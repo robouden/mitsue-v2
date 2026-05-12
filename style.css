@@ -281,6 +281,9 @@ table.funding .total td{font-weight:500;}
 .body-jp { display: none; }
 [data-lang="ja"] .body-en { display: none; }
 [data-lang="ja"] .body-jp { display: block; }
+/* Inline elements (small, span) need inline not block */
+[data-lang="ja"] small.body-jp,
+[data-lang="ja"] span.body-jp { display: inline; }
 
 /* ── JP mode: hero ── */
 [data-lang="ja"] .hero h1 {
