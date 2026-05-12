@@ -30,11 +30,22 @@ add_action( 'after_setup_theme', function () {
 } );
 
 /* ── Enqueue front-end assets ───────────────────────────────────────────── */
+/* Load Japanese fonts async — non-render-blocking, only needed for JP mode */
+add_action( 'wp_head', function () {
+	$jp_url = 'https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500;600&display=swap';
+	echo '<link rel="preconnect" href="https://fonts.googleapis.com">' . "\n";
+	echo '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>' . "\n";
+	// Load JP fonts async so they never block render
+	echo '<link rel="preload" as="style" href="' . esc_url( $jp_url ) . '" onload="this.onload=null;this.rel=\'stylesheet\'">' . "\n";
+	echo '<noscript><link rel="stylesheet" href="' . esc_url( $jp_url ) . '"></noscript>' . "\n";
+}, 1 );
+
 add_action( 'wp_enqueue_scripts', function () {
+	// Latin fonts self-hosted — no external request, no render block
 	wp_enqueue_style(
 		'mitsue-fonts',
-		'https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+JP:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500;600&display=swap',
-		[], null
+		MITSUE_URI . '/assets/fonts/latin-fonts.css',
+		[], MITSUE_VERSION
 	);
 	wp_enqueue_style( 'mitsue', get_stylesheet_uri(), [ 'mitsue-fonts' ], MITSUE_VERSION );
 
