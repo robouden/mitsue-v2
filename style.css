@@ -112,7 +112,7 @@ section{padding:112px 0;border-bottom:1px solid var(--rule);}
 .pillar{padding:48px 36px 48px 0;border-right:1px solid var(--rule);}
 .pillar:nth-child(n+2){padding-left:36px;}
 .pillar:last-child{padding-right:0;border-right:0;}
-.pillar .num{font-family:var(--serif-en);font-style:italic;font-size:52px;color:var(--accent);line-height:1;margin-bottom:28px;text-transform:uppercase;}
+.pillar .num{font-family:'Cinzel',var(--serif-en);font-style:italic;font-size:52px;color:var(--accent);line-height:1;margin-bottom:28px;text-transform:uppercase;}
 .pillar h3{font-family:var(--serif-en);font-weight:500;font-size:28px;margin:0 0 4px;letter-spacing:-0.005em;}
 .pillar .h3-jp{font-family:var(--serif-jp);font-size:13px;color:var(--ink-mute);margin-bottom:18px;letter-spacing:0.06em;}
 .pillar p{color:var(--ink-soft);font-size:15px;line-height:1.7;margin:0 0 20px;}
@@ -205,7 +205,7 @@ table.funding .total td{font-weight:500;}
 .prin:nth-child(3n){padding-right:0;border-right:0;}
 .prin:nth-child(n+2){padding-left:40px;}
 .prin:nth-child(3n+1){padding-left:0;}
-.prin .n{font-family:var(--serif-en);font-style:italic;font-size:36px;color:var(--accent);line-height:1;margin-bottom:20px;text-transform:uppercase;}
+.prin .n{font-family:'Cinzel',var(--serif-en);font-style:italic;font-size:36px;color:var(--accent);line-height:1;margin-bottom:20px;text-transform:uppercase;}
 .prin h6{font-family:var(--serif-en);font-weight:500;font-size:20px;margin:0 0 4px;}
 .prin .pjp{font-family:var(--serif-jp);font-size:12px;color:var(--ink-mute);margin-bottom:14px;letter-spacing:0.06em;}
 .prin p{font-size:14px;color:var(--ink-soft);line-height:1.7;margin:0;}
