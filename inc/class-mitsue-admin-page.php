@@ -133,9 +133,9 @@ if ( ! class_exists( 'Mitsue_Admin_Page' ) ) {
 					'type'    => 'repeater',
 					'columns' => [ 'k' => 'Label', 'v' => 'Value', 'sub' => 'Subtext EN', 'sub_jp' => 'Subtext JP' ],
 					'defaults' => [
-						[ 'k' => 'LOCATION',     'v' => 'Mitsue Village', 'sub' => 'Nara Prefecture · 奈良県御杖村',        'sub_jp' => '奈良県御杖村' ],
+						[ 'k' => 'LOCATION',     'v' => 'Mitsue Village', 'sub' => 'Nara Prefecture, Japan',               'sub_jp' => '奈良県御杖村' ],
 						[ 'k' => 'HORIZON',      'v' => '25 Years',       'sub' => 'Bridging today to small-scale fusion',  'sub_jp' => '現在から小規模核融合時代への橋渡し' ],
-						[ 'k' => 'STRUCTURE',    'v' => 'Non-profit',     'sub' => '一般社団法人 → NPO法人',               'sub_jp' => '一般社団法人 → NPO法人' ],
+						[ 'k' => 'STRUCTURE',    'v' => 'Non-profit',     'sub' => 'General Incorporated Association → NPO','sub_jp' => '一般社団法人 → NPO法人' ],
 						[ 'k' => 'YEAR-3 TARGET','v' => '¥134M',          'sub' => 'Five-layer funding stack',              'sub_jp' => '五層構造の資金調達' ],
 					],
 				],
