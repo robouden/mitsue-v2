@@ -1,0 +1,66 @@
+/* Mitsue admin settings page */
+.mitsue-admin-wrap { max-width: 1100px; }
+.mitsue-admin-wrap h1 { margin-bottom: 4px; }
+.mitsue-admin-wrap > .description { color: #646970; margin-bottom: 16px; }
+.mitsue-tabs { margin-bottom: 0; }
+.mitsue-settings-form { margin-top: 20px; }
+
+.mitsue-field-group {
+  background: #fff;
+  border: 1px solid #c3c4c7;
+  border-radius: 3px;
+  padding: 20px 24px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+.mitsue-field-heading {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1d2327;
+  margin: 0 0 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f0f0f1;
+}
+
+/* Repeater table */
+.mitsue-repeater-table { margin-bottom: 8px; }
+.mitsue-repeater-table thead th {
+  background: #f6f7f7;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: #50575e;
+  padding: 6px 8px;
+  white-space: nowrap;
+}
+.mitsue-th-action { width: 36px; }
+.mitsue-repeater-table td { vertical-align: top; padding: 5px 8px; }
+.mitsue-repeater-table tbody tr:nth-child(even) { background: #f9f9f9; }
+.mitsue-repeater-table input[type="text"],
+.mitsue-repeater-table textarea {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 13px;
+}
+.mitsue-repeater-table textarea { min-height: 68px; resize: vertical; }
+.mitsue-remove-row {
+  color: #d63638 !important;
+  font-size: 18px;
+  line-height: 1;
+  padding: 2px 4px;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+.mitsue-remove-row:hover { color: #b32d2e !important; }
+
+/* Image field */
+.mitsue-image-field { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.mitsue-img-preview {
+  width: 80px; height: 56px;
+  object-fit: cover;
+  border: 1px solid #c3c4c7;
+  border-radius: 2px;
+}
+
+.submit { padding-top: 12px; }
