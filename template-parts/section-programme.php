@@ -12,7 +12,8 @@ $pillars = mitsue_rows('pillars', [
       <div>
         <h2>Three integrated activities, <em>one coordinating body.</em></h2>
         <div class="h2-jp jp">三つの活動を、一つの運営体で。</div>
-        <div class="h2-sub">Forest restoration, locally generated renewable energy, and a small-scale community-owned data center — each reinforces the other and shares a common 25-year ledger of methods, data, and outcomes.</div>
+        <div class="h2-sub body-en">Forest restoration, locally generated renewable energy, and a small-scale community-owned data center — each reinforces the other and shares a common 25-year ledger of methods, data, and outcomes.</div>
+        <div class="h2-sub body-jp jp">森林再生・地域発電・小規模地域所有データセンター——それぞれが互いを強化し合い、手法・データ・成果を共有する25年の台帳によって結ばれています。</div>
       </div>
     </div>
 
@@ -42,13 +43,25 @@ $pillars = mitsue_rows('pillars', [
     <div style="display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--rule);">
       <div style="padding:36px 36px 0 0;border-right:1px solid var(--rule);">
         <div class="mono" style="color:var(--ink-mute);margin-bottom:14px;">§ 01.4 · EV Charging</div>
-        <h4 style="font-family:var(--serif-en);font-weight:500;font-size:22px;margin:0 0 8px;">Distributed charging anchored to local generation</h4>
-        <p style="color:var(--ink-soft);font-size:15px;line-height:1.7;">Charging infrastructure for residents and visitors, tied to on-site generation rather than waiting on capital-intensive grid extension. Within ten years, the majority of Japanese passenger vehicles are expected to be electric.</p>
+        <h4 style="font-family:var(--serif-en);font-weight:500;font-size:22px;margin:0 0 8px;">
+          <span class="body-en">Distributed charging anchored to local generation</span>
+          <span class="body-jp jp">地域発電と連動した分散型EV充電</span>
+        </h4>
+        <p style="color:var(--ink-soft);font-size:15px;line-height:1.7;">
+          <span class="body-en">Charging infrastructure for residents and visitors, tied to on-site generation rather than waiting on capital-intensive grid extension. Within ten years, the majority of Japanese passenger vehicles are expected to be electric.</span>
+          <span class="body-jp jp">居住者と来訪者向けの充電インフラを、資本集約的な系統延伸を待つのではなく、現地発電と連動して整備します。10年以内に、日本の乗用車の大半が電気自動車になると予測されています。</span>
+        </p>
       </div>
       <div style="padding:36px 0 0 36px;">
         <div class="mono" style="color:var(--ink-mute);margin-bottom:14px;">§ 01.5 · Open Knowledge</div>
-        <h4 style="font-family:var(--serif-en);font-weight:500;font-size:22px;margin:0 0 8px;">Documentation as a deliverable</h4>
-        <p style="color:var(--ink-soft);font-size:15px;line-height:1.7;">All methods, environmental data, financial records, and lessons learned are published under permissive open licences — Creative Commons for documents, appropriate open licences for data and code — so other communities may adapt the model.</p>
+        <h4 style="font-family:var(--serif-en);font-weight:500;font-size:22px;margin:0 0 8px;">
+          <span class="body-en">Documentation as a deliverable</span>
+          <span class="body-jp jp">文書化を成果物として</span>
+        </h4>
+        <p style="color:var(--ink-soft);font-size:15px;line-height:1.7;">
+          <span class="body-en">All methods, environmental data, financial records, and lessons learned are published under permissive open licences — Creative Commons for documents, appropriate open licences for data and code — so other communities may adapt the model.</span>
+          <span class="body-jp jp">手法・環境データ・財務記録・学んだ教訓はすべて、オープンライセンス（文書はクリエイティブ・コモンズ、データ・コードは適切なオープンライセンス）のもとで公開します。他のコミュニティがモデルを適用できるようにするためです。</span>
+        </p>
       </div>
     </div>
   </div>

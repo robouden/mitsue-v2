@@ -24,7 +24,10 @@ $meta        = mitsue_rows('hero_meta', [
       <?php foreach ($meta as $item): ?>
         <div>
           <div class="k"><?php echo esc_html($item['k']); ?></div>
-          <div class="v"><?php echo esc_html($item['v']); ?><small><?php echo esc_html($item['sub']); ?></small></div>
+          <div class="v"><?php echo esc_html($item['v']); ?>
+            <small class="body-en"><?php echo esc_html($item['sub']); ?></small>
+            <?php if (!empty($item['sub_jp'])): ?><small class="body-jp jp"><?php echo esc_html($item['sub_jp']); ?></small><?php endif; ?>
+          </div>
         </div>
       <?php endforeach; ?>
     </div>

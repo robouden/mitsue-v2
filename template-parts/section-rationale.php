@@ -13,7 +13,8 @@ $items = mitsue_rows('rationale', [
       <div>
         <h2>Four converging pressures, <em>one rural answer.</em></h2>
         <div class="h2-jp jp">四つの構造的圧力に、ひとつの農村型解答を。</div>
-        <div class="h2-sub">The project sits at the intersection of energy transition, forest liability, stranded community assets, and a rural digital deficit — each individually expensive to solve, all of them addressable together.</div>
+        <div class="h2-sub body-en">The project sits at the intersection of energy transition, forest liability, stranded community assets, and a rural digital deficit — each individually expensive to solve, all of them addressable together.</div>
+        <div class="h2-sub body-jp jp">本プロジェクトは、エネルギー転換・森林の負債・地域資産の遊休化・農村デジタル格差という四つの交差点に位置します。それぞれ単独では高コストな課題ですが、まとめて取り組むことができます。</div>
       </div>
     </div>
     <div class="rationale">

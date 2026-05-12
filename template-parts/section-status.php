@@ -26,7 +26,8 @@ $next = mitsue_rows('status_next', [
       <div>
         <h2>Where the project stands today, <em>May 2026.</em></h2>
         <div class="h2-jp jp">現在の進捗 — 2026年5月時点</div>
-        <div class="h2-sub">Phase 0 is intentionally quiet: no public announcements, no press, no website launch. The work is local trust-building, founding-team formation, and clean drafting of the charter.</div>
+        <div class="h2-sub body-en">Phase 0 is intentionally quiet: no public announcements, no press, no website launch. The work is local trust-building, founding-team formation, and clean drafting of the charter.</div>
+        <div class="h2-sub body-jp jp">フェーズ0は意図的に静かに進めています。公式発表なし、プレスなし、ウェブサイト公開なし。取り組みの中心は、地域との信頼構築、創設チームの形成、そして定款の丁寧な草案作成です。</div>
       </div>
     </div>
     <div class="status-wrap">
@@ -35,25 +36,43 @@ $next = mitsue_rows('status_next', [
         <h3>Pre-Foundation</h3>
         <div class="sub">準備期 · Months 01 – 03</div>
         <div class="period">SELF-FUNDED · ¥0–0.5M</div>
-        <p style="margin-top:24px;font-size:14px;color:var(--ink-soft);line-height:1.7;">No public announcements yet. Formal channels — website, dedicated email, NPO bank account — will be established at the start of Phase 1.</p>
+        <p style="margin-top:24px;font-size:14px;color:var(--ink-soft);line-height:1.7;">
+          <span class="body-en">No public announcements yet. Formal channels — website, dedicated email, NPO bank account — will be established at the start of Phase 1.</span>
+          <span class="body-jp jp">現時点では公式発表はありません。ウェブサイト・専用メール・NPO口座などの正式チャネルは、フェーズ1開始時に整備されます。</span>
+        </p>
       </div>
       <div class="status-cols">
         <div class="status-col">
           <h6>COMPLETED</h6>
           <ul>
-            <?php foreach ($completed as $i): ?><li class="done"><?php echo wp_kses_post($i['t']); ?></li><?php endforeach; ?>
+            <?php foreach ($completed as $i): ?>
+              <li class="done">
+                <span class="body-en"><?php echo wp_kses_post($i['t']); ?></span>
+                <?php if (!empty($i['t_jp'])): ?><span class="body-jp jp"><?php echo wp_kses_post($i['t_jp']); ?></span><?php endif; ?>
+              </li>
+            <?php endforeach; ?>
           </ul>
         </div>
         <div class="status-col">
           <h6>IN PROGRESS</h6>
           <ul>
-            <?php foreach ($progress as $i): ?><li class="prog"><?php echo wp_kses_post($i['t']); ?></li><?php endforeach; ?>
+            <?php foreach ($progress as $i): ?>
+              <li class="prog">
+                <span class="body-en"><?php echo wp_kses_post($i['t']); ?></span>
+                <?php if (!empty($i['t_jp'])): ?><span class="body-jp jp"><?php echo wp_kses_post($i['t_jp']); ?></span><?php endif; ?>
+              </li>
+            <?php endforeach; ?>
           </ul>
         </div>
         <div class="status-col">
           <h6>NEXT 30 DAYS</h6>
           <ul>
-            <?php foreach ($next as $i): ?><li class="next"><?php echo wp_kses_post($i['t']); ?></li><?php endforeach; ?>
+            <?php foreach ($next as $i): ?>
+              <li class="next">
+                <span class="body-en"><?php echo wp_kses_post($i['t']); ?></span>
+                <?php if (!empty($i['t_jp'])): ?><span class="body-jp jp"><?php echo wp_kses_post($i['t_jp']); ?></span><?php endif; ?>
+              </li>
+            <?php endforeach; ?>
           </ul>
         </div>
       </div>

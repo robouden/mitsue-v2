@@ -16,7 +16,8 @@ $total_y3 = mitsue_get('funding_total_y3','¥134M');
       <div>
         <h2>A <em>five-layer stack</em> — protecting against early dependence on any single source.</h2>
         <div class="h2-jp jp">五層構造の資金調達 — 単一財源への早期依存を避ける</div>
-        <div class="h2-sub">Each layer is unlocked by the deliverables of the prior phase. Figures are planning targets, not commitments; the actual mix depends on grant outcomes and partnership negotiations during Phases 1 and 2.</div>
+        <div class="h2-sub body-en">Each layer is unlocked by the deliverables of the prior phase. Figures are planning targets, not commitments; the actual mix depends on grant outcomes and partnership negotiations during Phases 1 and 2.</div>
+        <div class="h2-sub body-jp jp">各層は前フェーズの成果物によって解放されます。数字は計画目標であり確約ではなく、実際の組み合わせはフェーズ1・2における補助金の結果とパートナーシップ交渉によって変わります。</div>
       </div>
     </div>
     <table class="funding">
@@ -27,7 +28,10 @@ $total_y3 = mitsue_get('funding_total_y3','¥134M');
         <?php foreach ($rows as $r): ?>
           <tr>
             <td><?php echo esc_html($r['layer']); ?></td>
-            <td class="layer-name"><?php echo esc_html($r['name']); ?><span class="desc"><?php echo esc_html($r['desc']); ?></span></td>
+            <td class="layer-name"><?php echo esc_html($r['name']); ?>
+              <span class="desc body-en"><?php echo esc_html($r['desc']); ?></span>
+              <?php if (!empty($r['desc_jp'])): ?><span class="desc body-jp jp"><?php echo esc_html($r['desc_jp']); ?></span><?php endif; ?>
+            </td>
             <td class="num"><?php echo esc_html($r['y1']); ?></td>
             <td class="num"><?php echo esc_html($r['y3']); ?></td>
           </tr>

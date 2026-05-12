@@ -32,7 +32,10 @@ $legal = mitsue_rows('legal_path', [
           <div class="role">ADVISORY BOARD · 助言役員</div>
           <div class="portrait" aria-hidden="true"><?php echo esc_html($a['initials']); ?></div>
           <h4><?php echo esc_html($a['name']); ?></h4>
-          <p class="credit"><?php echo esc_html($a['credit']); ?></p>
+          <p class="credit body-en"><?php echo esc_html($a['credit']); ?></p>
+          <?php if (!empty($a['credit_jp'])): ?>
+          <p class="credit body-jp jp"><?php echo esc_html($a['credit_jp']); ?></p>
+          <?php endif; ?>
         </div>
       <?php endforeach; ?>
     </div>
