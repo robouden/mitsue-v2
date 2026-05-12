@@ -22,9 +22,18 @@ $pillars = mitsue_rows('pillars', [
           <div class="num"><?php echo esc_html($p['num']); ?></div>
           <h3><?php echo esc_html($p['title_en']); ?></h3>
           <div class="h3-jp jp"><?php echo esc_html($p['title_jp']); ?></div>
-          <?php foreach (explode('|', $p['body']) as $para): ?>
-            <p><?php echo wp_kses_post($para); ?></p>
-          <?php endforeach; ?>
+          <div class="body-en">
+            <?php foreach (explode('|', $p['body'] ?? '') as $para): ?>
+              <p><?php echo wp_kses_post($para); ?></p>
+            <?php endforeach; ?>
+          </div>
+          <?php if (!empty($p['body_jp'])): ?>
+          <div class="body-jp jp">
+            <?php foreach (explode('|', $p['body_jp']) as $para): ?>
+              <p><?php echo wp_kses_post($para); ?></p>
+            <?php endforeach; ?>
+          </div>
+          <?php endif; ?>
           <div class="tag"><?php echo esc_html($p['tag']); ?></div>
         </div>
       <?php endforeach; ?>

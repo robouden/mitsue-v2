@@ -262,7 +262,7 @@ table.funding .total td{font-weight:500;}
    JS sets data-lang="ja" on <html> when the user picks 日本語.
    Default (EN): JP subtitles sit below as decorative captions.
    JP mode: JP headings are promoted to primary; EN headings recede to captions.
-   Body paragraphs remain in English — no full JP translation exists yet.
+   Body paragraphs switch between .body-en and .body-jp where translations exist.
 ─────────────────────────────────────────────────────────────────────────── */
 
 /* Smooth cross-fade on all toggled elements */
@@ -272,9 +272,15 @@ table.funding .total td{font-weight:500;}
 .rationale-item h4, .rationale-item .h4-jp,
 .tphase h5, .tphase .pjp,
 .advisor h4,
-.hero .lede, .hero .lede .jp {
+.hero .lede, .hero .lede .jp,
+.body-en, .body-jp {
   transition: font-size .25s ease, color .25s ease, opacity .25s ease;
 }
+
+/* Body paragraph EN/JP switching */
+.body-jp { display: none; }
+[data-lang="ja"] .body-en { display: none; }
+[data-lang="ja"] .body-jp { display: block; }
 
 /* ── JP mode: hero ── */
 [data-lang="ja"] .hero h1 {
