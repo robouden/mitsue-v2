@@ -30,7 +30,18 @@ $legal = mitsue_rows('legal_path', [
       <?php foreach ($advisors as $a): ?>
         <div class="advisor">
           <div class="role">ADVISORY BOARD · 助言役員</div>
-          <div class="portrait" aria-hidden="true"><?php echo esc_html($a['initials']); ?></div>
+          <?php
+            $slug = strtolower(strtok($a['name'], ' '));
+            $img  = get_stylesheet_directory() . '/assets/images/' . $slug . '.jpg';
+            $uri  = get_stylesheet_directory_uri() . '/assets/images/' . $slug . '.jpg';
+          ?>
+          <div class="portrait" aria-hidden="true">
+            <?php if ( file_exists($img) ): ?>
+              <img src="<?php echo esc_url($uri); ?>" alt="<?php echo esc_attr($a['name']); ?>">
+            <?php else: ?>
+              <?php echo esc_html($a['initials']); ?>
+            <?php endif; ?>
+          </div>
           <h4><?php echo esc_html($a['name']); ?></h4>
           <p class="credit body-en"><?php echo esc_html($a['credit']); ?></p>
           <?php if (!empty($a['credit_jp'])): ?>

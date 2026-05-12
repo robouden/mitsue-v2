@@ -172,7 +172,8 @@ section{padding:112px 0;border-bottom:1px solid var(--rule);}
 .advisor{padding:40px 40px 40px 0;border-right:1px solid var(--rule);}
 .advisor:last-child{padding-left:40px;border-right:0;}
 .advisor .role{font-family:var(--mono);font-size:10px;color:var(--accent);letter-spacing:0.14em;margin-bottom:20px;}
-.advisor .portrait{width:52px;height:52px;border:1px solid var(--rule);display:flex;align-items:center;justify-content:center;font-family:var(--serif-en);font-size:14px;letter-spacing:0.04em;color:var(--ink-mute);margin-bottom:16px;}
+.advisor .portrait{width:52px;height:52px;border:1px solid var(--rule);display:flex;align-items:center;justify-content:center;font-family:var(--serif-en);font-size:14px;letter-spacing:0.04em;color:var(--ink-mute);margin-bottom:16px;overflow:hidden;}
+.advisor .portrait img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block;}
 .advisor h4{font-family:var(--serif-en);font-size:22px;font-weight:500;margin:0 0 12px;}
 .advisor .credit{font-size:14px;color:var(--ink-soft);line-height:1.65;margin:0;}
 .governance{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--rule);}
