@@ -514,7 +514,7 @@ if ( ! class_exists( 'Mitsue_Admin_Page' ) ) {
 		}
 
 		private function render_repeater_row( string $name_base, array $col_keys, array $row, $idx ): void {
-			$long_cols = [ 'body', 'credit', 'desc', 't' ];
+			$long_cols = [ 'body', 'body_jp', 'credit', 'credit_jp', 'desc', 'desc_jp', 't', 't_jp', 'note', 'note_jp', 'sub', 'sub_jp' ];
 			echo '<tr>';
 			foreach ( $col_keys as $col ) {
 				$val  = $row[ $col ] ?? '';
