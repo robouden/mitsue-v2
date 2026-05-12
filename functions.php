@@ -30,14 +30,17 @@ add_action( 'after_setup_theme', function () {
 } );
 
 /* ── Enqueue front-end assets ───────────────────────────────────────────── */
-/* Load Japanese fonts async — non-render-blocking, only needed for JP mode */
+/* JP fonts with font-display:optional — loads without blocking, no swap = no CLS */
 add_action( 'wp_head', function () {
-	$jp_url = 'https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500;600&display=swap';
+	// display=optional: browser uses font only if cached/fast; no swap, no layout shift
+	$jp_url = 'https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500;600&display=optional';
 	echo '<link rel="preconnect" href="https://fonts.googleapis.com">' . "\n";
 	echo '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>' . "\n";
-	// Load JP fonts async so they never block render
-	echo '<link rel="preload" as="style" href="' . esc_url( $jp_url ) . '" onload="this.onload=null;this.rel=\'stylesheet\'">' . "\n";
+	echo '<link rel="stylesheet" href="' . esc_url( $jp_url ) . '" media="print" onload="this.media=\'all\'">' . "\n";
 	echo '<noscript><link rel="stylesheet" href="' . esc_url( $jp_url ) . '"></noscript>' . "\n";
+	// Preload the two most-visible Latin fonts (Cormorant regular + IBM Plex Sans regular)
+	echo '<link rel="preload" as="font" type="font/woff2" crossorigin href="' . esc_url( get_stylesheet_directory_uri() . '/assets/fonts/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtK.woff2' ) . '">' . "\n";
+	echo '<link rel="preload" as="font" type="font/woff2" crossorigin href="' . esc_url( get_stylesheet_directory_uri() . '/assets/fonts/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxeKYY.woff2' ) . '">' . "\n";
 }, 1 );
 
 add_action( 'wp_enqueue_scripts', function () {
