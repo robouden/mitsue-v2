@@ -52,11 +52,12 @@ a{color:inherit;}
 
 /* ── Utility bar ──────────────────────────────────────────────────────────── */
 .utility{border-bottom:1px solid var(--rule);font-size:12px;color:var(--ink-mute);background:var(--bg);}
-.utility .row{display:flex;justify-content:space-between;align-items:center;height:40px;gap:24px;}
-.utility .left,.utility .right{display:flex;gap:18px;align-items:center;}
+.utility .row{display:flex;justify-content:space-between;align-items:center;height:40px;gap:24px;flex-wrap:nowrap;}
+.utility .left,.utility .right{display:flex;gap:18px;align-items:center;white-space:nowrap;}
 .utility .dot{width:6px;height:6px;background:var(--accent);border-radius:50%;display:inline-block;}
+@media(max-width:760px){.utility .left{display:none;}.utility .right{margin-left:auto;}}
 .lang{display:inline-flex;align-items:center;gap:2px;}
-.lang button{background:none;border:0;padding:4px 10px;cursor:pointer;color:var(--ink-mute);font:inherit;font-family:var(--mono);font-size:11px;letter-spacing:0.08em;}
+.lang button{background:none;border:0;padding:4px 10px;cursor:pointer;color:var(--ink-mute);font:inherit;font-family:var(--mono);font-size:11px;letter-spacing:0.08em;white-space:nowrap;}
 .lang button.active{color:var(--ink);border-bottom:1px solid var(--ink);}
 
 /* ── Primary nav ──────────────────────────────────────────────────────────── */
