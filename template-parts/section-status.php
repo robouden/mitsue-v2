@@ -22,7 +22,9 @@ $next = mitsue_rows('status_next', [
 <section id="status" style="background:var(--paper);">
   <div class="wrap">
     <div class="section-head">
-      <div class="num">§ 07<span class="label">Current Status</span></div>
+      <div class="num">§ 07<span class="label">Current Status</span>
+        <?php $si = mitsue_get('section_img_status'); if ($si): ?><img src="<?php echo esc_url($si); ?>" alt="" class="section-img"><?php endif; ?>
+      </div>
       <div>
         <h2>Where the project stands today, <em>May 2026.</em></h2>
         <div class="h2-jp jp">現在の進捗 — 2026年5月時点</div>

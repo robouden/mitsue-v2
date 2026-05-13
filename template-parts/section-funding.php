@@ -12,7 +12,9 @@ $total_y3 = mitsue_get('funding_total_y3','¥134M');
 <section id="funding">
   <div class="wrap">
     <div class="section-head">
-      <div class="num">§ 05<span class="label">Funding</span></div>
+      <div class="num">§ 05<span class="label">Funding</span>
+        <?php $si = mitsue_get('section_img_funding'); if ($si): ?><img src="<?php echo esc_url($si); ?>" alt="" class="section-img"><?php endif; ?>
+      </div>
       <div>
         <h2>A <em>five-layer stack</em> — protecting against early dependence on any single source.</h2>
         <div class="h2-jp jp">五層構造の資金調達 — 単一財源への早期依存を避ける</div>

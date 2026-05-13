@@ -16,7 +16,9 @@ $gates = mitsue_rows('gates', [
 <section id="timeline">
   <div class="wrap">
     <div class="section-head">
-      <div class="num">§ 03<span class="label">Phased Plan</span></div>
+      <div class="num">§ 03<span class="label">Phased Plan</span>
+        <?php $si = mitsue_get('section_img_timeline'); if ($si): ?><img src="<?php echo esc_url($si); ?>" alt="" class="section-img"><?php endif; ?>
+      </div>
       <div>
         <h2>Five phases, <em>four explicit gates.</em></h2>
         <div class="h2-jp jp">五段階・四つの資金ゲート</div>

@@ -54,7 +54,8 @@ if ( ! class_exists( 'Mitsue_Admin_Page' ) ) {
 
 		public function sanitize_options( $input ): array {
 			if ( ! is_array( $input ) ) return [];
-			$clean = [];
+			// Start from existing saved values so fields on other tabs are not wiped.
+			$clean = (array) get_option( 'mitsue_options', [] );
 			foreach ( $input as $key => $val ) {
 				$key = sanitize_key( $key );
 				if ( is_array( $val ) ) {
@@ -141,6 +142,12 @@ if ( ! class_exists( 'Mitsue_Admin_Page' ) ) {
 				],
 
 				/* ─── Programme ─────────────────────────────────────── */
+				'section_img_programme' => [
+					'tab'     => 'programme',
+					'label'   => __( 'Section image (left column, beside heading)', 'mitsue' ),
+					'type'    => 'image',
+					'default' => '',
+				],
 				'pillars' => [
 					'tab'     => 'programme',
 					'label'   => __( 'Programme pillars', 'mitsue' ),
@@ -168,6 +175,12 @@ if ( ! class_exists( 'Mitsue_Admin_Page' ) ) {
 				],
 
 				/* ─── Rationale ─────────────────────────────────────── */
+				'section_img_rationale' => [
+					'tab'     => 'rationale',
+					'label'   => __( 'Section image (left column, beside heading)', 'mitsue' ),
+					'type'    => 'image',
+					'default' => '',
+				],
 				'rationale' => [
 					'tab'     => 'rationale',
 					'label'   => __( 'Rationale items', 'mitsue' ),
@@ -182,6 +195,12 @@ if ( ! class_exists( 'Mitsue_Admin_Page' ) ) {
 				],
 
 				/* ─── Timeline ──────────────────────────────────────── */
+				'section_img_timeline' => [
+					'tab'     => 'timeline',
+					'label'   => __( 'Section image (left column, beside heading)', 'mitsue' ),
+					'type'    => 'image',
+					'default' => '',
+				],
 				'phases' => [
 					'tab'     => 'timeline',
 					'label'   => __( 'Timeline phases', 'mitsue' ),
@@ -209,6 +228,12 @@ if ( ! class_exists( 'Mitsue_Admin_Page' ) ) {
 				],
 
 				/* ─── Governance ────────────────────────────────────── */
+				'section_img_governance' => [
+					'tab'     => 'governance',
+					'label'   => __( 'Section image (left column, beside heading)', 'mitsue' ),
+					'type'    => 'image',
+					'default' => '',
+				],
 				'advisors' => [
 					'tab'     => 'governance',
 					'label'   => __( 'Advisory board members', 'mitsue' ),
@@ -246,6 +271,12 @@ if ( ! class_exists( 'Mitsue_Admin_Page' ) ) {
 				],
 
 				/* ─── Funding ───────────────────────────────────────── */
+				'section_img_funding' => [
+					'tab'     => 'funding',
+					'label'   => __( 'Section image (left column, beside heading)', 'mitsue' ),
+					'type'    => 'image',
+					'default' => '',
+				],
 				'funding_rows' => [
 					'tab'     => 'funding',
 					'label'   => __( 'Funding stack rows', 'mitsue' ),
@@ -273,6 +304,12 @@ if ( ! class_exists( 'Mitsue_Admin_Page' ) ) {
 				],
 
 				/* ─── Principles ────────────────────────────────────── */
+				'section_img_principles' => [
+					'tab'     => 'principles',
+					'label'   => __( 'Section image (left column, beside heading)', 'mitsue' ),
+					'type'    => 'image',
+					'default' => '',
+				],
 				'principles' => [
 					'tab'     => 'principles',
 					'label'   => __( 'Operating principles', 'mitsue' ),
@@ -289,6 +326,12 @@ if ( ! class_exists( 'Mitsue_Admin_Page' ) ) {
 				],
 
 				/* ─── Status ────────────────────────────────────────── */
+				'section_img_status' => [
+					'tab'     => 'status',
+					'label'   => __( 'Section image (left column, beside heading)', 'mitsue' ),
+					'type'    => 'image',
+					'default' => '',
+				],
 				'status_completed' => [
 					'tab'     => 'status',
 					'label'   => __( 'Completed items', 'mitsue' ),

@@ -20,7 +20,9 @@ $legal = mitsue_rows('legal_path', [
 <section id="governance">
   <div class="wrap">
     <div class="section-head">
-      <div class="num">§ 04<span class="label">Governance</span></div>
+      <div class="num">§ 04<span class="label">Governance</span>
+        <?php $si = mitsue_get('section_img_governance'); if ($si): ?><img src="<?php echo esc_url($si); ?>" alt="" class="section-img"><?php endif; ?>
+      </div>
       <div>
         <h2>An advisory bench of <em>builders</em> — and a clear path to certified nonprofit status.</h2>
         <div class="h2-jp jp">実務家による助言体制と、認定NPOへの明確な道筋</div>
@@ -32,14 +34,14 @@ $legal = mitsue_rows('legal_path', [
           <div class="role">ADVISORY BOARD · 助言役員</div>
           <?php
             $slug = strtolower(strtok($a['name'], ' '));
-            $img  = get_stylesheet_directory() . '/assets/images/' . $slug . '.jpg';
-            $uri  = get_stylesheet_directory_uri() . '/assets/images/' . $slug . '.jpg';
+            $uri  = MITSUE_URI . '/assets/images/' . $slug . '.jpg';
+            $img  = MITSUE_DIR . '/assets/images/' . $slug . '.jpg';
           ?>
           <div class="portrait" aria-hidden="true">
             <?php if ( file_exists($img) ): ?>
               <img src="<?php echo esc_url($uri); ?>" alt="<?php echo esc_attr($a['name']); ?>">
             <?php else: ?>
-              <?php echo esc_html($a['initials']); ?>
+              <?php echo esc_html($a['initials'] ?? strtoupper(substr($a['name'],0,1))); ?>
             <?php endif; ?>
           </div>
           <h4><?php echo esc_html($a['name']); ?></h4>

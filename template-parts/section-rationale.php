@@ -9,7 +9,9 @@ $items = mitsue_rows('rationale', [
 <section>
   <div class="wrap">
     <div class="section-head">
-      <div class="num">§ 02<span class="label">Rationale</span></div>
+      <div class="num">§ 02<span class="label">Rationale</span>
+        <?php $si = mitsue_get('section_img_rationale'); if ($si): ?><img src="<?php echo esc_url($si); ?>" alt="" class="section-img"><?php endif; ?>
+      </div>
       <div>
         <h2>Four converging pressures, <em>one rural answer.</em></h2>
         <div class="h2-jp jp">四つの構造的圧力に、ひとつの農村型解答を。</div>
