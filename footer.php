@@ -77,8 +77,8 @@
   }
 
   /* Restore preference immediately (before first paint if possible) */
-  var saved = 'en';
-  try { saved = localStorage.getItem('mitsue-lang') || 'en'; } catch(e) {}
+  var saved = 'ja';
+  try { saved = localStorage.getItem('mitsue-lang') || 'ja'; } catch(e) {}
   applyLang(saved);
 
   /* Wire up the buttons */
