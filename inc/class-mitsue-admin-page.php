@@ -606,7 +606,7 @@ if ( ! class_exists( 'Mitsue_Admin_Page' ) ) {
 				if ( in_array( $col, $photo_cols, true ) ) {
 					echo '<div class="mitsue-image-field">';
 					printf( '<input type="url" name="%s" value="%s" class="widefat" placeholder="https://" />', esc_attr( $name ), esc_attr( $val ) );
-					echo '<button type="button" class="button mitsue-media-pick-row" style="margin-top:4px;">' . esc_html__( 'Choose photo', 'mitsue' ) . '</button>';
+					echo '<button type="button" class="button mitsue-media-pick-row" style="margin-top:4px;">' . esc_html__( 'Choose photo from Media Library', 'mitsue' ) . '</button>';
 					if ( $val ) {
 						printf( '<img class="mitsue-img-preview" src="%s" style="margin-top:6px;max-width:80px;display:block;" />', esc_url( $val ) );
 					} else {
