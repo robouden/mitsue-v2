@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			tr.innerHTML = html;
 			tbody.appendChild(tr);
 			bindRemove(tr.querySelector('.mitsue-remove-row'));
+			tr.querySelectorAll('.mitsue-media-pick-row').forEach(bindMediaPickRow);
 		});
 	});
 
@@ -31,7 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
 	function reindex(tbody) {
 		tbody.querySelectorAll('tr').forEach((tr, i) => {
 			tr.querySelectorAll('[name]').forEach(el => {
-				// Replace the row index segment: [anything][col] → [i][col]
 				el.name = el.name.replace(/\[([^\]]+)\]\[([^\]]+)\]$/, `[${i}][$2]`);
 			});
 		});
@@ -57,38 +57,41 @@ document.addEventListener('DOMContentLoaded', () => {
 					preview.className = 'mitsue-img-preview';
 					input.closest('.mitsue-image-field').appendChild(preview);
 				}
-				preview.src   = att.url;
+				preview.src = att.url;
 				preview.style.display = 'block';
 			});
 			frame.open();
 		});
 	});
 
-	/* ── Media picker inside repeater rows (event-delegated) ── */
-	document.addEventListener('click', e => {
-		const btn = e.target.closest('.mitsue-media-pick-row');
+	/* ── Media picker inside repeater rows ───────────────────── */
+	document.querySelectorAll('.mitsue-media-pick-row').forEach(bindMediaPickRow);
+
+	function bindMediaPickRow(btn) {
 		if (!btn) return;
-		const field = btn.closest('.mitsue-image-field');
-		const input = field.querySelector('input[type="url"]');
-		const frame = wp.media({
-			title:    'Select photo',
-			button:   { text: 'Use this photo' },
-			multiple: false,
+		btn.addEventListener('click', () => {
+			const field = btn.closest('.mitsue-image-field');
+			const input = field.querySelector('input[type="url"]');
+			const frame = wp.media({
+				title:    'Select image',
+				button:   { text: 'Use this image' },
+				multiple: false,
+			});
+			frame.on('select', () => {
+				const att   = frame.state().get('selection').first().toJSON();
+				input.value = att.url;
+				let preview = field.querySelector('.mitsue-img-preview');
+				if (!preview) {
+					preview           = document.createElement('img');
+					preview.className = 'mitsue-img-preview';
+					preview.style.cssText = 'margin-top:6px;max-width:80px;display:block;';
+					field.appendChild(preview);
+				}
+				preview.src           = att.url;
+				preview.style.display = 'block';
+			});
+			frame.open();
 		});
-		frame.on('select', () => {
-			const att     = frame.state().get('selection').first().toJSON();
-			input.value   = att.url;
-			let preview   = field.querySelector('.mitsue-img-preview');
-			if (!preview) {
-				preview           = document.createElement('img');
-				preview.className = 'mitsue-img-preview';
-				preview.style.cssText = 'margin-top:6px;max-width:80px;display:block;';
-				field.appendChild(preview);
-			}
-			preview.src           = att.url;
-			preview.style.display = 'block';
-		});
-		frame.open();
-	});
+	}
 
 });
