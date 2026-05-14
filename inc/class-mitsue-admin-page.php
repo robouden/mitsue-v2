@@ -238,7 +238,7 @@ if ( ! class_exists( 'Mitsue_Admin_Page' ) ) {
 					'tab'     => 'governance',
 					'label'   => __( 'Founder profile cards', 'mitsue' ),
 					'type'    => 'repeater',
-					'columns' => [ 'initials' => 'Initials', 'name' => 'Full name', 'credit' => 'Bio EN', 'credit_jp' => 'Bio JP' ],
+					'columns' => [ 'initials' => 'Initials', 'name' => 'Full name', 'photo' => 'Photo', 'credit' => 'Bio EN', 'credit_jp' => 'Bio JP' ],
 					'defaults' => [
 						[ 'initials' => 'R.O.', 'name' => 'Rob Oudendijk', 'credit' => 'Founder of the Mitsue Project. Founder of YR-Design, a design and technology studio based in the Netherlands, and a core contributor to Safecast — the open environmental monitoring network established after Fukushima. His work spans interaction design, hardware development, and open-source environmental data.', 'credit_jp' => '御杖プロジェクト創業者。オランダを拠点とするデザイン・テクノロジースタジオ「YR-Design」の創設者であり、福島第一原発事故後に設立されたオープン環境モニタリングネットワーク「Safecast」のコア・コントリビューター。インタラクションデザイン・ハードウェア開発・オープンソース環境データの領域を横断して活動している。' ],
 					],
@@ -247,7 +247,7 @@ if ( ! class_exists( 'Mitsue_Admin_Page' ) ) {
 					'tab'     => 'governance',
 					'label'   => __( 'Advisory board members', 'mitsue' ),
 					'type'    => 'repeater',
-					'columns' => [ 'initials' => 'Initials', 'name' => 'Full name', 'credit' => 'Bio EN', 'credit_jp' => 'Bio JP' ],
+					'columns' => [ 'initials' => 'Initials', 'name' => 'Full name', 'photo' => 'Photo', 'credit' => 'Bio EN', 'credit_jp' => 'Bio JP' ],
 					'defaults' => [
 						[ 'initials' => 'J.I.', 'name' => 'Joi Ito',   'credit' => 'Former Director, MIT Media Lab. Internet pioneer; long-running engagement with Japanese institutions, technology policy, and emerging compute. Confirmed May 5, 2026.',          'credit_jp' => 'MITメディアラボ元所長。インターネットの先駆者として、日本の諸機関・技術政策・新興コンピューティングに長期的に関与。2026年5月5日に顧問就任を承諾。' ],
 						[ 'initials' => 'R.O.', 'name' => 'Ray Ozzie', 'credit' => 'Software pioneer; former Chief Software Architect at Microsoft. Decades of work on distributed systems, collaboration software, and the discipline of small, accountable platforms. Confirmed May 5, 2026.', 'credit_jp' => 'ソフトウェアの先駆者、マイクロソフト元チーフソフトウェアアーキテクト。分散システム・コラボレーションソフトウェア・小規模で説明責任を果たすプラットフォームの設計原則に数十年従事。2026年5月5日に顧問就任を承諾。' ],
@@ -596,14 +596,24 @@ if ( ! class_exists( 'Mitsue_Admin_Page' ) ) {
 		}
 
 		private function render_repeater_row( string $name_base, array $col_keys, array $row, $idx ): void {
-			$long_cols = [ 'body', 'body_jp', 'credit', 'credit_jp', 'desc', 'desc_jp', 't', 't_jp', 'note', 'note_jp', 'sub', 'sub_jp' ];
+			$long_cols  = [ 'body', 'body_jp', 'credit', 'credit_jp', 'desc', 'desc_jp', 't', 't_jp', 'note', 'note_jp', 'sub', 'sub_jp' ];
+			$photo_cols = [ 'photo', 'img', 'image_url' ];
 			echo '<tr>';
 			foreach ( $col_keys as $col ) {
 				$val  = $row[ $col ] ?? '';
 				$name = sprintf( '%s[%s][%s]', $name_base, $idx, $col );
-				$is_long = in_array( $col, $long_cols, true );
 				echo '<td>';
-				if ( $is_long ) {
+				if ( in_array( $col, $photo_cols, true ) ) {
+					echo '<div class="mitsue-image-field">';
+					printf( '<input type="url" name="%s" value="%s" class="widefat" placeholder="https://" />', esc_attr( $name ), esc_attr( $val ) );
+					echo '<button type="button" class="button mitsue-media-pick-row" style="margin-top:4px;">' . esc_html__( 'Choose photo', 'mitsue' ) . '</button>';
+					if ( $val ) {
+						printf( '<img class="mitsue-img-preview" src="%s" style="margin-top:6px;max-width:80px;display:block;" />', esc_url( $val ) );
+					} else {
+						echo '<img class="mitsue-img-preview" src="" style="margin-top:6px;max-width:80px;display:none;" />';
+					}
+					echo '</div>';
+				} elseif ( in_array( $col, $long_cols, true ) ) {
 					printf( '<textarea name="%s" rows="3" class="widefat">%s</textarea>', esc_attr( $name ), esc_textarea( $val ) );
 				} else {
 					printf( '<input type="text" name="%s" value="%s" class="widefat" />', esc_attr( $name ), esc_attr( $val ) );

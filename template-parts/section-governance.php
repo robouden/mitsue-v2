@@ -36,13 +36,16 @@ $legal = mitsue_rows('legal_path', [
         <div class="advisor">
           <div class="role">FOUNDER · 創業者</div>
           <?php
-            $slug = strtolower(strtok($a['name'], ' '));
-            $uri  = MITSUE_URI . '/assets/images/' . $slug . '.jpg';
-            $img  = MITSUE_DIR . '/assets/images/' . $slug . '.jpg';
+            $photo_url = !empty($a['photo']) ? $a['photo'] : null;
+            if ( ! $photo_url ) {
+              $slug = strtolower(strtok($a['name'], ' '));
+              $img  = MITSUE_DIR . '/assets/images/' . $slug . '.jpg';
+              if ( file_exists($img) ) $photo_url = MITSUE_URI . '/assets/images/' . $slug . '.jpg';
+            }
           ?>
           <div class="portrait" aria-hidden="true">
-            <?php if ( file_exists($img) ): ?>
-              <img src="<?php echo esc_url($uri); ?>" alt="<?php echo esc_attr($a['name']); ?>">
+            <?php if ( $photo_url ): ?>
+              <img src="<?php echo esc_url($photo_url); ?>" alt="<?php echo esc_attr($a['name']); ?>">
             <?php else: ?>
               <?php echo esc_html($a['initials'] ?? strtoupper(substr($a['name'],0,1))); ?>
             <?php endif; ?>
@@ -58,13 +61,16 @@ $legal = mitsue_rows('legal_path', [
         <div class="advisor">
           <div class="role">ADVISORY BOARD · 助言役員</div>
           <?php
-            $slug = strtolower(strtok($a['name'], ' '));
-            $uri  = MITSUE_URI . '/assets/images/' . $slug . '.jpg';
-            $img  = MITSUE_DIR . '/assets/images/' . $slug . '.jpg';
+            $photo_url = !empty($a['photo']) ? $a['photo'] : null;
+            if ( ! $photo_url ) {
+              $slug = strtolower(strtok($a['name'], ' '));
+              $img  = MITSUE_DIR . '/assets/images/' . $slug . '.jpg';
+              if ( file_exists($img) ) $photo_url = MITSUE_URI . '/assets/images/' . $slug . '.jpg';
+            }
           ?>
           <div class="portrait" aria-hidden="true">
-            <?php if ( file_exists($img) ): ?>
-              <img src="<?php echo esc_url($uri); ?>" alt="<?php echo esc_attr($a['name']); ?>">
+            <?php if ( $photo_url ): ?>
+              <img src="<?php echo esc_url($photo_url); ?>" alt="<?php echo esc_attr($a['name']); ?>">
             <?php else: ?>
               <?php echo esc_html($a['initials'] ?? strtoupper(substr($a['name'],0,1))); ?>
             <?php endif; ?>

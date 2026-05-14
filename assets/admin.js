@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	}
 
-	/* ── Media library picker ────────────────────────────────── */
+	/* ── Media library picker (standalone fields) ───────────── */
 	document.querySelectorAll('.mitsue-media-pick').forEach(btn => {
 		btn.addEventListener('click', () => {
 			const targetId = btn.dataset.target;
@@ -51,17 +51,44 @@ document.addEventListener('DOMContentLoaded', () => {
 				const input = document.getElementById(targetId);
 				if (!input) return;
 				input.value = att.url;
-				// Update or insert preview image.
 				let preview = input.closest('.mitsue-image-field').querySelector('.mitsue-img-preview');
 				if (!preview) {
 					preview = document.createElement('img');
 					preview.className = 'mitsue-img-preview';
 					input.closest('.mitsue-image-field').appendChild(preview);
 				}
-				preview.src = att.url;
+				preview.src   = att.url;
+				preview.style.display = 'block';
 			});
 			frame.open();
 		});
+	});
+
+	/* ── Media picker inside repeater rows (event-delegated) ── */
+	document.addEventListener('click', e => {
+		const btn = e.target.closest('.mitsue-media-pick-row');
+		if (!btn) return;
+		const field = btn.closest('.mitsue-image-field');
+		const input = field.querySelector('input[type="url"]');
+		const frame = wp.media({
+			title:    'Select photo',
+			button:   { text: 'Use this photo' },
+			multiple: false,
+		});
+		frame.on('select', () => {
+			const att     = frame.state().get('selection').first().toJSON();
+			input.value   = att.url;
+			let preview   = field.querySelector('.mitsue-img-preview');
+			if (!preview) {
+				preview           = document.createElement('img');
+				preview.className = 'mitsue-img-preview';
+				preview.style.cssText = 'margin-top:6px;max-width:80px;display:block;';
+				field.appendChild(preview);
+			}
+			preview.src           = att.url;
+			preview.style.display = 'block';
+		});
+		frame.open();
 	});
 
 });
