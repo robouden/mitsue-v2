@@ -23,7 +23,7 @@ $gates = mitsue_rows('gates', [
         <h2>Five phases, <em>four explicit gates.</em></h2>
         <div class="h2-jp jp">五段階・四つの資金ゲート</div>
         <div class="h2-sub body-en">Each phase is gated by a funding checkpoint. Failure to clear a gate triggers a hold-and-re-pitch cycle rather than acceleration into an under-resourced phase. Patient capital, deliberately staged.</div>
-        <div class="h2-sub body-jp jp">各フェーズは資金チェックポイントによってゲート管理されています。ゲートを通過できない場合は、資金不足のまま次フェーズへ進むのではなく、保留・再提案サイクルに移行します。忍耐強い資本、意図的な段階化。</div>
+        <div class="h2-sub body-jp jp">各フェーズは資金チェックポイントによって管理されています。ゲートを通過できない場合は、資金不足のまま次フェーズへ進むのではなく、保留・再提案サイクルに移行します。忍耐強い資本、意図的な段階的推進。</div>
       </div>
     </div>
     <div class="timeline">

@@ -1,7 +1,10 @@
 <?php
+$founder_profiles = mitsue_rows('founder_profiles', [
+  ['initials'=>'R.O.','name'=>'Rob Oudendijk','credit'=>'Founder of the Mitsue Project. Founder of YR-Design, a design and technology studio based in the Netherlands, and a core contributor to Safecast — the open environmental monitoring network established after Fukushima. His work spans interaction design, hardware development, and open-source environmental data.','credit_jp'=>'御杖プロジェクト創業者。オランダを拠点とするデザイン・テクノロジースタジオ「YR-Design」の創設者であり、福島第一原発事故後に設立されたオープン環境モニタリングネットワーク「Safecast」のコア・コントリビューター。インタラクションデザイン・ハードウェア開発・オープンソース環境データの領域を横断して活動している。'],
+]);
 $advisors = mitsue_rows('advisors', [
-  ['initials'=>'J.I.','name'=>'Joi Ito',  'credit'=>'Former Director, MIT Media Lab. Internet pioneer; long-running engagement with Japanese institutions, technology policy, and emerging compute. Confirmed May 5, 2026.'],
-  ['initials'=>'R.O.','name'=>'Ray Ozzie','credit'=>'Software pioneer; former Chief Software Architect at Microsoft. Decades of work on distributed systems, collaboration software, and the discipline of small, accountable platforms. Confirmed May 5, 2026.'],
+  ['initials'=>'J.I.','name'=>'Joi Ito',  'credit'=>'Former Director, MIT Media Lab. Internet pioneer; long-running engagement with Japanese institutions, technology policy, and emerging compute. Confirmed May 5, 2026.', 'credit_jp'=>'元MITメディアラボ所長。インターネット黎明期からの先駆者として、日本の機関・テクノロジー政策・新興コンピューティング分野に長年携わる。2026年5月5日確認。'],
+  ['initials'=>'R.O.','name'=>'Ray Ozzie','credit'=>'Software pioneer; former Chief Software Architect at Microsoft. Decades of work on distributed systems, collaboration software, and the discipline of small, accountable platforms. Confirmed May 5, 2026.', 'credit_jp'=>'ソフトウェア分野の先駆者。元マイクロソフト チーフ ソフトウェア アーキテクト。分散システム、コラボレーションソフトウェア、小規模で説明責任のあるプラットフォームの設計を数十年にわたり追求。2026年5月5日確認。'],
 ]);
 $founders = mitsue_rows('founders', [
   ['name'=>'Rob Oudendijk',      'when'=>'YR-Design · Safecast'],
@@ -29,6 +32,28 @@ $legal = mitsue_rows('legal_path', [
       </div>
     </div>
     <div class="advisors">
+      <?php foreach ($founder_profiles as $a): ?>
+        <div class="advisor">
+          <div class="role">FOUNDER · 創業者</div>
+          <?php
+            $slug = strtolower(strtok($a['name'], ' '));
+            $uri  = MITSUE_URI . '/assets/images/' . $slug . '.jpg';
+            $img  = MITSUE_DIR . '/assets/images/' . $slug . '.jpg';
+          ?>
+          <div class="portrait" aria-hidden="true">
+            <?php if ( file_exists($img) ): ?>
+              <img src="<?php echo esc_url($uri); ?>" alt="<?php echo esc_attr($a['name']); ?>">
+            <?php else: ?>
+              <?php echo esc_html($a['initials'] ?? strtoupper(substr($a['name'],0,1))); ?>
+            <?php endif; ?>
+          </div>
+          <h4><?php echo esc_html($a['name']); ?></h4>
+          <p class="credit body-en"><?php echo esc_html($a['credit']); ?></p>
+          <?php if (!empty($a['credit_jp'])): ?>
+          <p class="credit body-jp jp"><?php echo esc_html($a['credit_jp']); ?></p>
+          <?php endif; ?>
+        </div>
+      <?php endforeach; ?>
       <?php foreach ($advisors as $a): ?>
         <div class="advisor">
           <div class="role">ADVISORY BOARD · 助言役員</div>

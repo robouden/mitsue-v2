@@ -126,7 +126,7 @@ if ( ! class_exists( 'Mitsue_Admin_Page' ) ) {
 					'tab'     => 'hero',
 					'label'   => __( 'Intro paragraph (JP)', 'mitsue' ),
 					'type'    => 'textarea',
-					'default' => '御杖プロジェクトは、閉校した山間の小学校とその周囲の森林を、農山村再生の透明で再現可能な統合モデルへと再生する取り組みです。',
+					'default' => '御杖プロジェクトは、閉校した山間の小学校とその周囲の森林を、農山村再生の透明で再現可能な統合モデルへと転換する取り組みです。',
 				],
 				'hero_meta' => [
 					'tab'     => 'hero',
@@ -187,7 +187,7 @@ if ( ! class_exists( 'Mitsue_Admin_Page' ) ) {
 					'type'    => 'repeater',
 					'columns' => [ 'n' => 'Eyebrow', 'title' => 'Title EN', 'jp' => 'Title JP', 'body' => 'Body EN', 'body_jp' => 'Body JP' ],
 					'defaults' => [
-						[ 'n' => '01 · ENERGY TRANSITION', 'title' => 'Distributed generation, not grid extension.',        'jp' => 'EV普及と分散型発電',    'body' => 'Within roughly ten years, the majority of Japanese passenger vehicles are expected to be electric. Rural regions need significant new distributed generation capacity — grid extension is slow and capital-intensive.', 'body_jp' => 'およそ10年以内に、日本の乗用車の大半が電気自動車になると予測されています。農村部には大規模な分散型発電能力が必要であり、系統延伸は遅く資本集約的です。' ],
+						[ 'n' => '01 · ENERGY TRANSITION', 'title' => 'Distributed generation, not grid extension.',        'jp' => '分散型発電：系統依存からの脱却',    'body' => 'Within roughly ten years, the majority of Japanese passenger vehicles are expected to be electric. Rural regions need significant new distributed generation capacity — grid extension is slow and capital-intensive.', 'body_jp' => 'およそ10年以内に、日本の乗用車の大半が電気自動車になると予測されています。農村部には相当規模の分散型発電能力が必要であり、系統延伸は遅く資本集約的です。' ],
 						[ 'n' => '02 · FOREST LIABILITY',  'title' => 'Aged cedar plantations as under-managed asset.',     'jp' => '放置された杉人工林の活用', 'body' => 'Aged sugi plantations impose ecological costs — pollen burden, biodiversity loss — and physical risks: landslide and fire. Active management converts liability into feedstock and timber revenue.', 'body_jp' => '老齢化した杉の人工林は、花粉被害・生物多様性の喪失といった生態的コストと、土砂崩れ・火災リスクをもたらします。適切な管理により、負の資産を燃料や木材収益へと転換できます。' ],
 						[ 'n' => '03 · STRANDED ASSETS',   'title' => 'Closed schools as anchor facilities.',               'jp' => '廃校の利活用',         'body' => 'Closed schools currently impose net maintenance costs on shrinking municipal budgets. Productive reuse turns these into community-anchored facilities.', 'body_jp' => '廃校は現在、縮小する自治体予算に維持管理コストとして負担をかけています。有効活用することで、地域の拠点施設へと転換できます。' ],
 						[ 'n' => '04 · DIGITAL DEFICIT',   'title' => 'Edge compute where the energy is.',                  'jp' => '農村部のデジタル基盤不足', 'body' => 'Rural broadband and edge-compute capacity continue to lag urban Japan. A small, energy-aligned data center addresses both the connectivity gap and the on-site computation gap at the same time.', 'body_jp' => '農村部のブロードバンドとエッジコンピューティング能力は、都市部に比べて依然として遅れています。エネルギーと連携した小規模データセンターが、接続性と演算能力の両方のギャップを同時に解消します。' ],
@@ -233,6 +233,15 @@ if ( ! class_exists( 'Mitsue_Admin_Page' ) ) {
 					'label'   => __( 'Section image (left column, beside heading)', 'mitsue' ),
 					'type'    => 'image',
 					'default' => '',
+				],
+				'founder_profiles' => [
+					'tab'     => 'governance',
+					'label'   => __( 'Founder profile cards', 'mitsue' ),
+					'type'    => 'repeater',
+					'columns' => [ 'initials' => 'Initials', 'name' => 'Full name', 'credit' => 'Bio EN', 'credit_jp' => 'Bio JP' ],
+					'defaults' => [
+						[ 'initials' => 'R.O.', 'name' => 'Rob Oudendijk', 'credit' => 'Founder of the Mitsue Project. Founder of YR-Design, a design and technology studio based in the Netherlands, and a core contributor to Safecast — the open environmental monitoring network established after Fukushima. His work spans interaction design, hardware development, and open-source environmental data.', 'credit_jp' => '御杖プロジェクト創業者。オランダを拠点とするデザイン・テクノロジースタジオ「YR-Design」の創設者であり、福島第一原発事故後に設立されたオープン環境モニタリングネットワーク「Safecast」のコア・コントリビューター。インタラクションデザイン・ハードウェア開発・オープンソース環境データの領域を横断して活動している。' ],
+					],
 				],
 				'advisors' => [
 					'tab'     => 'governance',
@@ -400,6 +409,36 @@ if ( ! class_exists( 'Mitsue_Admin_Page' ) ) {
 					'label'   => __( 'Contact email address', 'mitsue' ),
 					'type'    => 'email',
 					'default' => '',
+				],
+				'cta_repo_url' => [
+					'tab'     => 'cta',
+					'label'   => __( 'Document repository URL', 'mitsue' ),
+					'type'    => 'url',
+					'default' => '#',
+				],
+				'cta_repo_label' => [
+					'tab'     => 'cta',
+					'label'   => __( 'Document repository label EN (link text)', 'mitsue' ),
+					'type'    => 'text',
+					'default' => 'codeberg.org / YR-Design',
+				],
+				'cta_repo_label_jp' => [
+					'tab'     => 'cta',
+					'label'   => __( 'Document repository label JP (link text)', 'mitsue' ),
+					'type'    => 'text',
+					'default' => 'codeberg.org / YR-Design',
+				],
+				'cta_repo_desc' => [
+					'tab'     => 'cta',
+					'label'   => __( 'Document repository description EN', 'mitsue' ),
+					'type'    => 'text',
+					'default' => 'Founding charter · implementation plan · stakeholder map · finance workbook',
+				],
+				'cta_repo_desc_jp' => [
+					'tab'     => 'cta',
+					'label'   => __( 'Document repository description JP', 'mitsue' ),
+					'type'    => 'text',
+					'default' => '設立定款・実施計画・ステークホルダーマップ・財務ワークブック',
 				],
 				'cta_plan_url' => [
 					'tab'     => 'cta',
