@@ -50,7 +50,7 @@ $legal = mitsue_rows('legal_path', [
               <?php echo esc_html($a['initials'] ?? strtoupper(substr($a['name'],0,1))); ?>
             <?php endif; ?>
           </div>
-          <h4><?php echo esc_html($a['name']); ?></h4>
+          <h4><?php if (!empty($a['link'])): ?><a href="<?php echo esc_url($a['link']); ?>" target="_blank" rel="noopener"><?php echo esc_html($a['name']); ?></a><?php else: ?><?php echo esc_html($a['name']); ?><?php endif; ?></h4>
           <p class="credit body-en"><?php echo esc_html($a['credit']); ?></p>
           <?php if (!empty($a['credit_jp'])): ?>
           <p class="credit body-jp jp"><?php echo esc_html($a['credit_jp']); ?></p>
@@ -75,7 +75,7 @@ $legal = mitsue_rows('legal_path', [
               <?php echo esc_html($a['initials'] ?? strtoupper(substr($a['name'],0,1))); ?>
             <?php endif; ?>
           </div>
-          <h4><?php echo esc_html($a['name']); ?></h4>
+          <h4><?php if (!empty($a['link'])): ?><a href="<?php echo esc_url($a['link']); ?>" target="_blank" rel="noopener"><?php echo esc_html($a['name']); ?></a><?php else: ?><?php echo esc_html($a['name']); ?><?php endif; ?></h4>
           <p class="credit body-en"><?php echo esc_html($a['credit']); ?></p>
           <?php if (!empty($a['credit_jp'])): ?>
           <p class="credit body-jp jp"><?php echo esc_html($a['credit_jp']); ?></p>

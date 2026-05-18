@@ -155,7 +155,7 @@ if ( ! class_exists( 'Mitsue_Admin_Page' ) ) {
 					'columns' => [ 'num' => 'Numeral', 'title_en' => 'Title EN', 'title_jp' => 'Title JP', 'body' => 'Body EN (separate paragraphs with |)', 'body_jp' => 'Body JP (separate paragraphs with |)', 'tag' => 'Footer tag' ],
 					'defaults' => [
 						[ 'num' => 'i',   'title_en' => 'Forest Restoration',    'title_jp' => '森林再生 · Native broadleaf', 'body' => "Phased replacement of aged sugi (cedar) plantations with native broadleaf species, with private landowners, the Forestry Agency (林野庁), and local contractors. Liability becomes feedstock and timber revenue.|The 25-year arc aligns to the ecological clock, not the funding cycle.", 'body_jp' => '老齢化した杉（スギ）の人工林を、地元の土地所有者・林野庁・地域請負業者と協力しながら、段階的に在来広葉樹種へ転換します。負の資産を木材収益へと転換します。|25年という時間軸は、資金調達サイクルではなく、生態系の時計に合わせたものです。', 'tag' => 'Sugi → Broadleaf · 25-year cycle' ],
-						[ 'num' => 'ii',  'title_en' => 'Sustainable Energy',    'title_jp' => '再生可能エネルギー · Thermal first', 'body' => 'Biomass and biogas generation from sustainably harvested forest material — sized for village load, EV charging, and greenhouse heat.|Thermal first, electrical second. A boiler with heat recovery costs roughly one-third of a CHP unit and runs several times more efficiently.', 'body_jp' => '持続可能な形で収穫した森林資源から、バイオマス・バイオガスを発電——村の電力需要、EV充電、温室暖房に対応できる規模。|まず熱、次に電気。熱回収付きボイラーはCHPユニットの約3分の1のコストで、数倍の効率を発揮します。', 'tag' => 'Biomass · Solar · Grid backup' ],
+						[ 'num' => 'ii',  'title_en' => 'EV Charging & Energy Resilience', 'title_jp' => 'EV充電・エネルギーレジリエンス · Solar + Battery', 'body' => 'Solar panels and battery storage at the school site supply clean local energy — powering the data center, providing EV charging for residents and visitors, and keeping critical facilities running during grid outages.|Aging rural distribution lines make blackouts a real and growing risk. Village-owned battery storage provides 12–48 hours of backup, independent of the national grid.', 'body_jp' => '校舎の屋根に設置した太陽光パネルと蓄電池が、クリーンな地域エネルギーを供給します——データセンターの稼働、住民・来訪者向けEV充電、そして停電時の重要施設のバックアップ電源として。|老朽化した農村の配電線は、停電リスクを年々高めています。村所有の蓄電池は、国の送電網に依存せず12〜48時間のバックアップを提供します。', 'tag' => 'Solar · Battery storage · EV charging · Blackout resilience' ],
 						[ 'num' => 'iii', 'title_en' => 'Community Data Center', 'title_jp' => '地域所有データセンター · Edge-scale', 'body' => 'The closed Mitsue Elementary School building, repurposed as a small-scale, energy-efficient edge-compute facility powered entirely by locally generated renewable energy.|Sized for accountability and community ownership — not hyperscale economics. Designed to be replicated by other depopulating municipalities.', 'body_jp' => '廃校となった御杖小学校の校舎を、地域で発電した再生可能エネルギーのみで稼働する、小規模・省エネ型エッジコンピュート施設として再活用します。|ハイパースケール経済ではなく、説明責任と地域所有のための規模。過疎自治体が複製できるモデルとして設計されています。', 'tag' => 'Edge compute · Heat re-use · Replicable' ],
 					],
 				],
@@ -238,19 +238,19 @@ if ( ! class_exists( 'Mitsue_Admin_Page' ) ) {
 					'tab'     => 'governance',
 					'label'   => __( 'Founder profile cards', 'mitsue' ),
 					'type'    => 'repeater',
-					'columns' => [ 'initials' => 'Initials', 'name' => 'Full name', 'photo' => 'Photo', 'credit' => 'Bio EN', 'credit_jp' => 'Bio JP' ],
+					'columns' => [ 'initials' => 'Initials', 'name' => 'Full name', 'link' => 'Link URL', 'photo' => 'Photo', 'credit' => 'Bio EN', 'credit_jp' => 'Bio JP' ],
 					'defaults' => [
-						[ 'initials' => 'R.O.', 'name' => 'Rob Oudendijk', 'credit' => 'Founder of the Mitsue Project. Founder of YR-Design, a design and technology studio based in the Netherlands, and a core contributor to Safecast — the open environmental monitoring network established after Fukushima. His work spans interaction design, hardware development, and open-source environmental data.', 'credit_jp' => '御杖プロジェクト創業者。オランダを拠点とするデザイン・テクノロジースタジオ「YR-Design」の創設者であり、福島第一原発事故後に設立されたオープン環境モニタリングネットワーク「Safecast」のコア・コントリビューター。インタラクションデザイン・ハードウェア開発・オープンソース環境データの領域を横断して活動している。' ],
+						[ 'initials' => 'R.O.', 'name' => 'Rob Oudendijk', 'link' => 'https://about.me/robouden', 'credit' => 'Founder of the Mitsue Project. Founder of YR-Design, a design and technology studio based in the Netherlands, and a core contributor to Safecast — the open environmental monitoring network established after Fukushima. His work spans interaction design, hardware development, and open-source environmental data.', 'credit_jp' => '御杖プロジェクト創業者。オランダを拠点とするデザイン・テクノロジースタジオ「YR-Design」の創設者であり、福島第一原発事故後に設立されたオープン環境モニタリングネットワーク「Safecast」のコア・コントリビューター。インタラクションデザイン・ハードウェア開発・オープンソース環境データの領域を横断して活動している。' ],
 					],
 				],
 				'advisors' => [
 					'tab'     => 'governance',
 					'label'   => __( 'Advisory board members', 'mitsue' ),
 					'type'    => 'repeater',
-					'columns' => [ 'initials' => 'Initials', 'name' => 'Full name', 'photo' => 'Photo', 'credit' => 'Bio EN', 'credit_jp' => 'Bio JP' ],
+					'columns' => [ 'initials' => 'Initials', 'name' => 'Full name', 'link' => 'Link URL', 'photo' => 'Photo', 'credit' => 'Bio EN', 'credit_jp' => 'Bio JP' ],
 					'defaults' => [
-						[ 'initials' => 'J.I.', 'name' => 'Joi Ito',   'credit' => 'Former Director, MIT Media Lab. Internet pioneer; long-running engagement with Japanese institutions, technology policy, and emerging compute. Confirmed May 5, 2026.',          'credit_jp' => 'MITメディアラボ元所長。インターネットの先駆者として、日本の諸機関・技術政策・新興コンピューティングに長期的に関与。2026年5月5日に顧問就任を承諾。' ],
-						[ 'initials' => 'R.O.', 'name' => 'Ray Ozzie', 'credit' => 'Software pioneer; former Chief Software Architect at Microsoft. Decades of work on distributed systems, collaboration software, and the discipline of small, accountable platforms. Confirmed May 5, 2026.', 'credit_jp' => 'ソフトウェアの先駆者、マイクロソフト元チーフソフトウェアアーキテクト。分散システム・コラボレーションソフトウェア・小規模で説明責任を果たすプラットフォームの設計原則に数十年従事。2026年5月5日に顧問就任を承諾。' ],
+						[ 'initials' => 'J.I.', 'name' => 'Joi Ito',   'link' => 'https://en.wikipedia.org/wiki/Joi_Ito',   'credit' => 'Former Director, MIT Media Lab. Internet pioneer; long-running engagement with Japanese institutions, technology policy, and emerging compute. Confirmed May 5, 2026.',          'credit_jp' => 'MITメディアラボ元所長。インターネットの先駆者として、日本の諸機関・技術政策・新興コンピューティングに長期的に関与。2026年5月5日に顧問就任を承諾。' ],
+						[ 'initials' => 'R.O.', 'name' => 'Ray Ozzie', 'link' => 'https://en.wikipedia.org/wiki/Ray_Ozzie', 'credit' => 'Software pioneer; former Chief Software Architect at Microsoft. Decades of work on distributed systems, collaboration software, and the discipline of small, accountable platforms. Confirmed May 5, 2026.', 'credit_jp' => 'ソフトウェアの先駆者、マイクロソフト元チーフソフトウェアアーキテクト。分散システム・コラボレーションソフトウェア・小規模で説明責任を果たすプラットフォームの設計原則に数十年従事。2026年5月5日に顧問就任を承諾。' ],
 					],
 				],
 				'founders' => [
@@ -296,7 +296,7 @@ if ( ! class_exists( 'Mitsue_Admin_Page' ) ) {
 						[ 'layer' => 'L2', 'name' => 'Government grants',          'desc' => 'NEDO · METI · Nara Prefecture · Mitsue Village',                          'desc_jp' => 'NEDO・経済産業省・奈良県・御杖村',                               'y1' => '¥5M', 'y3' => '¥80M' ],
 						[ 'layer' => 'L3', 'name' => 'Foundations',                'desc' => 'Nippon Foundation · Japan Fund for Global Environment · Toyota Foundation', 'desc_jp' => '日本財団・地球環境基金・トヨタ財団',                             'y1' => '¥3M', 'y3' => '¥20M' ],
 						[ 'layer' => 'L4', 'name' => 'Corporate partnerships',     'desc' => 'Dutch and Japanese corporates; CSR-aligned',                              'desc_jp' => 'オランダ・日本の企業；CSR連携',                                  'y1' => '¥0',  'y3' => '¥30M' ],
-						[ 'layer' => 'L5', 'name' => 'Operating revenue',          'desc' => 'Hosting fees · FIT/FIP · heat · EV charging · J-Credits',                'desc_jp' => 'ホスティング料金・FIT/FIP・熱供給・EV充電・Jクレジット',        'y1' => '¥0',  'y3' => '¥3M' ],
+						[ 'layer' => 'L5', 'name' => 'Operating revenue',          'desc' => 'Hosting fees · FIT/FIP · EV charging · J-Credits',                    'desc_jp' => 'ホスティング料金・FIT/FIP・EV充電料金・Jクレジット',            'y1' => '¥0',  'y3' => '¥3M' ],
 					],
 				],
 				'funding_total_y1' => [
