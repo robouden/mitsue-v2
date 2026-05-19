@@ -28,8 +28,8 @@ $next = mitsue_rows('status_next', [
       <div>
         <h2>Where the project stands today, <em>May 2026.</em></h2>
         <div class="h2-jp jp">現在の進捗 — 2026年5月時点</div>
-        <div class="h2-sub body-en">Phase 0 is intentionally quiet: no public announcements, no press, no website launch. The work is local trust-building, founding-team formation, and clean drafting of the charter.</div>
-        <div class="h2-sub body-jp jp">フェーズ0は意図的に静かに進めています。公式発表なし、プレスなし、ウェブサイト公開なし。取り組みの中心は、地域との信頼構築、創設チームの形成、そして定款の丁寧な草案作成です。</div>
+        <div class="h2-sub body-en">Phase 0 is intentionally quiet: no public announcements, no press. The work is local trust-building, founding-team formation, and clean drafting of the charter.</div>
+        <div class="h2-sub body-jp jp">フェーズ0は意図的に静かに進めています。公式発表なし、プレスなし。取り組みの中心は、地域との信頼構築、創設チームの形成、そして定款の丁寧な草案作成です。</div>
       </div>
     </div>
     <div class="status-wrap">
