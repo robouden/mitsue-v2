@@ -12,7 +12,7 @@
  * @package Mitsue
  */
 
-if ( ! defined( 'MITSUE_VERSION' ) ) define( 'MITSUE_VERSION', '2.0.1' );
+if ( ! defined( 'MITSUE_VERSION' ) ) define( 'MITSUE_VERSION', '2.0.2' );
 if ( ! defined( 'MITSUE_DIR' ) )     define( 'MITSUE_DIR', get_stylesheet_directory() );
 if ( ! defined( 'MITSUE_URI' ) )     define( 'MITSUE_URI', get_stylesheet_directory_uri() );
 
