@@ -51,7 +51,7 @@ a{color:inherit;}
 @media(max-width:720px){.wrap{padding:0 24px;}}
 
 /* ── Utility bar ──────────────────────────────────────────────────────────── */
-.utility{border-bottom:1px solid var(--rule);font-size:12px;color:var(--ink-mute);background:var(--bg);}
+.utility{border-bottom:1px solid var(--rule);font-size:12px;color:var(--ink-mute);background:var(--bg);position:sticky;top:0;z-index:100;}
 .utility .row{display:flex;justify-content:space-between;align-items:center;height:40px;gap:24px;flex-wrap:nowrap;}
 .utility .left,.utility .right{display:flex;gap:18px;align-items:center;white-space:nowrap;}
 .utility .dot{width:6px;height:6px;background:var(--accent);border-radius:50%;display:inline-block;}
