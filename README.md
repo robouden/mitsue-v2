@@ -94,7 +94,9 @@ mitsue-v2/
 ├── index.php                        # Fallback
 ├── assets/
 │   ├── admin.css                    # Settings page styles
-│   └── admin.js                     # Repeater add/remove rows, media picker
+│   ├── admin.js                     # Repeater add/remove rows, media picker
+│   ├── nav.js                       # Mobile hamburger menu toggle
+│   └── lightbox.js                  # Image lightbox
 ├── inc/
 │   ├── class-mitsue-admin-page.php  # Settings page — field schema + render
 │   ├── class-mitsue-customizer.php  # Customizer panels — colours + brand
@@ -135,11 +137,15 @@ print(json.dumps(mitsue_options(), ensure_ascii=False))
 PYEOF
 ```
 
-**Flush cache:**
+**Flush cache** (always run after any theme or content change):
 ```bash
 ssh root@80.208.225.44 \
-  "wp --path=/home/mitsue.it/public_html --allow-root cache flush"
+  "wp --path=/home/mitsue.it/public_html --allow-root cache flush && \
+   rm -rf /home/mitsue.it/public_html/wp-content/cache/wpo-cache/ && \
+   rm -rf /home/mitsue.it/public_html/wp-content/cache/wpo-minify/"
 ```
+
+> **Note:** WP-Optimize is active and caches full HTML pages to disk. Logged-in users bypass the cache; logged-out visitors (the public) get the cached file. Always delete both `wpo-cache` and `wpo-minify` after deploying, or changes will be invisible to non-logged-in visitors.
 
 ---
 

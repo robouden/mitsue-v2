@@ -35,8 +35,17 @@ $intro_jp    = mitsue_get('cta_intro_jp',   'プロジェクトは現在、設�
           </div>
           <div class="cta-contact-row">
             <span class="label">DOCUMENT REPOSITORY</span>
-            <span class="v">codeberg.org / YR-Design</span>
-            Founding charter · implementation plan · stakeholder map · finance workbook
+            <?php
+              $repo_url      = mitsue_get('cta_repo_url','#');
+              $repo_label_en = mitsue_get('cta_repo_label',   'codeberg.org / YR-Design');
+              $repo_label_jp = mitsue_get('cta_repo_label_jp','codeberg.org / YR-Design');
+              $repo_desc_en  = mitsue_get('cta_repo_desc',    'Founding charter · implementation plan · stakeholder map · finance workbook');
+              $repo_desc_jp  = mitsue_get('cta_repo_desc_jp', '設立定款・実施計画・ステークホルダーマップ・財務ワークブック');
+            ?>
+            <span class="v body-en"><?php if ($repo_url && $repo_url !== '#'): ?><a href="<?php echo esc_url($repo_url); ?>" target="_blank" rel="noopener"><?php echo esc_html($repo_label_en); ?></a><?php else: ?><?php echo esc_html($repo_label_en); ?><?php endif; ?></span>
+            <span class="v body-jp jp"><?php if ($repo_url && $repo_url !== '#'): ?><a href="<?php echo esc_url($repo_url); ?>" target="_blank" rel="noopener"><?php echo esc_html($repo_label_jp); ?></a><?php else: ?><?php echo esc_html($repo_label_jp); ?><?php endif; ?></span>
+            <span class="body-en"><?php echo esc_html($repo_desc_en); ?></span>
+            <span class="body-jp jp"><?php echo esc_html($repo_desc_jp); ?></span>
           </div>
           <?php if ($cta_email): ?>
           <div class="cta-contact-row">

@@ -4,7 +4,7 @@ $rows     = mitsue_rows('funding_rows', [
   ['layer'=>'L2','name'=>'Government grants',         'name_jp'=>'政府助成金',        'desc'=>'NEDO · METI · Nara Prefecture · Mitsue Village',                         'desc_jp'=>'NEDO・経済産業省・奈良県・御杖村',                                                                           'y1'=>'¥5M','y3'=>'¥80M'],
   ['layer'=>'L3','name'=>'Foundations',               'name_jp'=>'財団',              'desc'=>'Nippon Foundation · Japan Fund for Global Environment · Toyota Foundation','desc_jp'=>'日本財団・地球環境基金・トヨタ財団',                                                                         'y1'=>'¥3M','y3'=>'¥20M'],
   ['layer'=>'L4','name'=>'Corporate partnerships',    'name_jp'=>'企業パートナーシップ','desc'=>'Dutch and Japanese corporates; CSR-aligned',                             'desc_jp'=>'オランダ・日本の企業；CSR連携',                                                                              'y1'=>'¥0', 'y3'=>'¥30M'],
-  ['layer'=>'L5','name'=>'Operating revenue',         'name_jp'=>'事業収益',          'desc'=>'Hosting fees · FIT/FIP · heat · EV charging · J-Credits',               'desc_jp'=>'ホスティング料・FIT/FIP・熱利用・EV充電・Jクレジット',                                                        'y1'=>'¥0', 'y3'=>'¥3M'],
+  ['layer'=>'L5','name'=>'Operating revenue',         'name_jp'=>'事業収益',          'desc'=>'Hosting fees · FIT/FIP · EV charging · J-Credits',                     'desc_jp'=>'ホスティング料・FIT/FIP・EV充電料金・Jクレジット',                                                           'y1'=>'¥0', 'y3'=>'¥3M'],
 ]);
 $total_y1 = mitsue_get('funding_total_y1','¥11M');
 $total_y3 = mitsue_get('funding_total_y3','¥134M');
