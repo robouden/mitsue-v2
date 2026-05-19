@@ -41,6 +41,9 @@
           <div class="jp"><?php echo esc_html( get_theme_mod('mitsue_logo_jp', '御杖プロジェクト') ); ?></div>
         </div>
       </a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
       <div class="navlinks">
         <?php
         if ( has_nav_menu('primary') ) {

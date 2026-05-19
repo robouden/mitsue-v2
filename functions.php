@@ -58,6 +58,7 @@ add_action( 'wp_enqueue_scripts', function () {
 		wp_add_inline_style( 'mitsue', $dynamic );
 	}
 	wp_enqueue_script( 'mitsue-lightbox', MITSUE_URI . '/assets/lightbox.js', [], MITSUE_VERSION, true );
+	wp_enqueue_script( 'mitsue-nav', MITSUE_URI . '/assets/nav.js', [], MITSUE_VERSION, true );
 } );
 
 /* ── Options helper ─────────────────────────────────────────────────────── */
