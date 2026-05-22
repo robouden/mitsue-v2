@@ -251,7 +251,7 @@ if ( ! class_exists( 'Mitsue_Admin_Page' ) ) {
 					'defaults' => [
 						[ 'initials' => 'J.I.', 'name' => 'Joi Ito',   'link' => 'https://en.wikipedia.org/wiki/Joi_Ito',   'credit' => 'Former Director, MIT Media Lab. Internet pioneer; long-running engagement with Japanese institutions, technology policy, and emerging compute. Confirmed May 5, 2026.',          'credit_jp' => 'MITメディアラボ元所長。インターネットの先駆者として、日本の諸機関・技術政策・新興コンピューティングに長期的に関与。2026年5月5日に顧問就任を承諾。' ],
 						[ 'initials' => 'R.O.', 'name' => 'Ray Ozzie', 'link' => 'https://en.wikipedia.org/wiki/Ray_Ozzie', 'credit' => 'Software pioneer; former Chief Software Architect at Microsoft. Decades of work on distributed systems, collaboration software, and the discipline of small, accountable platforms. Confirmed May 5, 2026.', 'credit_jp' => 'ソフトウェアの先駆者、マイクロソフト元チーフソフトウェアアーキテクト。分散システム・コラボレーションソフトウェア・小規模で説明責任を果たすプラットフォームの設計原則に数十年従事。2026年5月5日に顧問就任を承諾。' ],
-						[ 'initials' => '·',    'name' => 'Advisor 3 — TBD', 'link' => '', 'credit' => 'To be confirmed.', 'credit_jp' => '確定待ち。' ],
+						[ 'initials' => 'S.P.', 'name' => 'San Poisson',    'link' => '', 'credit' => 'Project Manager.', 'credit_jp' => 'プロジェクトマネージャー。' ],
 						[ 'initials' => '·',    'name' => 'Advisor 4 — TBD', 'link' => '', 'credit' => 'To be confirmed.', 'credit_jp' => '確定待ち。' ],
 					],
 				],

@@ -5,7 +5,7 @@ $founder_profiles = mitsue_rows('founder_profiles', [
 $advisors = mitsue_rows('advisors', [
   ['initials'=>'J.I.','name'=>'Joi Ito',  'credit'=>'Former Director, MIT Media Lab. Internet pioneer; long-running engagement with Japanese institutions, technology policy, and emerging compute. Confirmed May 5, 2026.', 'credit_jp'=>'元MITメディアラボ所長。インターネット黎明期からの先駆者として、日本の機関・テクノロジー政策・新興コンピューティング分野に長年携わる。2026年5月5日確認。'],
   ['initials'=>'R.O.','name'=>'Ray Ozzie','credit'=>'Software pioneer; former Chief Software Architect at Microsoft. Decades of work on distributed systems, collaboration software, and the discipline of small, accountable platforms. Confirmed May 5, 2026.', 'credit_jp'=>'ソフトウェア分野の先駆者。元マイクロソフト チーフ ソフトウェア アーキテクト。分散システム、コラボレーションソフトウェア、小規模で説明責任のあるプラットフォームの設計を数十年にわたり追求。2026年5月5日確認。'],
-  ['initials'=>'·','name'=>'Advisor 3 — TBD','credit'=>'To be confirmed.', 'credit_jp'=>'確定待ち。'],
+  ['initials'=>'S.P.','name'=>'San Poisson','credit'=>'Project Manager.', 'credit_jp'=>'プロジェクトマネージャー。'],
   ['initials'=>'·','name'=>'Advisor 4 — TBD','credit'=>'To be confirmed.', 'credit_jp'=>'確定待ち。'],
 ]);
 $founders = mitsue_rows('founders', [
