@@ -195,35 +195,26 @@ if ( ! class_exists( 'Mitsue_Admin_Page' ) ) {
 				],
 
 				/* ─── Endorsement ───────────────────────────────────── */
-				'endorse_quote_en' => [
+				'endorsements' => [
 					'tab'     => 'endorsement',
-					'label'   => __( 'Quote (EN) — wrap each paragraph in <p>…</p>; links allowed via <a href="…">', 'mitsue' ),
-					'type'    => 'textarea',
-					'default' => '<p>This initiative is highly relevant and timely. It addresses both the past and present reality of rural depopulation and the socio-economic “impoverishment” — or “desertification”, as we call it in <a href="https://ec.europa.eu/regional_policy/policy/what/investment-policy_en" target="_blank" rel="noopener">European Cohesion Policy</a> — while also being forward-looking: engaging critically with the AI and digital economies, and confronting the global problem of monocultures and plantations that deplete biodiversity and erode resilient, thriving landscapes.</p><p>I see great relevance in such an idea — not least for the many EU countries that, like Japan, suffer from the ageing and depopulation of rural areas, with multiple negative social, ecological and economic impacts.</p><p>Re-imagining towns and villages is a wonderful and essential project. Combining ecological resilience (the replacement of cedar) with social (trust and revival), cultural (a new sense of place) and economic resilience is very promising.</p>',
-				],
-				'endorse_quote_jp' => [
-					'tab'     => 'endorsement',
-					'label'   => __( 'Quote (JP) — wrap each paragraph in <p>…</p>; links allowed via <a href="…">', 'mitsue' ),
-					'type'    => 'textarea',
-					'default' => '<p>この構想は非常に意義深く、時宜を得たものです。過去から現在に続く農村部の人口減少と、社会経済的な「困窮」——<a href="https://ec.europa.eu/regional_policy/policy/what/investment-policy_en" target="_blank" rel="noopener">欧州結束政策</a>で私たちが「砂漠化」と呼ぶ現象——に取り組むと同時に、未来志向でもあります。AI・デジタル経済を批判的に受け止め、生物多様性を枯渇させ、回復力ある豊かな景観を損なう単一栽培やプランテーションという世界的課題にも向き合っているからです。</p><p>このような発想には大きな意義があると感じます。とりわけ、日本と同様に農村部の高齢化と人口減少に直面し、社会・生態・経済の各面で複合的な負の影響を被っている多くのEU諸国にとって、その意義は小さくありません。</p><p>町や村を再構想することは、すばらしく、そして不可欠な取り組みです。生態的な回復力（杉の置き換え）を、社会的な回復力（信頼と再生）、文化的な回復力（新たな「場所」の感覚）、そして経済的な回復力と組み合わせる——これは非常に有望です。</p>',
-				],
-				'endorse_cite_name' => [
-					'tab'     => 'endorsement',
-					'label'   => __( 'Attribution — name', 'mitsue' ),
-					'type'    => 'text',
-					'default' => 'Olivia Bina',
-				],
-				'endorse_cite_role_en' => [
-					'tab'     => 'endorsement',
-					'label'   => __( 'Attribution — title / role (EN)', 'mitsue' ),
-					'type'    => 'text',
-					'default' => 'Co-author, “Transforming Knowledge Systems for Life on Earth”',
-				],
-				'endorse_cite_role_jp' => [
-					'tab'     => 'endorsement',
-					'label'   => __( 'Attribution — title / role (JP)', 'mitsue' ),
-					'type'    => 'text',
-					'default' => '「地球上の生命のための知識システムの変革」共著者',
+					'label'   => __( 'Endorsements — add one row per person. Quote columns: wrap paragraphs in <p>…</p>, links allowed via <a href=”…”>.', 'mitsue' ),
+					'type'    => 'repeater',
+					'columns' => [
+						'cite_name'    => 'Name',
+						'cite_role_en' => 'Role / title (EN)',
+						'cite_role_jp' => 'Role / title (JP)',
+						'quote_en'     => 'Quote (EN)',
+						'quote_jp'     => 'Quote (JP)',
+					],
+					'defaults' => [
+						[
+							'cite_name'    => 'Olivia Bina',
+							'cite_role_en' => 'Co-author, “Transforming Knowledge Systems for Life on Earth”',
+							'cite_role_jp' => '「地球上の生命のための知識システムの変革」共著者',
+							'quote_en'     => '<p>This initiative is highly relevant and timely. It addresses both the past and present reality of rural depopulation and the socio-economic “impoverishment” — or “desertification”, as we call it in <a href=”https://ec.europa.eu/regional_policy/policy/what/investment-policy_en” target=”_blank” rel=”noopener”>European Cohesion Policy</a> — while also being forward-looking: engaging critically with the AI and digital economies, and confronting the global problem of monocultures and plantations that deplete biodiversity and erode resilient, thriving landscapes.</p><p>I see great relevance in such an idea — not least for the many EU countries that, like Japan, suffer from the ageing and depopulation of rural areas, with multiple negative social, ecological and economic impacts.</p><p>Re-imagining towns and villages is a wonderful and essential project. Combining ecological resilience (the replacement of cedar) with social (trust and revival), cultural (a new sense of place) and economic resilience is very promising.</p>',
+							'quote_jp'     => '<p>この構想は非常に意義深く、時宜を得たものです。過去から現在に続く農村部の人口減少と、社会経済的な「困窮」——<a href=”https://ec.europa.eu/regional_policy/policy/what/investment-policy_en” target=”_blank” rel=”noopener”>欧州結束政策</a>で私たちが「砂漠化」と呼ぶ現象——に取り組むと同時に、未来志向でもあります。AI・デジタル経済を批判的に受け止め、生物多様性を枯渇させ、回復力ある豊かな景観を損なう単一栽培やプランテーションという世界的課題にも向き合っているからです。</p><p>このような発想には大きな意義があると感じます。とりわけ、日本と同様に農村部の高齢化と人口減少に直面し、社会・生態・経済の各面で複合的な負の影響を被っている多くのEU諸国にとって、その意義は小さくありません。</p><p>町や村を再構想することは、すばらしく、そして不可欠な取り組みです。生態的な回復力（杉の置き換え）を、社会的な回復力（信頼と再生）、文化的な回復力（新たな「場所」の感覚）、そして経済的な回復力と組み合わせる——これは非常に有望です。</p>',
+						],
+					],
 				],
 
 				/* ─── Timeline ──────────────────────────────────────── */
@@ -631,7 +622,7 @@ if ( ! class_exists( 'Mitsue_Admin_Page' ) ) {
 		}
 
 		private function render_repeater_row( string $name_base, array $col_keys, array $row, $idx ): void {
-			$long_cols  = [ 'body', 'body_jp', 'credit', 'credit_jp', 'desc', 'desc_jp', 't', 't_jp', 'note', 'note_jp', 'sub', 'sub_jp' ];
+			$long_cols  = [ 'body', 'body_jp', 'credit', 'credit_jp', 'desc', 'desc_jp', 't', 't_jp', 'note', 'note_jp', 'sub', 'sub_jp', 'quote_en', 'quote_jp' ];
 			$photo_cols = [ 'photo', 'img', 'image_url' ];
 			echo '<tr>';
 			foreach ( $col_keys as $col ) {
