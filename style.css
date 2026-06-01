@@ -276,6 +276,23 @@ table.funding .total td{font-weight:500;}
 .cta-contact-row .v{font-family:var(--serif-en);font-size:18px;display:block;margin-bottom:4px;color:var(--bg);}
 @media(max-width:860px){.cta .grid{grid-template-columns:1fr;gap:48px;padding:64px 0;}}
 
+/* ── Endorsement / pull-quote band ────────────────────────────────────────── */
+.endorsement{padding:96px 0;border-bottom:1px solid var(--rule);background:var(--paper);}
+.endorsement .mono{display:block;color:var(--accent);letter-spacing:0.16em;margin-bottom:40px;}
+.endorsement blockquote{margin:0;max-width:900px;}
+.endorsement blockquote p{font-family:var(--serif-en);font-weight:400;font-size:clamp(21px,2.5vw,31px);line-height:1.42;letter-spacing:-0.005em;color:var(--ink);margin:0 0 0.85em;text-wrap:pretty;}
+.endorsement blockquote p:last-of-type{margin-bottom:0;}
+.endorsement blockquote a{color:var(--accent-deep);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px;}
+.endorsement blockquote a:hover{color:var(--accent);}
+.endorsement cite{display:block;margin-top:44px;padding-top:24px;border-top:1px solid var(--rule);font-style:normal;}
+.endorsement cite .cite-name{display:block;font-family:var(--serif-en);font-size:19px;font-weight:500;color:var(--ink);margin-bottom:6px;}
+.endorsement cite .cite-role{display:block;font-family:var(--mono);font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink-mute);}
+/* JP mode: switch the pull-quote and name to the JP serif, with looser leading */
+[data-lang="ja"] .endorsement blockquote p{font-family:var(--serif-jp);font-size:clamp(17px,1.9vw,23px);line-height:1.9;letter-spacing:0.02em;}
+[data-lang="ja"] .endorsement cite .cite-name{font-family:var(--serif-jp);}
+[data-lang="ja"] .endorsement cite .cite-role{text-transform:none;letter-spacing:0.04em;}
+@media(max-width:720px){.endorsement{padding:64px 0;}}
+
 /* ── EN / JP language toggle ──────────────────────────────────────────────────
    JS sets data-lang="ja" on <html> when the user picks 日本語.
    Default (EN): JP subtitles sit below as decorative captions.
