@@ -26,8 +26,8 @@ $next = mitsue_rows('status_next', [
         <?php $si = mitsue_get('section_img_status'); if ($si): ?><img src="<?php echo esc_url($si); ?>" alt="" class="section-img"><?php endif; ?>
       </div>
       <div>
-        <h2>Where the project stands today, <em>May 2026.</em></h2>
-        <div class="h2-jp jp">現在の進捗 — 2026年5月時点</div>
+        <h2>Where the project stands today, <em><?php echo date('F Y'); ?>.</em></h2>
+        <div class="h2-jp jp">現在の進捗 — <?php echo date('Y'); ?>年<?php echo date('n'); ?>月時点</div>
         <div class="h2-sub body-en">Phase 0 is intentionally quiet: no public announcements, no press. The work is local trust-building, founding-team formation, and clean drafting of the charter.</div>
         <div class="h2-sub body-jp jp">フェーズ0は意図的に静かに進めています。公式発表なし、プレスなし。取り組みの中心は、地域との信頼構築、創設チームの形成、そして定款の丁寧な草案作成です。</div>
       </div>
