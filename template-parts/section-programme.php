@@ -44,14 +44,14 @@ $pillars = mitsue_rows('pillars', [
 
     <div style="display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--rule);">
       <div style="padding:36px 36px 0 0;border-right:1px solid var(--rule);">
-        <div class="mono" style="color:var(--ink-mute);margin-bottom:14px;">§ 01.4 · EV Charging</div>
+        <div class="mono" style="color:var(--ink-mute);margin-bottom:14px;">§ 01.4 · Clean Energy Vehicle Charging</div>
         <h4 style="font-family:var(--serif-en);font-weight:500;font-size:22px;margin:0 0 8px;">
           <span class="body-en">Distributed charging anchored to local generation</span>
-          <span class="body-jp jp">地域発電と連動した分散型EV充電</span>
+          <span class="body-jp jp">地域発電と連動した分散型クリーンエネルギー自動車充電</span>
         </h4>
         <p style="color:var(--ink-soft);font-size:15px;line-height:1.7;">
-          <span class="body-en">Charging infrastructure for residents and visitors, tied to on-site generation rather than waiting on capital-intensive grid extension. Within ten years, the majority of Japanese passenger vehicles are expected to be electric.</span>
-          <span class="body-jp jp">居住者と来訪者向けの充電インフラを、資本集約的な系統延伸を待つのではなく、現地発電と連動して整備します。10年以内に、日本の乗用車の大半が電気自動車になると予測されています。</span>
+          <span class="body-en">Charging infrastructure for residents and visitors, tied to on-site generation rather than waiting on capital-intensive grid extension. We build multiple, higher-powered outlets serving the full range of clean energy vehicles — EVs, PHEVs and FCVs — and equip them with external power outlets so vehicles can support the community during disasters. This follows Japan's goal of 100% electrified new passenger-vehicle sales by 2035 and the upgraded FY2024 CEV subsidy scheme (up to ¥850,000 for an EV, ¥550,000 for a PHEV or light EV), which now rewards charging infrastructure and disaster resilience alongside vehicle performance.</span>
+          <span class="body-jp jp">居住者と来訪者向けの充電インフラを、資本集約的な系統延伸を待つのではなく、現地発電と連動して整備します。EV・PHEV・FCVといった多様なクリーンエネルギー自動車に対応する複数の高出力充電口を設け、災害時に車両が地域へ電力を供給できるよう外部給電機能も備えます。これは、2035年までに新車乗用車販売の100％を電動車とする日本の目標と、車両性能に加えて充電インフラや災害対応力を評価するよう刷新された2024年度のCEV補助金（EV最大85万円、PHEV・軽EV最大55万円）に沿うものです。</span>
         </p>
       </div>
       <div style="padding:36px 0 0 36px;">
