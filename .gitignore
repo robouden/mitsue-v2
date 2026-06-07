@@ -1,0 +1,8 @@
+# Editor / agent session artifacts
+.omc/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+*~
