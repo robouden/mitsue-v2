@@ -1,13 +1,14 @@
 <?php
 $rows     = mitsue_rows('funding_rows', [
-  ['layer'=>'L1','name'=>'Founder / private capital','name_jp'=>'創業者・民間資本',  'desc'=>'Self-funded ramp; founder commitments',                                   'desc_jp'=>'自己資金によるスタートアップ費用；創業者コミットメント',                                                       'y1'=>'¥3M','y3'=>'¥1M'],
-  ['layer'=>'L2','name'=>'Government grants',         'name_jp'=>'政府助成金',        'desc'=>'NEDO · METI · Nara Prefecture · Mitsue Village 地域脱炭素移行・再エネ推進交付金 (2/3–3/4, via village)',                         'desc_jp'=>'NEDO・経済産業省・奈良県・御杖村 地域脱炭素移行・再エネ推進交付金（補助率2/3〜3/4、村経由）',                                                                           'y1'=>'¥5M','y3'=>'¥80M'],
-  ['layer'=>'L3','name'=>'Foundations',               'name_jp'=>'財団',              'desc'=>'Nippon Foundation · Japan Fund for Global Environment · Toyota Foundation','desc_jp'=>'日本財団・地球環境基金・トヨタ財団',                                                                         'y1'=>'¥3M','y3'=>'¥20M'],
-  ['layer'=>'L4','name'=>'Corporate partnerships',    'name_jp'=>'企業パートナーシップ','desc'=>'Dutch and Japanese corporates; CSR-aligned',                             'desc_jp'=>'オランダ・日本の企業；CSR連携',                                                                              'y1'=>'¥0', 'y3'=>'¥30M'],
-  ['layer'=>'L5','name'=>'Operating revenue',         'name_jp'=>'事業収益',          'desc'=>'Hosting fees · FIT/FIP · EV charging · J-Credits',                     'desc_jp'=>'ホスティング料・FIT/FIP・EV充電料金・Jクレジット',                                                           'y1'=>'¥0', 'y3'=>'¥3M'],
+  ['layer'=>'L1','name'=>'Founder / private capital','name_jp'=>'創業者・民間資本',  'desc'=>'Self-funded ramp; founder commitments',                                   'desc_jp'=>'自己資金によるスタートアップ費用；創業者コミットメント',                                                       'committed'=>'¥6M'],
+  ['layer'=>'L2','name'=>'Government grants',         'name_jp'=>'政府助成金',        'desc'=>'NEDO · METI · Nara Prefecture · Mitsue Village 地域脱炭素移行・再エネ推進交付金 (2/3–3/4, via village)',                         'desc_jp'=>'NEDO・経済産業省・奈良県・御杖村 地域脱炭素移行・再エネ推進交付金（補助率2/3〜3/4、村経由）',                                                                           'committed'=>'¥115M'],
+  ['layer'=>'L3','name'=>'Foundations',               'name_jp'=>'財団',              'desc'=>'Nippon Foundation · Japan Fund for Global Environment · Toyota Foundation','desc_jp'=>'日本財団・地球環境基金・トヨタ財団',                                                                         'committed'=>'¥33M'],
+  ['layer'=>'L4','name'=>'Corporate partnerships',    'name_jp'=>'企業パートナーシップ','desc'=>'Dutch and Japanese corporates; CSR-aligned',                             'desc_jp'=>'オランダ・日本の企業；CSR連携',                                                                              'committed'=>'¥35M'],
+  ['layer'=>'L5','name'=>'Operating revenue',         'name_jp'=>'事業収益',          'desc'=>'Hosting fees · FIT/FIP · EV charging · J-Credits',                     'desc_jp'=>'ホスティング料・FIT/FIP・EV充電料金・Jクレジット',                                                           'committed'=>'¥3M'],
 ]);
-$total_y1 = mitsue_get('funding_total_y1','¥11M');
-$total_y3 = mitsue_get('funding_total_y3','¥134M');
+$total_committed = mitsue_get('funding_total_committed','¥192M');
+$bac             = mitsue_get('funding_bac','¥220M');
+$total_budget    = mitsue_get('funding_total_budget','¥245M');
 ?>
 <section id="funding">
   <div class="wrap">
@@ -18,13 +19,13 @@ $total_y3 = mitsue_get('funding_total_y3','¥134M');
       <div>
         <h2>A <em>five-layer stack</em> — protecting against early dependence on any single source.</h2>
         <div class="h2-jp jp">五層構造の資金調達 — 単一財源への早期依存を避ける</div>
-        <div class="h2-sub body-en">Each layer is unlocked by the deliverables of the prior phase. Figures are planning targets, not commitments; the actual mix depends on grant outcomes and partnership negotiations during Phases 1 and 2.</div>
-        <div class="h2-sub body-jp jp">各層は前フェーズの成果によって開放されます。数字は計画目標であり確約ではなく、実際の組み合わせはフェーズ1・2における補助金の結果とパートナーシップ交渉によって変わります。</div>
+        <div class="h2-sub body-en">Each layer is unlocked by the deliverables of the prior phase. Figures reflect commitments and pipeline as of the Baseline Rev 1 plan (May 2026); the remaining gap to the project's full budget is to be closed during Phases 2–3.</div>
+        <div class="h2-sub body-jp jp">各層は前フェーズの成果によって開放されます。数字はベースラインRev 1計画（2026年5月）時点の確約・パイプラインを反映しており、事業全体の予算との差額はフェーズ2〜3で解消する計画です。</div>
       </div>
     </div>
     <table class="funding">
       <thead>
-        <tr><th></th><th>Source</th><th>Year 1 Target</th><th>Year 3 Target</th></tr>
+        <tr><th></th><th>Source</th><th>Committed / Pipeline</th></tr>
       </thead>
       <tbody>
         <?php foreach ($rows as $r): ?>
@@ -36,14 +37,20 @@ $total_y3 = mitsue_get('funding_total_y3','¥134M');
               <span class="desc body-en"><?php echo esc_html($r['desc']); ?></span>
               <?php if (!empty($r['desc_jp'])): ?><span class="desc body-jp jp"><?php echo esc_html($r['desc_jp']); ?></span><?php endif; ?>
             </td>
-            <td class="num"><?php echo esc_html($r['y1']); ?></td>
-            <td class="num"><?php echo esc_html($r['y3']); ?></td>
+            <td class="num"><?php echo esc_html($r['committed']); ?></td>
           </tr>
         <?php endforeach; ?>
         <tr class="total">
-          <td></td><td><span class="body-en">Illustrative total</span><span class="body-jp jp"> · 試算合計</span></td>
-          <td class="num"><?php echo esc_html($total_y1); ?></td>
-          <td class="num"><?php echo esc_html($total_y3); ?></td>
+          <td></td><td><span class="body-en">Total raised / committed</span><span class="body-jp jp"> · 確約・調達済み合計</span></td>
+          <td class="num"><?php echo esc_html($total_committed); ?></td>
+        </tr>
+        <tr class="total">
+          <td></td><td><span class="body-en">BAC (project budget baseline)</span><span class="body-jp jp"> · BAC（事業予算ベースライン）</span></td>
+          <td class="num"><?php echo esc_html($bac); ?></td>
+        </tr>
+        <tr class="total">
+          <td></td><td><span class="body-en">Total project budget (incl. reserve)</span><span class="body-jp jp"> · 事業総予算（予備費含む）</span></td>
+          <td class="num"><?php echo esc_html($total_budget); ?></td>
         </tr>
       </tbody>
     </table>

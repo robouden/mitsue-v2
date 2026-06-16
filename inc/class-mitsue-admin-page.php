@@ -315,26 +315,32 @@ if ( ! class_exists( 'Mitsue_Admin_Page' ) ) {
 					'tab'     => 'funding',
 					'label'   => __( 'Funding stack rows', 'mitsue' ),
 					'type'    => 'repeater',
-					'columns' => [ 'layer' => 'Layer', 'name' => 'Source name', 'desc' => 'Description EN', 'desc_jp' => 'Description JP', 'y1' => 'Year 1', 'y3' => 'Year 3' ],
+					'columns' => [ 'layer' => 'Layer', 'name' => 'Source name', 'desc' => 'Description EN', 'desc_jp' => 'Description JP', 'committed' => 'Committed / Pipeline' ],
 					'defaults' => [
-						[ 'layer' => 'L1', 'name' => 'Founder / private capital', 'desc' => 'Self-funded ramp; founder commitments',                                    'desc_jp' => '自己資金による立ち上げ；創業者コミットメント',                   'y1' => '¥3M', 'y3' => '¥1M' ],
-						[ 'layer' => 'L2', 'name' => 'Government grants',          'desc' => 'NEDO · METI · Nara Prefecture · Mitsue Village',                          'desc_jp' => 'NEDO・経済産業省・奈良県・御杖村',                               'y1' => '¥5M', 'y3' => '¥80M' ],
-						[ 'layer' => 'L3', 'name' => 'Foundations',                'desc' => 'Nippon Foundation · Japan Fund for Global Environment · Toyota Foundation', 'desc_jp' => '日本財団・地球環境基金・トヨタ財団',                             'y1' => '¥3M', 'y3' => '¥20M' ],
-						[ 'layer' => 'L4', 'name' => 'Corporate partnerships',     'desc' => 'Dutch and Japanese corporates; CSR-aligned',                              'desc_jp' => 'オランダ・日本の企業；CSR連携',                                  'y1' => '¥0',  'y3' => '¥30M' ],
-						[ 'layer' => 'L5', 'name' => 'Operating revenue',          'desc' => 'Hosting fees · FIT/FIP · EV charging · J-Credits',                    'desc_jp' => 'ホスティング料金・FIT/FIP・EV充電料金・Jクレジット',            'y1' => '¥0',  'y3' => '¥3M' ],
+						[ 'layer' => 'L1', 'name' => 'Founder / private capital', 'desc' => 'Self-funded ramp; founder commitments',                                    'desc_jp' => '自己資金による立ち上げ；創業者コミットメント',                   'committed' => '¥6M' ],
+						[ 'layer' => 'L2', 'name' => 'Government grants',          'desc' => 'NEDO · METI · Nara Prefecture · Mitsue Village',                          'desc_jp' => 'NEDO・経済産業省・奈良県・御杖村',                               'committed' => '¥115M' ],
+						[ 'layer' => 'L3', 'name' => 'Foundations',                'desc' => 'Nippon Foundation · Japan Fund for Global Environment · Toyota Foundation', 'desc_jp' => '日本財団・地球環境基金・トヨタ財団',                             'committed' => '¥33M' ],
+						[ 'layer' => 'L4', 'name' => 'Corporate partnerships',     'desc' => 'Dutch and Japanese corporates; CSR-aligned',                              'desc_jp' => 'オランダ・日本の企業；CSR連携',                                  'committed' => '¥35M' ],
+						[ 'layer' => 'L5', 'name' => 'Operating revenue',          'desc' => 'Hosting fees · FIT/FIP · EV charging · J-Credits',                    'desc_jp' => 'ホスティング料金・FIT/FIP・EV充電料金・Jクレジット',            'committed' => '¥3M' ],
 					],
 				],
-				'funding_total_y1' => [
+				'funding_total_committed' => [
 					'tab'     => 'funding',
-					'label'   => __( 'Total — Year 1', 'mitsue' ),
+					'label'   => __( 'Total — Raised / Committed', 'mitsue' ),
 					'type'    => 'text',
-					'default' => '¥11M',
+					'default' => '¥192M',
 				],
-				'funding_total_y3' => [
+				'funding_bac' => [
 					'tab'     => 'funding',
-					'label'   => __( 'Total — Year 3', 'mitsue' ),
+					'label'   => __( 'BAC (project budget baseline)', 'mitsue' ),
 					'type'    => 'text',
-					'default' => '¥134M',
+					'default' => '¥220M',
+				],
+				'funding_total_budget' => [
+					'tab'     => 'funding',
+					'label'   => __( 'Total project budget (incl. reserve)', 'mitsue' ),
+					'type'    => 'text',
+					'default' => '¥245M',
 				],
 
 				/* ─── Principles ────────────────────────────────────── */
