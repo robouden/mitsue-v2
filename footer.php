@@ -28,14 +28,18 @@
         <h6>DOCUMENTS</h6>
         <ul>
           <?php
-          $plan_url    = mitsue_get('cta_plan_url','#');
-          $charter_url = mitsue_get('cta_charter_url','#');
+          $repo_base       = 'https://codeberg.org/YR-Design/mitsue-ai-data-center/src/branch/main/';
+          $plan_url        = mitsue_get('cta_plan_url','#');
+          $charter_url     = mitsue_get('cta_charter_url','#');
+          $flowchart_url   = mitsue_get('cta_flowchart_url',   $repo_base . 'mitsue_phases_funding_flowchart.pdf');
+          $stakeholder_url = mitsue_get('cta_stakeholder_url', $repo_base . 'mitsue_stakeholders.pdf');
+          $finance_url     = mitsue_get('cta_finance_url',     $repo_base . 'mitsue_finance.xlsx');
           ?>
           <li><a href="<?php echo esc_url($charter_url); ?>">Founding Charter</a></li>
           <li><a href="<?php echo esc_url($plan_url); ?>">Implementation Plan</a></li>
-          <li><a href="#">Phase &amp; Funding Flowchart</a></li>
-          <li><a href="#">Stakeholder Map</a></li>
-          <li><a href="#">Finance Workbook</a></li>
+          <li><a href="<?php echo esc_url($flowchart_url); ?>">Phase &amp; Funding Flowchart</a></li>
+          <li><a href="<?php echo esc_url($stakeholder_url); ?>">Stakeholder Map</a></li>
+          <li><a href="<?php echo esc_url($finance_url); ?>">Finance Workbook</a></li>
         </ul>
       </div>
       <div>
