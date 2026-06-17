@@ -486,19 +486,19 @@ if ( ! class_exists( 'Mitsue_Admin_Page' ) ) {
 					'tab'     => 'cta',
 					'label'   => __( 'Phase & funding flowchart URL', 'mitsue' ),
 					'type'    => 'url',
-					'default' => 'https://codeberg.org/YR-Design/mitsue-ai-data-center/src/branch/main/mitsue_phases_funding_flowchart.pdf',
+					'default' => 'https://codeberg.org/YR-Design/mitsue-ai-data-center/raw/branch/main/mitsue_phases_funding_flowchart.pdf',
 				],
 				'cta_stakeholder_url' => [
 					'tab'     => 'cta',
 					'label'   => __( 'Stakeholder map URL', 'mitsue' ),
 					'type'    => 'url',
-					'default' => 'https://codeberg.org/YR-Design/mitsue-ai-data-center/src/branch/main/mitsue_stakeholders.pdf',
+					'default' => 'https://codeberg.org/YR-Design/mitsue-ai-data-center/raw/branch/main/mitsue_stakeholders.pdf',
 				],
 				'cta_finance_url' => [
 					'tab'     => 'cta',
 					'label'   => __( 'Finance workbook URL', 'mitsue' ),
 					'type'    => 'url',
-					'default' => 'https://codeberg.org/YR-Design/mitsue-ai-data-center/src/branch/main/mitsue_finance.xlsx',
+					'default' => 'https://codeberg.org/YR-Design/mitsue-ai-data-center/raw/branch/main/mitsue_finance.xlsx',
 				],
 
 			]; // end schema

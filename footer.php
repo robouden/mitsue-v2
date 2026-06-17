@@ -28,7 +28,7 @@
         <h6>DOCUMENTS</h6>
         <ul>
           <?php
-          $repo_base       = 'https://codeberg.org/YR-Design/mitsue-ai-data-center/src/branch/main/';
+          $repo_base       = 'https://codeberg.org/YR-Design/mitsue-ai-data-center/raw/branch/main/';
           $plan_url        = mitsue_get('cta_plan_url','#');
           $charter_url     = mitsue_get('cta_charter_url','#');
           $flowchart_url   = mitsue_get('cta_flowchart_url',   $repo_base . 'mitsue_phases_funding_flowchart.pdf');
