@@ -122,9 +122,14 @@ The live site runs on a VPS at `80.208.225.44`. WP-CLI is available.
 
 **Push theme file changes:**
 ```bash
-rsync -av --delete "/path/to/mitsue-v2/" \
+rsync -av --delete \
+  --exclude='.git' --exclude='.gitignore' --exclude='.entire' --exclude='.omc' \
+  "/path/to/mitsue-v2/" \
   root@80.208.225.44:/home/mitsue.it/public_html/wp-content/themes/mitsue-v2/
 ```
+> **Never** sync `.git`/`.gitignore` into the webroot — they are publicly
+> downloadable and leak source + history. The excludes above prevent this; the
+> server `.htaccess` also denies `.git/.hg/.svn/.bzr` as defense-in-depth.
 
 **Push content data** (after editing `build-updraft.py`):
 ```bash
