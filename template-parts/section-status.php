@@ -4,7 +4,7 @@ $completed = mitsue_rows('status_completed', [
   ['t'=>'Initial meeting with the local forestry group (early 2026)'],
   ['t'=>'Drafted founding charter and detailed implementation plan'],
   ['t'=>'Phase &amp; funding-gate flowchart published'],
-  ['t'=>'Advisory commitments: Joi Ito and Ray Ozzie'],
+  ['t'=>'Advisory commitment: Ray Ozzie'],
 ]);
 $progress = mitsue_rows('status_progress', [
   ['t'=>'Identifying a Japanese co-founder with rural credibility'],

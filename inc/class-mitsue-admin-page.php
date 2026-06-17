@@ -272,7 +272,6 @@ if ( ! class_exists( 'Mitsue_Admin_Page' ) ) {
 					'type'    => 'repeater',
 					'columns' => [ 'initials' => 'Initials', 'name' => 'Full name', 'link' => 'Link URL', 'photo' => 'Photo', 'credit' => 'Bio EN', 'credit_jp' => 'Bio JP' ],
 					'defaults' => [
-						[ 'initials' => 'J.I.', 'name' => 'Joi Ito',   'link' => 'https://en.wikipedia.org/wiki/Joi_Ito',   'credit' => 'Former Director, MIT Media Lab. Internet pioneer; long-running engagement with Japanese institutions, technology policy, and emerging compute. Confirmed May 5, 2026.',          'credit_jp' => 'MITメディアラボ元所長。インターネットの先駆者として、日本の諸機関・技術政策・新興コンピューティングに長期的に関与。2026年5月5日に顧問就任を承諾。' ],
 						[ 'initials' => 'R.O.', 'name' => 'Ray Ozzie', 'link' => 'https://en.wikipedia.org/wiki/Ray_Ozzie', 'credit' => 'Software pioneer; former Chief Software Architect at Microsoft. Decades of work on distributed systems, collaboration software, and the discipline of small, accountable platforms. Confirmed May 5, 2026.', 'credit_jp' => 'ソフトウェアの先駆者、マイクロソフト元チーフソフトウェアアーキテクト。分散システム・コラボレーションソフトウェア・小規模で説明責任を果たすプラットフォームの設計原則に数十年従事。2026年5月5日に顧問就任を承諾。' ],
 						[ 'initials' => 'S.P.', 'name' => 'San Poisson',    'link' => '', 'credit' => 'Project Manager.', 'credit_jp' => 'プロジェクトマネージャー。' ],
 						[ 'initials' => '·',    'name' => 'Advisor 4 — TBD', 'link' => '', 'credit' => 'To be confirmed.', 'credit_jp' => '確定待ち。' ],
@@ -382,7 +381,7 @@ if ( ! class_exists( 'Mitsue_Admin_Page' ) ) {
 						[ 't' => 'Initial meeting with the local forestry group (early 2026)',   't_jp' => '地域林業グループとの初回面談（2026年初頭）' ],
 						[ 't' => 'Drafted founding charter and detailed implementation plan',     't_jp' => '設立定款・詳細実施計画の草案作成' ],
 						[ 't' => 'Phase &amp; funding-gate flowchart published',                 't_jp' => 'フェーズ・資金ゲートフローチャートの公開' ],
-						[ 't' => 'Advisory commitments: Joi Ito and Ray Ozzie',                 't_jp' => '顧問就任の確約：伊藤穰一・レイ・オジー' ],
+						[ 't' => 'Advisory commitment: Ray Ozzie',                              't_jp' => '顧問就任の確約：レイ・オジー' ],
 					],
 				],
 				'status_progress' => [
