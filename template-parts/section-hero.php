@@ -3,7 +3,7 @@ $eyebrow     = mitsue_get('hero_eyebrow', 'A 25-YEAR INITIATIVE · 二十五年�
 $headline_en = mitsue_get('hero_headline_en', 'Forest restoration, distributed energy, and a <em>community-owned</em> data center — in rural Japan.');
 $headline_jp = mitsue_get('hero_headline_jp', '森林再生・分散型再生可能エネルギー・地域所有のデータセンター');
 $lede_en     = mitsue_get('hero_lede_en', 'The Mitsue Project repurposes an unused school or a disused village factory building and the forests around it into a single, transparent, openly replicable demonstration of rural revitalization — modest in scale, patient in horizon, built to be copied.');
-$lede_jp     = mitsue_get('hero_lede_jp', '御杖プロジェクトは、旧菅野小学校（御杖体験交流館）とその周囲の森林を、農山村再生の透明で再現可能な統合モデルへと転換する取り組みです。');
+$lede_jp     = mitsue_get('hero_lede_jp', '御杖プロジェクトは、未使用の学校または廃村工場と、その周囲の森林を、農山村再生の透明で再現可能な統合モデルへと転換する取り組みです。');
 $meta        = mitsue_rows('hero_meta', [
   ['k'=>'LOCATION',    'v'=>'Mitsue Village','sub'=>'Nara Prefecture · 奈良県御杖村'],
   ['k'=>'HORIZON',     'v'=>'25 Years',      'sub'=>'Bridging today to small-scale fusion'],

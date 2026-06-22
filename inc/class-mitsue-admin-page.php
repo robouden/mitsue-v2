@@ -126,7 +126,7 @@ if ( ! class_exists( 'Mitsue_Admin_Page' ) ) {
 					'tab'     => 'hero',
 					'label'   => __( 'Intro paragraph (JP)', 'mitsue' ),
 					'type'    => 'textarea',
-					'default' => '御杖プロジェクトは、閉校した山間の小学校とその周囲の森林を、農山村再生の透明で再現可能な統合モデルへと転換する取り組みです。',
+					'default' => '御杖プロジェクトは、未使用の学校または廃村工場と、その周囲の森林を、農山村再生の透明で再現可能な統合モデルへと転換する取り組みです。',
 				],
 				'hero_meta' => [
 					'tab'     => 'hero',
