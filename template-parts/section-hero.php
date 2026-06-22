@@ -16,6 +16,7 @@ $meta        = mitsue_rows('hero_meta', [
     <div class="eyebrow"><?php echo wp_kses_post($eyebrow); ?></div>
     <h1><?php echo wp_kses_post($headline_en); ?></h1>
     <div class="h1-jp jp"><?php echo esc_html($headline_jp); ?></div>
+    <p class="hero-tagline">The forest our ancestors planted — the power that sustains the village they built<span class="jp">先人が植えた森が、今、村を支える力になる。</span></p>
     <p class="lede">
       <?php echo esc_html($lede_en); ?>
       <span class="jp"><?php echo esc_html($lede_jp); ?></span>
