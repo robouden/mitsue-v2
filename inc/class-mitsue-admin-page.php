@@ -120,7 +120,7 @@ if ( ! class_exists( 'Mitsue_Admin_Page' ) ) {
 					'tab'     => 'hero',
 					'label'   => __( 'Intro paragraph (EN)', 'mitsue' ),
 					'type'    => 'textarea',
-					'default' => 'The Mitsue Project repurposes a closed mountain school and the forests around it into a single, transparent, openly replicable demonstration of rural revitalization — modest in scale, patient in horizon, built to be copied.',
+					'default' => 'The Mitsue Project repurposes an unused school or a disused village factory building and the forests around it into a single, transparent, openly replicable demonstration of rural revitalization — modest in scale, patient in horizon, built to be copied.',
 				],
 				'hero_lede_jp' => [
 					'tab'     => 'hero',
