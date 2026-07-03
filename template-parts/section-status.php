@@ -36,7 +36,7 @@ $next = mitsue_rows('status_next', [
       <div class="status-meta">
         <div class="badge"><span class="pulse"></span> PHASE 0 · IN PROGRESS</div>
         <h3>Pre-Foundation</h3>
-        <div class="sub">準備期 · Months 01 – 03</div>
+        <div class="sub">準備期 · 2026年4月〜10月</div>
         <div class="period">SELF-FUNDED · ¥0–0.5M</div>
         <p style="margin-top:24px;font-size:14px;color:var(--ink-soft);line-height:1.7;">
           <span class="body-en">No public announcements yet. Formal channels — website, dedicated email, NPO bank account — will be established at the start of Phase 1.</span>

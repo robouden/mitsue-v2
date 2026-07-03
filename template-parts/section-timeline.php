@@ -1,10 +1,10 @@
 <?php
 $phases = mitsue_rows('phases', [
-  ['name'=>'Phase 0 — Current','title'=>'Pre-Foundation',  'jp'=>'準備期',         'months'=>'Months 01 – 03','note'=>'Local trust-building, founding team, draft charter.','budget'=>'¥0 – 0.5M',  'extra'=>'self-funded','current'=>'1'],
-  ['name'=>'Phase 1',          'title'=>'Foundation',      'jp'=>'基盤構築期',     'months'=>'Months 04 – 09','note'=>'Legal entity, feasibility studies, advisors.',       'budget'=>'¥3 – 8M',    'extra'=>'','current'=>'0'],
-  ['name'=>'Phase 2',          'title'=>'Pilot Design',    'jp'=>'パイロット設計期','months'=>'Months 10 – 18','note'=>'Engineering, partnerships, permits.',               'budget'=>'¥15 – 30M',  'extra'=>'','current'=>'0'],
-  ['name'=>'Phase 3',          'title'=>'Pilot Build',     'jp'=>'パイロット建設期','months'=>'Months 19 – 30','note'=>'First-stage construction, commissioning.',          'budget'=>'¥80 – 200M', 'extra'=>'','current'=>'0'],
-  ['name'=>'Phase 4',          'title'=>'Operate &amp; Scale','jp'=>'運営・拡張期','months'=>'Months 31 +',   'note'=>'Operations, monitoring, replication.',              'budget'=>'Revenue-led', 'extra'=>'','current'=>'0'],
+  ['name'=>'Phase 0 — Current','title'=>'Pre-Foundation',  'jp'=>'準備期',         'months'=>'Apr – Oct 2026','note'=>'Local trust-building, founding team, draft charter.','budget'=>'¥0 – 0.5M',  'extra'=>'self-funded','current'=>'1'],
+  ['name'=>'Phase 1',          'title'=>'Foundation',      'jp'=>'基盤構築期',     'months'=>'Oct 2026 – May 2027','note'=>'Legal entity, feasibility studies, advisors.',       'budget'=>'¥3 – 8M',    'extra'=>'','current'=>'0'],
+  ['name'=>'Phase 2',          'title'=>'Pilot Design',    'jp'=>'パイロット設計期','months'=>'May 2027 – May 2028','note'=>'Engineering, partnerships, permits.',               'budget'=>'¥15 – 30M',  'extra'=>'','current'=>'0'],
+  ['name'=>'Phase 3',          'title'=>'Pilot Build',     'jp'=>'パイロット建設期','months'=>'May 2028 – Nov 2029','note'=>'First-stage construction, commissioning.',          'budget'=>'¥80 – 200M', 'extra'=>'','current'=>'0'],
+  ['name'=>'Phase 4',          'title'=>'Operate &amp; Scale','jp'=>'運営・拡張期','months'=>'Nov 2029 +',   'note'=>'Operations, monitoring, replication.',              'budget'=>'Revenue-led', 'extra'=>'','current'=>'0'],
 ]);
 $gates = mitsue_rows('gates', [
   ['n'=>'G1','v'=>'¥3 – 8M',       'note'=>'Foundation gate'],
