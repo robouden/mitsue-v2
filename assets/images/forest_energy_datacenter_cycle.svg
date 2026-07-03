@@ -1,112 +1,97 @@
-<svg width="100%" viewBox="0 0 690 690" role="img" style="" xmlns="http://www.w3.org/2000/svg">
-  <title style="fill:rgb(0, 0, 0);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">Forest · Energy · Data — a self-reinforcing 25-year cycle</title>
-  <desc style="fill:rgb(0, 0, 0);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">Three nodes — native forest restoration, locally generated renewable energy, and community-owned data center — each feeding the others, bound together by a shared 25-year ledger of methods, data, and outcomes.</desc>
+<svg width="100%" viewBox="0 0 690 690" role="img" xmlns="http://www.w3.org/2000/svg"
+     font-family="'Anthropic Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <title>Forest · Energy · Data — a self-reinforcing 25-year cycle</title>
+  <desc>Three nodes — native forest restoration, locally generated renewable energy, and community-owned data center — each feeding the others, bound together by a shared 25-year ledger of methods, data, and outcomes.</desc>
   <defs>
-    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M1 1L9 5L1 9" fill="context-stroke"/>
     </marker>
-    <!-- Tree symbol (simplified) -->
     <symbol id="tree" viewBox="0 0 24 32">
-      <polygon points="12,2 22,18 2,18" fill="#639922" opacity="0.85"/>
-      <polygon points="12,7 20,21 4,21" fill="#3B6D11" opacity="0.85"/>
+      <polygon points="12,2 22,18 2,18" fill="#639922"/>
+      <polygon points="12,7 20,21 4,21" fill="#3B6D11"/>
       <rect x="10" y="21" width="4" height="8" rx="1" fill="#633806"/>
     </symbol>
-    <!-- Lightning bolt -->
     <symbol id="bolt" viewBox="0 0 24 32">
-      <polygon points="14,2 5,17 12,17 10,30 19,13 13,13" fill="#EF9F27" opacity="0.9"/>
+      <polygon points="14,2 5,17 12,17 10,30 19,13 13,13" fill="#FFCF6A"/>
     </symbol>
-    <!-- Server rack -->
     <symbol id="server" viewBox="0 0 28 32">
-      <rect x="2" y="2" width="24" height="7" rx="2" fill="#378ADD" opacity="0.85"/>
-      <rect x="2" y="12" width="24" height="7" rx="2" fill="#185FA5" opacity="0.85"/>
-      <rect x="2" y="22" width="24" height="7" rx="2" fill="#0C447C" opacity="0.85"/>
-      <circle cx="23" cy="5.5" r="1.5" fill="#E6F1FB"/>
-      <circle cx="23" cy="15.5" r="1.5" fill="#85B7EB"/>
-      <circle cx="23" cy="25.5" r="1.5" fill="#B5D4F4"/>
+      <rect x="2" y="2"  width="24" height="7" rx="2" fill="#5FA0E6"/>
+      <rect x="2" y="12" width="24" height="7" rx="2" fill="#2E7BC9"/>
+      <rect x="2" y="22" width="24" height="7" rx="2" fill="#0C447C"/>
+      <circle cx="23" cy="5.5"  r="1.6" fill="#E6F1FB"/>
+      <circle cx="23" cy="15.5" r="1.6" fill="#B5D4F4"/>
+      <circle cx="23" cy="25.5" r="1.6" fill="#B5D4F4"/>
     </symbol>
-  <mask id="imagine-text-gaps-quvb8z" maskUnits="userSpaceOnUse"><rect x="0" y="0" width="690" height="690" fill="white"/><rect x="288.3833312988281" y="311" width="103.23332977294922" height="24" fill="black" rx="2"/><rect x="261" y="332" width="158" height="21" fill="black" rx="2"/><rect x="272.8999938964844" y="349" width="134.1999969482422" height="21" fill="black" rx="2"/><rect x="293.8833312988281" y="126" width="92.23332977294922" height="24" fill="black" rx="2"/><rect x="304.79998779296875" y="143.5" width="70.4000015258789" height="21" fill="black" rx="2"/><rect x="99.33333587646484" y="528" width="129.33333587646484" height="24" fill="black" rx="2"/><rect x="111.71666717529297" y="546.5" width="104.56666564941406" height="21" fill="black" rx="2"/><rect x="473.70001220703125" y="528" width="84.5999984741211" height="24" fill="black" rx="2"/><rect x="459.1333312988281" y="546.5" width="113.73332977294922" height="21" fill="black" rx="2"/><rect x="180.39999389648438" y="283" width="55.20000076293945" height="21" fill="black" rx="2"/><rect x="105.19166564941406" y="315" width="105.61666870117188" height="21" fill="black" rx="2"/><rect x="288.7166748046875" y="497" width="102.56666564941406" height="21" fill="black" rx="2"/><rect x="287.5333251953125" y="513" width="104.93333435058594" height="21" fill="black" rx="2"/><rect x="422.125" y="283" width="99.75" height="21" fill="black" rx="2"/><rect x="491.8333435058594" y="315" width="64.33333206176758" height="21" fill="black" rx="2"/></mask></defs>
+    <!-- white halo behind text/labels so they stay readable over any line -->
+    <style>
+      .lbl   { paint-order:stroke; stroke:#ffffff; stroke-width:5px; stroke-linejoin:round; font-weight:600; }
+      .node-title { font-size:23px; font-weight:700; paint-order:stroke; stroke-width:4px; stroke-linejoin:round; }
+      .node-sub   { font-size:16px; font-weight:600; paint-order:stroke; stroke-width:3.5px; stroke-linejoin:round; }
+      .edge  { font-size:15px; }
+      .node  { cursor:pointer; }
+      .node circle { transition:filter .15s ease; }
+      .node:hover circle { filter:brightness(1.12); }
+    </style>
+  </defs>
 
-  <!-- ── BACKGROUND: subtle landscape wash ── -->
-  <!-- Sky gradient using flat stacked rects -->
-  <rect x="0" y="0" width="680" height="400" fill="#E6F1FB" opacity="0.18" style="fill:rgb(230, 241, 251);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.18;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <rect x="0" y="380" width="680" height="300" fill="#EAF3DE" opacity="0.2" style="fill:rgb(234, 243, 222);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.2;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <!-- ── background wash ── -->
+  <rect x="0" y="0"   width="690" height="400" fill="#EAF3DE" opacity="0.35"/>
+  <rect x="0" y="380" width="690" height="310" fill="#EAF3DE" opacity="0.5"/>
 
-  <!-- ── LEDGER RING — central 25-year record ── -->
-  <!-- Outer ring -->
-  <circle cx="340" cy="340" r="118" fill="none" stroke="#888780" stroke-width="0.5" stroke-dasharray="4 4" opacity="0.6" style="fill:none;stroke:rgb(136, 135, 128);color:rgb(251, 251, 254);stroke-width:0.5px;stroke-dasharray:4px, 4px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.6;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <!-- Inner ring -->
-  <circle cx="340" cy="340" r="86" fill="none" stroke="#888780" stroke-width="0.5" opacity="0.35" style="fill:none;stroke:rgb(136, 135, 128);color:rgb(251, 251, 254);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.35;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <!-- Central disk -->
-  <circle cx="340" cy="340" r="85" fill="#F1EFE8" opacity="0.55" style="fill:rgb(241, 239, 232);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.55;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <text x="340" y="328" text-anchor="middle" fill="#5F5E5A" font-size="13" style="fill:rgb(250, 249, 245);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:14px;font-weight:500;text-anchor:middle;dominant-baseline:auto">25-year ledger</text>
-  <text x="340" y="347" text-anchor="middle" fill="#888780" style="fill:rgb(194, 192, 182);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:12px;font-weight:400;text-anchor:middle;dominant-baseline:auto">methods · data · outcomes</text>
-  <text x="340" y="364" text-anchor="middle" fill="#888780" style="fill:rgb(194, 192, 182);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:12px;font-weight:400;text-anchor:middle;dominant-baseline:auto">community ownership</text>
+  <!-- ── LEDGER RING (center) ── -->
+  <circle cx="340" cy="340" r="120" fill="none" stroke="#B7B5AC" stroke-width="1.5" stroke-dasharray="6 6"/>
+  <circle cx="340" cy="340" r="90"  fill="#F1EFE8" stroke="#B7B5AC" stroke-width="1.5"/>
+  <text x="340" y="326" text-anchor="middle" class="lbl" fill="#4A4945" font-size="17" font-weight="700">25-year ledger</text>
+  <text x="340" y="348" text-anchor="middle" class="lbl" fill="#6B6A64" font-size="14">methods · data · outcomes</text>
+  <text x="340" y="368" text-anchor="middle" class="lbl" fill="#6B6A64" font-size="14">community ownership</text>
 
-  <!-- ── NODE 1 — NATIVE FOREST (top) ── -->
-  <!-- glow halo -->
-  <circle cx="340" cy="120" r="78" fill="#EAF3DE" opacity="0.55" style="fill:rgb(234, 243, 222);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.55;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <g onclick="sendPrompt('Tell me more about native forest restoration in Mitsue village and how it connects to EV charging and community energy resilience')" style="fill:rgb(0, 0, 0);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
-    <circle cx="340" cy="120" r="66" stroke-width="0.8" style="fill:rgb(39, 80, 10);stroke:rgb(151, 196, 89);color:rgb(251, 251, 254);stroke-width:0.8px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-    <use href="#tree" x="310" y="85" width="20" height="28" style="fill:rgb(0, 0, 0);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-    <use href="#tree" x="328" y="80" width="24" height="32" style="fill:rgb(0, 0, 0);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-    <use href="#tree" x="349" y="85" width="20" height="28" style="fill:rgb(0, 0, 0);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-    <text x="340" y="138" text-anchor="middle" dominant-baseline="central" font-size="13" style="fill:rgb(192, 221, 151);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:14px;font-weight:500;text-anchor:middle;dominant-baseline:central">Native forest</text>
-    <text x="340" y="154" text-anchor="middle" dominant-baseline="central" style="fill:rgb(151, 196, 89);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:12px;font-weight:400;text-anchor:middle;dominant-baseline:central">restoration</text>
+  <!-- ══ ARROWS (drawn under nodes) ══ -->
+  <g stroke-width="4.5" fill="none" stroke-linecap="round">
+    <!-- Forest → Energy -->
+    <path d="M280 176 Q188 300 184 448" stroke="#3B6D11" marker-end="url(#arrow)"/>
+    <!-- Energy → Forest -->
+    <path d="M176 448 Q158 296 296 178" stroke="#BA7517" marker-end="url(#arrow)"/>
+    <!-- Energy → Data -->
+    <path d="M236 524 L444 524" stroke="#EF9F27" marker-end="url(#arrow)"/>
+    <!-- Data → Energy -->
+    <path d="M444 512 L236 512" stroke="#185FA5" marker-end="url(#arrow)"/>
+    <!-- Forest → Data -->
+    <path d="M400 176 Q492 300 496 448" stroke="#3B6D11" marker-end="url(#arrow)"/>
+    <!-- Data → Forest -->
+    <path d="M504 448 Q522 296 384 178" stroke="#0C447C" marker-end="url(#arrow)"/>
   </g>
 
-  <!-- ── NODE 2 — RENEWABLE ENERGY (bottom-left) ── -->
-  <circle cx="164" cy="520" r="78" fill="#FAEEDA" opacity="0.5" style="fill:rgb(250, 238, 218);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.5;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <g onclick="sendPrompt('How does locally generated solar and battery energy connect forest restoration to the data center and EV charging in Mitsue?')" style="fill:rgb(0, 0, 0);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
-    <circle cx="164" cy="520" r="66" stroke-width="0.8" style="fill:rgb(99, 56, 6);stroke:rgb(239, 159, 39);color:rgb(251, 251, 254);stroke-width:0.8px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-    <use href="#bolt" x="148" y="492" width="32" height="38" style="fill:rgb(0, 0, 0);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-    <text x="164" y="540" text-anchor="middle" dominant-baseline="central" font-size="13" style="fill:rgb(250, 199, 117);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:14px;font-weight:500;text-anchor:middle;dominant-baseline:central">Renewable energy</text>
-    <text x="164" y="557" text-anchor="middle" dominant-baseline="central" style="fill:rgb(239, 159, 39);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:12px;font-weight:400;text-anchor:middle;dominant-baseline:central">locally generated</text>
+  <!-- ══ EDGE LABELS ══ -->
+  <text x="196" y="292" text-anchor="middle" class="lbl edge" fill="#3B6D11">timber</text>
+  <text x="150" y="330" text-anchor="middle" class="lbl edge" fill="#BA7517">funds restoration</text>
+  <text x="340" y="507" text-anchor="middle" class="lbl edge" fill="#C77A0E">powers compute</text>
+  <text x="340" y="548" text-anchor="middle" class="lbl edge" fill="#185FA5">grid optimisation</text>
+  <text x="486" y="292" text-anchor="middle" class="lbl edge" fill="#3B6D11">monitoring data</text>
+  <text x="534" y="330" text-anchor="middle" class="lbl edge" fill="#0C447C">AI models</text>
+
+  <!-- ══ NODE 1 — NATIVE FOREST (top) ══ -->
+  <g class="node" onclick="sendPrompt('Tell me more about native forest restoration in Mitsue village and how it connects to EV charging and community energy resilience')">
+    <circle cx="340" cy="120" r="70" fill="#27500A" stroke="#97C459" stroke-width="3"/>
+    <use href="#tree" x="308" y="78" width="20" height="28"/>
+    <use href="#tree" x="327" y="72" width="26" height="34"/>
+    <use href="#tree" x="352" y="78" width="20" height="28"/>
+    <text x="340" y="138" text-anchor="middle" class="node-title" stroke="#183405" fill="#FFFFFF">Native forest</text>
+    <text x="340" y="158" text-anchor="middle" class="node-sub"   stroke="#183405" fill="#DCEEBF">restoration</text>
   </g>
 
-  <!-- ── NODE 3 — DATA CENTER (bottom-right) ── -->
-  <circle cx="516" cy="520" r="78" fill="#E6F1FB" opacity="0.5" style="fill:rgb(230, 241, 251);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.5;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <g onclick="sendPrompt('What is the community-owned micro data center concept for Mitsue elementary school?')" style="fill:rgb(0, 0, 0);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
-    <circle cx="516" cy="520" r="66" stroke-width="0.8" style="fill:rgb(12, 68, 124);stroke:rgb(133, 183, 235);color:rgb(251, 251, 254);stroke-width:0.8px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-    <use href="#server" x="502" y="492" width="28" height="32" style="fill:rgb(0, 0, 0);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-    <text x="516" y="540" text-anchor="middle" dominant-baseline="central" font-size="13" style="fill:rgb(181, 212, 244);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:14px;font-weight:500;text-anchor:middle;dominant-baseline:central">Data center</text>
-    <text x="516" y="557" text-anchor="middle" dominant-baseline="central" style="fill:rgb(133, 183, 235);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:12px;font-weight:400;text-anchor:middle;dominant-baseline:central">community-owned</text>
+  <!-- ══ NODE 2 — RENEWABLE ENERGY (bottom-left) ══ -->
+  <g class="node" onclick="sendPrompt('How does locally generated solar and battery energy connect forest restoration to the data center and EV charging in Mitsue?')">
+    <circle cx="164" cy="520" r="70" fill="#7A4A08" stroke="#EF9F27" stroke-width="3"/>
+    <use href="#bolt" x="146" y="484" width="34" height="40"/>
+    <text x="164" y="540" text-anchor="middle" class="node-title" stroke="#3D2504" fill="#FFFFFF">Renewable</text>
+    <text x="164" y="562" text-anchor="middle" class="node-sub"   stroke="#3D2504" fill="#FBE0B4">energy · local</text>
   </g>
 
-  <!-- ── ARROWS: Forest ↔ Energy ── -->
-  <!-- Forest → Energy: timber revenue funds solar/battery investment -->
-  <path d="M282 168 Q196 280 188 452" fill="none" stroke="#639922" stroke-width="1.5" marker-end="url(#arrow)" opacity="0.75" mask="url(#imagine-text-gaps-quvb8z)" style="fill:none;stroke:rgb(99, 153, 34);color:rgb(251, 251, 254);stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.75;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <!-- Energy → Forest: funds restoration -->
-  <path d="M172 452 Q162 280 298 172" fill="none" stroke="#BA7517" stroke-width="1.5" marker-end="url(#arrow)" opacity="0.75" mask="url(#imagine-text-gaps-quvb8z)" style="fill:none;stroke:rgb(186, 117, 23);color:rgb(251, 251, 254);stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.75;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-
-  <!-- ── ARROWS: Energy ↔ Data ── -->
-  <!-- Energy → Data: powers compute -->
-  <path d="M232 520 L448 520" fill="none" stroke="#EF9F27" stroke-width="1.5" marker-end="url(#arrow)" opacity="0.75" mask="url(#imagine-text-gaps-quvb8z)" style="fill:none;stroke:rgb(239, 159, 39);color:rgb(251, 251, 254);stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.75;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <!-- Data → Energy: optimises grid -->
-  <path d="M448 508 L232 508" fill="none" stroke="#185FA5" stroke-width="1.5" marker-end="url(#arrow)" opacity="0.7" mask="url(#imagine-text-gaps-quvb8z)" style="fill:none;stroke:rgb(24, 95, 165);color:rgb(251, 251, 254);stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.7;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-
-  <!-- ── ARROWS: Forest ↔ Data ── -->
-  <!-- Forest → Data: monitoring data -->
-  <path d="M398 168 Q484 280 490 452" fill="none" stroke="#3B6D11" stroke-width="1.5" marker-end="url(#arrow)" opacity="0.7" mask="url(#imagine-text-gaps-quvb8z)" style="fill:none;stroke:rgb(59, 109, 17);color:rgb(251, 251, 254);stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.7;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <!-- Data → Forest: AI models, outcomes -->
-  <path d="M502 452 Q516 280 382 172" fill="none" stroke="#0C447C" stroke-width="1.5" marker-end="url(#arrow)" opacity="0.7" mask="url(#imagine-text-gaps-quvb8z)" style="fill:none;stroke:rgb(12, 68, 124);color:rgb(251, 251, 254);stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.7;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-
-  <!-- ── EDGE LABELS ── -->
-  <!-- Forest→Energy -->
-  <text x="208" y="298" text-anchor="middle" fill="#3B6D11" opacity="0.9" style="fill:rgb(194, 192, 182);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.9;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:12px;font-weight:400;text-anchor:middle;dominant-baseline:auto">timber</text>
-  <!-- Energy→Forest -->
-  <text x="158" y="330" text-anchor="middle" fill="#BA7517" opacity="0.9" style="fill:rgb(194, 192, 182);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.9;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:12px;font-weight:400;text-anchor:middle;dominant-baseline:auto">funds restoration</text>
-  <!-- Energy→Data -->
-  <text x="340" y="512" text-anchor="middle" fill="#BA7517" opacity="0.9" style="fill:rgb(194, 192, 182);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.9;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:12px;font-weight:400;text-anchor:middle;dominant-baseline:auto">powers compute</text>
-  <!-- Data→Energy -->
-  <text x="340" y="528" text-anchor="middle" fill="#185FA5" opacity="0.85" style="fill:rgb(194, 192, 182);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.85;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:12px;font-weight:400;text-anchor:middle;dominant-baseline:auto">grid optimisation</text>
-  <!-- Forest→Data -->
-  <text x="472" y="298" text-anchor="middle" fill="#3B6D11" opacity="0.9" style="fill:rgb(194, 192, 182);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.9;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:12px;font-weight:400;text-anchor:middle;dominant-baseline:auto">monitoring data</text>
-  <!-- Data→Forest -->
-  <text x="524" y="330" text-anchor="middle" fill="#0C447C" opacity="0.9" style="fill:rgb(194, 192, 182);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.9;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:12px;font-weight:400;text-anchor:middle;dominant-baseline:auto">AI models</text>
-
-  <!-- ── SPOKE LINES from ledger ring to each node ── -->
-  <line x1="340" y1="255" x2="340" y2="186" stroke="#888780" stroke-width="0.5" stroke-dasharray="3 3" opacity="0.5" style="fill:rgb(0, 0, 0);stroke:rgb(136, 135, 128);color:rgb(251, 251, 254);stroke-width:0.5px;stroke-dasharray:3px, 3px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.5;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <line x1="266" y1="415" x2="218" y2="460" stroke="#888780" stroke-width="0.5" stroke-dasharray="3 3" opacity="0.5" style="fill:rgb(0, 0, 0);stroke:rgb(136, 135, 128);color:rgb(251, 251, 254);stroke-width:0.5px;stroke-dasharray:3px, 3px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.5;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <line x1="414" y1="415" x2="462" y2="460" stroke="#888780" stroke-width="0.5" stroke-dasharray="3 3" opacity="0.5" style="fill:rgb(0, 0, 0);stroke:rgb(136, 135, 128);color:rgb(251, 251, 254);stroke-width:0.5px;stroke-dasharray:3px, 3px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.5;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-
+  <!-- ══ NODE 3 — DATA CENTER (bottom-right) ══ -->
+  <g class="node" onclick="sendPrompt('What is the community-owned micro data center concept for Mitsue elementary school?')">
+    <circle cx="516" cy="520" r="70" fill="#0C447C" stroke="#85B7EB" stroke-width="3"/>
+    <use href="#server" x="500" y="482" width="30" height="34"/>
+    <text x="516" y="540" text-anchor="middle" class="node-title" stroke="#052240" fill="#FFFFFF">Data center</text>
+    <text x="516" y="562" text-anchor="middle" class="node-sub"   stroke="#052240" fill="#CBE0F7">community-owned</text>
+  </g>
 </svg>
