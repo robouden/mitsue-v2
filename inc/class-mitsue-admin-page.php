@@ -414,7 +414,7 @@ if ( ! class_exists( 'Mitsue_Admin_Page' ) ) {
 					'tab'     => 'join',
 					'label'   => __( 'Eyebrow text', 'mitsue' ),
 					'type'    => 'text',
-					'default' => 'Careers · 御杖村森林組合 × Mitsue Project',
+					'default' => 'Get involved · 御杖プロジェクト × 御杖村森林組合',
 				],
 				'join_headline_en' => [
 					'tab'     => 'join',
@@ -432,13 +432,25 @@ if ( ! class_exists( 'Mitsue_Admin_Page' ) ) {
 					'tab'     => 'join',
 					'label'   => __( 'Intro paragraph (EN)', 'mitsue' ),
 					'type'    => 'textarea',
-					'default' => 'One job, one place, one 25-year story. We are growing the Mitsue forestry cooperative to restore native forest and power a community-owned data center — and we are looking for people who want to build it.',
+					'default' => 'One place, one 25-year story — reforest a mountain, power a community-owned data center, and revive a village. Whether you want to work, invest, advise, or partner, there is a way in.',
 				],
 				'join_lede_jp' => [
 					'tab'     => 'join',
 					'label'   => __( 'Intro paragraph (JP)', 'mitsue' ),
 					'type'    => 'textarea',
-					'default' => 'ひとつの仕事、ひとつの場所、25年の物語。私たちは御杖村森林組合を拡大し、在来林を再生して地域所有のデータセンターを動かします——それを共に築く仲間を探しています。',
+					'default' => 'ひとつの場所、25年の物語——山を再生し、地域所有のデータセンターを動かし、村を蘇らせる。働く・出資する・助言する・連携する、どの形でも参加の入り口があります。',
+				],
+				'join_ways' => [
+					'tab'     => 'join',
+					'label'   => __( 'Ways to get involved — chooser cards', 'mitsue' ),
+					'type'    => 'repeater',
+					'columns' => [ 'label_en' => 'Label EN', 'label_jp' => 'Label JP', 'sub' => 'One-liner EN', 'sub_jp' => 'One-liner JP', 'anchor' => 'Anchor (#work etc.)' ],
+					'defaults' => [
+						[ 'label_en' => '🌲 Work', 'label_jp' => '働く', 'sub' => 'Paid roles at the forestry co-op — forest, energy, data.', 'sub_jp' => '森林組合の有給職——森・エネルギー・データ。', 'anchor' => '#work' ],
+						[ 'label_en' => '◆ Invest', 'label_jp' => '出資する', 'sub' => 'Patient capital for a 25-year, non-profit build.', 'sub_jp' => '25年・非営利の事業への長期資本。', 'anchor' => '#invest' ],
+						[ 'label_en' => '✎ Advise', 'label_jp' => '助言する', 'sub' => 'Expertise in forestry, energy, compute, or governance.', 'sub_jp' => '林業・エネルギー・計算・ガバナンスの知見。', 'anchor' => '#advise' ],
+						[ 'label_en' => '⌂ Partner', 'label_jp' => '連携する', 'sub' => 'Companies, NGOs, landowners, and volunteers.', 'sub_jp' => '企業・NGO・土地所有者・ボランティア。', 'anchor' => '#partner' ],
+					],
 				],
 				'join_pillars' => [
 					'tab'     => 'join',
@@ -511,9 +523,20 @@ if ( ! class_exists( 'Mitsue_Admin_Page' ) ) {
 					'type'    => 'textarea',
 					'default' => 'どの柱に惹かれるか（森・エネルギー・村）と、今どちらにお住まいかをお知らせください。林業経験は不問です。好奇心と覚悟を重視します。',
 				],
+				'join_sections' => [
+					'tab'     => 'join',
+					'label'   => __( 'Other ways — Invest / Advise / Partner blocks', 'mitsue' ),
+					'type'    => 'repeater',
+					'columns' => [ 'id' => 'Anchor id (invest…)', 'num' => 'Section №', 'label' => 'Kicker label', 'title_en' => 'Title EN (<em> ok)', 'title_jp' => 'Title JP', 'body' => 'Body EN', 'body_jp' => 'Body JP', 'cta' => 'Button label (opt.)', 'href' => 'Button URL (opt.)' ],
+					'defaults' => [
+						[ 'id' => 'invest', 'num' => '§ 03', 'label' => 'Invest', 'title_en' => 'Patient capital for a <em>25-year</em> build.', 'title_jp' => '25年の事業への長期資本。', 'body' => 'The project is a non-profit (一般社団法人 → NPO) with a transparent, published budget and funding gates. We are assembling patient capital across a five-layer stack — founder, grants, foundations, corporate partnerships, and operating revenue. If your horizon matches ours, we welcome the conversation.', 'body_jp' => '本事業は非営利（一般社団法人→NPO法人）であり、公開された予算と資金ゲートを持ちます。創業者・補助金・財団・企業連携・事業収益の五層構造で長期資本を組成しています。時間軸が一致するなら、ぜひご相談ください。', 'cta' => 'For investors', 'href' => '/#funding' ],
+						[ 'id' => 'advise', 'num' => '§ 04', 'label' => 'Advise', 'title_en' => 'Lend your <em>expertise.</em>', 'title_jp' => '知見を貸してください。', 'body' => 'We are building an advisory board across forestry, distributed energy, edge compute, rural governance, and Japanese non-profit law. Advisors give occasional, high-leverage guidance — not day-to-day work. (Ray Ozzie confirmed, 2026.)', 'body_jp' => '林業・分散型エネルギー・エッジコンピュート・農村ガバナンス・日本の非営利法にわたる顧問会を組成しています。顧問は日常業務ではなく、要所での助言をお願いするものです。（レイ・オジー就任確約、2026年）', 'cta' => '', 'href' => '' ],
+						[ 'id' => 'partner', 'num' => '§ 05', 'label' => 'Partner', 'title_en' => 'Companies, NGOs, landowners &amp; <em>volunteers.</em>', 'title_jp' => '企業・NGO・土地所有者・ボランティア。', 'body' => 'Corporate partners (CSR-aligned), reforestation and J-Credit NGOs, forest landowners, and volunteers for tree-survey and eco-tourism activities. There are many ways to contribute time, land, or capability without relocating.', 'body_jp' => '企業パートナー（CSR連携）、再植林・JクレジットのNGO、森林所有者、そして樹木調査・エコツーリズム活動のボランティア。移住せずとも、時間・土地・能力で貢献する方法が数多くあります。', 'cta' => '', 'href' => '' ],
+					],
+				],
 				'join_email' => [
 					'tab'     => 'join',
-					'label'   => __( 'Recruitment contact email (falls back to CTA email if blank)', 'mitsue' ),
+					'label'   => __( 'Contact email (falls back to CTA email if blank)', 'mitsue' ),
 					'type'    => 'email',
 					'default' => '',
 				],
