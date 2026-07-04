@@ -409,6 +409,115 @@ if ( ! class_exists( 'Mitsue_Admin_Page' ) ) {
 					],
 				],
 
+				/* ─── Join Page (/join) ─────────────────────────────── */
+				'join_eyebrow' => [
+					'tab'     => 'join',
+					'label'   => __( 'Eyebrow text', 'mitsue' ),
+					'type'    => 'text',
+					'default' => 'Careers · 御杖村森林組合 × Mitsue Project',
+				],
+				'join_headline_en' => [
+					'tab'     => 'join',
+					'label'   => __( 'Headline (EN) — wrap accent words in <em>…</em>', 'mitsue' ),
+					'type'    => 'textarea',
+					'default' => 'Rewild a mountain, power an AI data center, <em>and rebuild a village.</em>',
+				],
+				'join_headline_jp' => [
+					'tab'     => 'join',
+					'label'   => __( 'Headline (JP)', 'mitsue' ),
+					'type'    => 'text',
+					'default' => '山を再生し、AIデータセンターを動かし、村を再建する。',
+				],
+				'join_lede_en' => [
+					'tab'     => 'join',
+					'label'   => __( 'Intro paragraph (EN)', 'mitsue' ),
+					'type'    => 'textarea',
+					'default' => 'One job, one place, one 25-year story. We are growing the Mitsue forestry cooperative to restore native forest and power a community-owned data center — and we are looking for people who want to build it.',
+				],
+				'join_lede_jp' => [
+					'tab'     => 'join',
+					'label'   => __( 'Intro paragraph (JP)', 'mitsue' ),
+					'type'    => 'textarea',
+					'default' => 'ひとつの仕事、ひとつの場所、25年の物語。私たちは御杖村森林組合を拡大し、在来林を再生して地域所有のデータセンターを動かします——それを共に築く仲間を探しています。',
+				],
+				'join_pillars' => [
+					'tab'     => 'join',
+					'label'   => __( 'The Work — three pillars', 'mitsue' ),
+					'type'    => 'repeater',
+					'columns' => [ 'num' => 'Numeral', 'title_en' => 'Title EN', 'title_jp' => 'Title JP', 'body' => 'Body EN (paragraphs with |)', 'body_jp' => 'Body JP (paragraphs with |)', 'tag' => 'Footer tag' ],
+					'defaults' => [
+						[ 'num' => '🌱 01', 'title_en' => 'Reforest', 'title_jp' => '再生 · 生きた在来林を取り戻す', 'body' => "Not \"cut trees\" — the opposite. Convert dark, lifeless sugi monoculture into living native broadleaf forest: oak and konara for wildlife forage, returning birds, insects and balance, protecting watersheds and reducing landslide risk.|A multi-decade legacy you can walk through — the forest our ancestors planted for timber, remade into the forest we leave our descendants.", 'body_jp' => "「木を切る」のではなくその逆。暗く生命の乏しい杉一斉林を、生きた在来広葉樹林へ転換します。コナラ・クヌギで野生動物の餌を確保し、鳥や昆虫、生態系の均衡を取り戻し、水源を守り土砂災害リスクを下げます。|実際に歩いて確かめられる数十年の遺産——先人が木材のために植えた森を、子孫に遺す森へ。", 'tag' => 'For ecologists & conservationists' ],
+						[ 'num' => '⚡ 02', 'title_en' => 'Power', 'title_jp' => '動力 · エネルギーと村営データセンター', 'body' => "The same forest work literally powers computation — biomass CHP, salt-battery storage, and a village-owned AI data center. Frontier technology, not analog forestry.|You can stand in the forest you replanted and point at the servers it runs.", 'body_jp' => "同じ森の仕事が、計算資源を文字どおり動かします——バイオマスCHP、ソルトバッテリー蓄熱、村営AIデータセンター。アナログな林業ではなく、最先端の技術です。|自分が植え直した森に立ち、それが動かすサーバーを指さすことができます。", 'tag' => 'For technologists & engineers' ],
+						[ 'num' => '🏡 03', 'title_en' => 'Revive', 'title_jp' => '再建 · 未来のある村を取り戻す', 'body' => "A depopulating mountain village given a genuine next chapter — jobs, families, energy self-sufficiency, disaster resilience. Rural life with a future, not nostalgia.", 'body_jp' => "過疎の山村に本物の次章を——雇用、家族、エネルギー自給、防災。郷愁ではなく、未来のある地方生活です。", 'tag' => 'For U/I-turn returnees & families' ],
+					],
+				],
+				'join_work_intro_en' => [
+					'tab'     => 'join',
+					'label'   => __( 'The Work — subheading (EN)', 'mitsue' ),
+					'type'    => 'text',
+					'default' => 'Most rural jobs offer one thread. This offers all three, woven together — and each pillar draws a different kind of person.',
+				],
+				'join_work_intro_jp' => [
+					'tab'     => 'join',
+					'label'   => __( 'The Work — subheading (JP)', 'mitsue' ),
+					'type'    => 'text',
+					'default' => '多くの地方の仕事は1本の糸しか提供しません。これは3本を編み合わせて提供します——各柱が異なる層に届きます。',
+				],
+				'join_stack' => [
+					'tab'     => 'join',
+					'label'   => __( 'Support — subsidy stack rows', 'mitsue' ),
+					'type'    => 'repeater',
+					'columns' => [ 'scheme' => 'Scheme', 'who' => 'Funder → recipient', 'val' => 'Value EN', 'val_jp' => 'Value JP' ],
+					'defaults' => [
+						[ 'scheme' => '緑の雇用 (Green Employment)', 'who' => '林野庁 → the co-op', 'val' => 'Wage + ~3-yr OJT training subsidy for new forestry recruits', 'val_jp' => '新規就業者の人件費＋約3年のOJT研修助成' ],
+						[ 'scheme' => '地域おこし協力隊', 'who' => '総務省 → via 御杖村', 'val' => '~¥5.2M/yr (salary + activity), up to 3 yrs, + up to ¥1M startup grant', 'val_jp' => '報償費＋活動費 約520万円/年、最長3年、＋起業支援最大100万円' ],
+						[ 'scheme' => '移住支援金 (Relocation grant)', 'who' => '国 + 県 + 町 → you', 'val' => 'Household up to ¥1M + up to ¥1M per child; single ¥0.6M', 'val_jp' => '世帯 最大100万円＋子1人最大100万円／単身60万円' ],
+						[ 'scheme' => '空き家バンク + housing', 'who' => '御杖村', 'val' => 'Vacant-house match + renovation support', 'val_jp' => '空き家マッチング＋改修支援' ],
+					],
+				],
+				'join_stack_note_en' => [
+					'tab'     => 'join',
+					'label'   => __( 'Support — closing line (EN)', 'mitsue' ),
+					'type'    => 'text',
+					'default' => 'The grants get you to parity. The mission is the reason to come — and the reason to stay.',
+				],
+				'join_stack_note_jp' => [
+					'tab'     => 'join',
+					'label'   => __( 'Support — closing line (JP)', 'mitsue' ),
+					'type'    => 'text',
+					'default' => '補助金は「並び」に到達させ、使命こそが来る理由、そして留まる理由です。',
+				],
+				'join_cta_head_en' => [
+					'tab'     => 'join',
+					'label'   => __( 'Closing CTA — heading (EN)', 'mitsue' ),
+					'type'    => 'text',
+					'default' => 'Want to build this with us?',
+				],
+				'join_cta_head_jp' => [
+					'tab'     => 'join',
+					'label'   => __( 'Closing CTA — heading (JP)', 'mitsue' ),
+					'type'    => 'text',
+					'default' => '一緒に築きませんか？',
+				],
+				'join_cta_body_en' => [
+					'tab'     => 'join',
+					'label'   => __( 'Closing CTA — body (EN)', 'mitsue' ),
+					'type'    => 'textarea',
+					'default' => "Tell us which pillar pulls you — forest, energy, or village — and where you're coming from. No forestry experience required; curiosity and commitment matter more.",
+				],
+				'join_cta_body_jp' => [
+					'tab'     => 'join',
+					'label'   => __( 'Closing CTA — body (JP)', 'mitsue' ),
+					'type'    => 'textarea',
+					'default' => 'どの柱に惹かれるか（森・エネルギー・村）と、今どちらにお住まいかをお知らせください。林業経験は不問です。好奇心と覚悟を重視します。',
+				],
+				'join_email' => [
+					'tab'     => 'join',
+					'label'   => __( 'Recruitment contact email (falls back to CTA email if blank)', 'mitsue' ),
+					'type'    => 'email',
+					'default' => '',
+				],
+
 				/* ─── CTA ───────────────────────────────────────────── */
 				'cta_intro_en' => [
 					'tab'     => 'cta',
@@ -518,6 +627,7 @@ if ( ! class_exists( 'Mitsue_Admin_Page' ) ) {
 				'principles' => __( 'Principles', 'mitsue' ),
 				'status'     => __( 'Status',     'mitsue' ),
 				'cta'        => __( 'CTA',        'mitsue' ),
+				'join'       => __( 'Join Page',  'mitsue' ),
 			];
 		}
 
