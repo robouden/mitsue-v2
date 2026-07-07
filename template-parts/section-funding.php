@@ -19,13 +19,13 @@ $total_budget    = mitsue_get('funding_total_budget','¥245M');
       <div>
         <h2>A <em>five-layer stack</em> — protecting against early dependence on any single source.</h2>
         <div class="h2-jp jp">五層構造の資金調達 — 単一財源への早期依存を避ける</div>
-        <div class="h2-sub body-en">Each layer is unlocked by the deliverables of the prior phase. Figures reflect commitments and pipeline as of the Baseline Rev 1 plan (May 2026); the remaining gap to the project's full budget is to be closed during Phases 2–3.</div>
-        <div class="h2-sub body-jp jp">各層は前フェーズの成果によって開放されます。数字はベースラインRev 1計画（2026年5月）時点の確約・パイプラインを反映しており、事業全体の予算との差額はフェーズ2〜3で解消する計画です。</div>
+        <div class="h2-sub body-en">Each layer is unlocked by the deliverables of the prior phase. Figures are funding targets under the Baseline Rev 1 plan (May 2026) — sources we are pursuing or applying to, not funds secured or received; the remaining gap to the project's full budget is to be closed during Phases 2–3.</div>
+        <div class="h2-sub body-jp jp">各層は前フェーズの成果によって開放されます。数字はベースラインRev 1計画（2026年5月）時点の資金調達目標であり、現在申請・交渉中の資金源を示すもので、確保済み・受領済みの資金ではありません。事業全体の予算との差額はフェーズ2〜3で解消する計画です。</div>
       </div>
     </div>
     <table class="funding">
       <thead>
-        <tr><th></th><th>Source</th><th>Committed / Pipeline</th></tr>
+        <tr><th></th><th>Source</th><th>Target (unsecured)</th></tr>
       </thead>
       <tbody>
         <?php foreach ($rows as $r): ?>
@@ -41,7 +41,7 @@ $total_budget    = mitsue_get('funding_total_budget','¥245M');
           </tr>
         <?php endforeach; ?>
         <tr class="total">
-          <td></td><td><span class="body-en">Total raised / committed</span><span class="body-jp jp"> · 確約・調達済み合計</span></td>
+          <td></td><td><span class="body-en">Total funding target (unsecured)</span><span class="body-jp jp"> · 資金調達目標合計（未確保）</span></td>
           <td class="num"><?php echo esc_html($total_committed); ?></td>
         </tr>
         <tr class="total">
