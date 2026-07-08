@@ -7,7 +7,7 @@
           <div class="mark" aria-hidden="true"><?php echo esc_html( get_theme_mod('mitsue_logo_mark','御') ); ?></div>
           <div class="name">
             <div class="en"><?php bloginfo('name'); ?></div>
-            <div class="jp"><?php echo esc_html( get_theme_mod('mitsue_logo_jp','御杖プロジェクト') ); ?></div>
+            <div class="jp"><?php echo esc_html( get_theme_mod('mitsue_logo_jp','御杖くんプロジェクト') ); ?></div>
           </div>
         </div>
         <p style="font-size:13px;color:var(--ink-mute);max-width:320px;line-height:1.65;margin:0;">
@@ -56,7 +56,7 @@
       </div>
     </div>
     <div class="foot-meta">
-      <div>© <?php echo esc_html(date('Y')); ?> Mitsue Project · 御杖プロジェクト</div>
+      <div>© <?php echo esc_html(date('Y')); ?> Mitsue-kun Project · 御杖くんプロジェクト</div>
       <div>CC-BY 4.0 · DOCUMENTS &amp; DATA RELEASED UNDER OPEN LICENCES</div>
     </div>
   </div>

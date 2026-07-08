@@ -78,7 +78,7 @@ if ( ! class_exists( 'Mitsue_Customizer' ) ) {
 				[
 					'type'    => 'setting',
 					'id'      => 'mitsue_logo_jp',
-					'default' => '御杖プロジェクト',
+					'default' => '御杖くんプロジェクト',
 					'sanitize'=> 'sanitize_text_field',
 				],
 				[

@@ -1,6 +1,6 @@
 <?php
 /**
- * Mitsue Project — functions.php
+ * Mitsue-kun Project — functions.php
  *
  * Architecture (inspired by Astra):
  *  • All settings live in ONE option array: get_option('mitsue_options').

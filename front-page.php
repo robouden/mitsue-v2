@@ -1,6 +1,6 @@
 <?php
 /**
- * Front page — Mitsue Project investor landing
+ * Front page — Mitsue-kun Project investor landing
  * @package Mitsue
  */
 get_header();
