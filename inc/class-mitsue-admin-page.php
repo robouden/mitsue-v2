@@ -120,7 +120,7 @@ if ( ! class_exists( 'Mitsue_Admin_Page' ) ) {
 					'tab'     => 'hero',
 					'label'   => __( 'Intro paragraph (EN)', 'mitsue' ),
 					'type'    => 'textarea',
-					'default' => 'The Mitsue-kun Project repurposes an unused school or a disused village factory building and the forests around it into a single, transparent, openly replicable demonstration of rural revitalization — modest in scale, patient in horizon, built to be copied.',
+					'default' => 'The BIOMASS ENERGY & AI project repurposes an unused school or a disused village factory building and the forests around it into a single, transparent, openly replicable demonstration of rural revitalization — modest in scale, patient in horizon, built to be copied.',
 				],
 				'hero_lede_jp' => [
 					'tab'     => 'hero',
@@ -263,7 +263,7 @@ if ( ! class_exists( 'Mitsue_Admin_Page' ) ) {
 					'type'    => 'repeater',
 					'columns' => [ 'initials' => 'Initials', 'name' => 'Full name', 'link' => 'Link URL', 'photo' => 'Photo', 'credit' => 'Bio EN', 'credit_jp' => 'Bio JP' ],
 					'defaults' => [
-						[ 'initials' => 'R.O.', 'name' => 'Rob Oudendijk', 'link' => 'https://about.me/robouden', 'credit' => 'Founder of the Mitsue-kun Project. Founder of YR-Design, a design and technology studio based in the Netherlands, and a core contributor to Safecast — the open environmental monitoring network established after Fukushima. His work spans interaction design, hardware development, and open-source environmental data.', 'credit_jp' => '御杖くんプロジェクト創業者。オランダを拠点とするデザイン・テクノロジースタジオ「YR-Design」の創設者であり、福島第一原発事故後に設立されたオープン環境モニタリングネットワーク「Safecast」のコア・コントリビューター。インタラクションデザイン・ハードウェア開発・オープンソース環境データの領域を横断して活動している。' ],
+						[ 'initials' => 'R.O.', 'name' => 'Rob Oudendijk', 'link' => 'https://about.me/robouden', 'credit' => 'Founder of the BIOMASS ENERGY & AI project. Founder of YR-Design, a design and technology studio based in the Netherlands, and a core contributor to Safecast — the open environmental monitoring network established after Fukushima. His work spans interaction design, hardware development, and open-source environmental data.', 'credit_jp' => 'バイオマスエネルギーとAI創業者。オランダを拠点とするデザイン・テクノロジースタジオ「YR-Design」の創設者であり、福島第一原発事故後に設立されたオープン環境モニタリングネットワーク「Safecast」のコア・コントリビューター。インタラクションデザイン・ハードウェア開発・オープンソース環境データの領域を横断して活動している。' ],
 					],
 				],
 				'advisors' => [

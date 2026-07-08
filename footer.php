@@ -56,7 +56,7 @@
       </div>
     </div>
     <div class="foot-meta">
-      <div>© <?php echo esc_html(date('Y')); ?> Mitsue-kun Project · 御杖くんプロジェクト</div>
+      <div>© <?php echo esc_html(date('Y')); ?> BIOMASS ENERGY &amp; AI · バイオマスエネルギーとAI</div>
       <div>CC-BY 4.0 · DOCUMENTS &amp; DATA RELEASED UNDER OPEN LICENCES</div>
     </div>
   </div>

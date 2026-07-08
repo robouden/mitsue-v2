@@ -1,6 +1,6 @@
 <?php
 /**
- * Mitsue-kun Project — functions.php
+ * BIOMASS ENERGY & AI — functions.php
  *
  * Architecture (inspired by Astra):
  *  • All settings live in ONE option array: get_option('mitsue_options').

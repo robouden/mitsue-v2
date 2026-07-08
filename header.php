@@ -45,7 +45,7 @@
         <div class="mark" aria-hidden="true"><?php echo esc_html( get_theme_mod('mitsue_logo_mark', '御') ); ?></div>
         <div class="name">
           <div class="en"><?php bloginfo('name'); ?></div>
-          <div class="jp"><?php echo esc_html( get_theme_mod('mitsue_logo_jp', '御杖くんプロジェクト') ); ?></div>
+          <div class="jp"><?php echo esc_html( get_theme_mod('mitsue_logo_jp', 'バイオマスエネルギーとAI') ); ?></div>
         </div>
       </a>
       <button class="nav-toggle" aria-label="Menu" aria-expanded="false">

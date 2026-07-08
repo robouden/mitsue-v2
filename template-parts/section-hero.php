@@ -1,9 +1,13 @@
 <?php
 $eyebrow     = mitsue_get('hero_eyebrow', 'A 25-YEAR INITIATIVE · 二十五年計画');
+$title_jp    = mitsue_get('hero_title_jp', 'バイオマスエネルギーとAI');
+$subtitle_jp = mitsue_get('hero_subtitle_jp', '御杖村における地域植林');
+$title_en    = mitsue_get('hero_title_en', 'BIOMASS ENERGY & AI');
+$subtitle_en = mitsue_get('hero_subtitle_en', 'Reforesting in Mitsue');
 $headline_en = mitsue_get('hero_headline_en', 'Forest restoration, distributed energy, and a <em>community-owned</em> data center — in rural Japan.');
 $headline_jp = mitsue_get('hero_headline_jp', '森林再生・分散型再生可能エネルギー・地域所有のデータセンター');
-$lede_en     = mitsue_get('hero_lede_en', 'The Mitsue-kun Project repurposes an unused school or a disused village factory building and the forests around it into a single, transparent, openly replicable demonstration of rural revitalization — modest in scale, patient in horizon, built to be copied.');
-$lede_jp     = mitsue_get('hero_lede_jp', '御杖くんプロジェクトは、未使用の学校または廃村工場と、その周囲の森林を、農山村再生の透明で再現可能な統合モデルへと転換する取り組みです。');
+$lede_en     = mitsue_get('hero_lede_en', 'The BIOMASS ENERGY & AI project repurposes an unused school or a disused village factory building and the forests around it into a single, transparent, openly replicable demonstration of rural revitalization — modest in scale, patient in horizon, built to be copied.');
+$lede_jp     = mitsue_get('hero_lede_jp', 'バイオマスエネルギーとAIは、未使用の学校または廃村工場と、その周囲の森林を、農山村再生の透明で再現可能な統合モデルへと転換する取り組みです。');
 $meta        = mitsue_rows('hero_meta', [
   ['k'=>'LOCATION',    'v'=>'Mitsue Village','sub'=>'Nara Prefecture · 奈良県御杖村'],
   ['k'=>'HORIZON',     'v'=>'25 Years',      'sub'=>'Bridging today to small-scale fusion'],
@@ -14,6 +18,14 @@ $meta        = mitsue_rows('hero_meta', [
 <header class="hero">
   <div class="wrap">
     <div class="eyebrow"><?php echo wp_kses_post($eyebrow); ?></div>
+    <div class="brand-title jp">
+      <div class="brand-title-main"><?php echo esc_html($title_jp); ?></div>
+      <div class="brand-title-sub"><?php echo esc_html($subtitle_jp); ?></div>
+    </div>
+    <div class="brand-title">
+      <div class="brand-title-main"><?php echo esc_html($title_en); ?></div>
+      <div class="brand-title-sub"><?php echo esc_html($subtitle_en); ?></div>
+    </div>
     <h1><?php echo wp_kses_post($headline_en); ?></h1>
     <div class="h1-jp jp"><?php echo esc_html($headline_jp); ?></div>
     <p class="hero-tagline">The forest our ancestors planted — the power that sustains the village they built<span class="jp">先人が植えた森が、今、村を支える力になる。</span></p>

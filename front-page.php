@@ -1,6 +1,6 @@
 <?php
 /**
- * Front page — Mitsue-kun Project investor landing
+ * Front page — BIOMASS ENERGY & AI investor landing
  * @package Mitsue
  */
 get_header();
