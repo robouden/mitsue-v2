@@ -50,6 +50,13 @@ a{color:inherit;}
 .wrap{max-width:1240px;margin:0 auto;padding:0 48px;}
 @media(max-width:720px){.wrap{padding:0 24px;}}
 
+/* ── Disclaimer banner ────────────────────────────────────────────────────── */
+.disclaimer-banner{background:oklch(0.30 0.04 150);color:var(--paper);font-size:12.5px;line-height:1.5;text-align:center;}
+.disclaimer-banner .wrap{padding:8px 48px;display:flex;flex-direction:column;gap:2px;}
+.disclaimer-banner strong{font-weight:700;}
+.disclaimer-banner .jp{font-family:var(--sans-jp);}
+@media(max-width:760px){.disclaimer-banner .wrap{padding:8px 24px;}}
+
 /* ── Utility bar ──────────────────────────────────────────────────────────── */
 .utility{border-bottom:1px solid var(--rule);font-size:12px;color:var(--ink-mute);background:var(--bg);position:sticky;top:0;z-index:100;}
 .utility .row{display:flex;justify-content:space-between;align-items:center;height:40px;gap:24px;flex-wrap:nowrap;}

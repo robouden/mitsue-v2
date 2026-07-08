@@ -12,6 +12,13 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 
+<div class="disclaimer-banner" role="note">
+  <div class="wrap">
+    <span>&#9888;&nbsp; This is an independent community project and is <strong>not affiliated with, endorsed by, or operated by Mitsue Village Government (御杖村役場)</strong>.</span>
+    <span class="jp">&#9888;&nbsp; 本サイトは民間の独立プロジェクトであり、<strong>御杖村役場とは一切関係ありません</strong>。</span>
+  </div>
+</div>
+
 <div class="utility">
   <div class="wrap">
     <div class="row">
