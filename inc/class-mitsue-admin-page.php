@@ -314,7 +314,7 @@ if ( ! class_exists( 'Mitsue_Admin_Page' ) ) {
 					'tab'     => 'funding',
 					'label'   => __( 'Funding stack rows', 'mitsue' ),
 					'type'    => 'repeater',
-					'columns' => [ 'layer' => 'Layer', 'name' => 'Source name', 'desc' => 'Description EN', 'desc_jp' => 'Description JP', 'committed' => 'Committed / Pipeline' ],
+					'columns' => [ 'layer' => 'Layer', 'name' => 'Source name', 'desc' => 'Description EN', 'desc_jp' => 'Description JP', 'committed' => 'Target amount (unsecured — none raised/committed yet)' ],
 					'defaults' => [
 						[ 'layer' => 'L1', 'name' => 'Founder / private capital', 'desc' => 'Self-funded ramp; founder commitments',                                    'desc_jp' => '自己資金による立ち上げ；創業者コミットメント',                   'committed' => '¥6M' ],
 						[ 'layer' => 'L2', 'name' => 'Government grants',          'desc' => 'NEDO · METI · Nara Prefecture · Mitsue Village',                          'desc_jp' => 'NEDO・経済産業省・奈良県・御杖村',                               'committed' => '¥115M' ],
@@ -325,7 +325,7 @@ if ( ! class_exists( 'Mitsue_Admin_Page' ) ) {
 				],
 				'funding_total_committed' => [
 					'tab'     => 'funding',
-					'label'   => __( 'Total — Raised / Committed', 'mitsue' ),
+					'label'   => __( 'Total — Funding Target (unsecured; ¥0 raised/committed)', 'mitsue' ),
 					'type'    => 'text',
 					'default' => '¥192M',
 				],
