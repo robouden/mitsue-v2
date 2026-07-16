@@ -126,7 +126,7 @@ if ( ! class_exists( 'Mitsue_Admin_Page' ) ) {
 					'tab'     => 'hero',
 					'label'   => __( 'Intro paragraph (JP)', 'mitsue' ),
 					'type'    => 'textarea',
-					'default' => '御杖くんプロジェクトは、未使用の学校または廃村工場と、その周囲の森林を、農山村再生の透明で再現可能な統合モデルへと転換する取り組みです。',
+					'default' => 'バイオマスエネルギーとAIプロジェクトは、未使用の学校または廃村工場と、その周囲の森林を、農山村再生の透明で再現可能な統合モデルへと転換する取り組みです。',
 				],
 				'hero_meta' => [
 					'tab'     => 'hero',
@@ -274,7 +274,7 @@ if ( ! class_exists( 'Mitsue_Admin_Page' ) ) {
 					'defaults' => [
 						[ 'initials' => 'R.O.', 'name' => 'Ray Ozzie', 'link' => 'https://en.wikipedia.org/wiki/Ray_Ozzie', 'credit' => 'Software pioneer; former Chief Software Architect at Microsoft. Decades of work on distributed systems, collaboration software, and the discipline of small, accountable platforms. Confirmed May 5, 2026.', 'credit_jp' => 'ソフトウェアの先駆者、マイクロソフト元チーフソフトウェアアーキテクト。分散システム・コラボレーションソフトウェア・小規模で説明責任を果たすプラットフォームの設計原則に数十年従事。2026年5月5日に顧問就任を承諾。' ],
 						[ 'initials' => 'S.P.', 'name' => 'San Poisson',    'link' => '', 'credit' => 'Project Manager.', 'credit_jp' => 'プロジェクトマネージャー。' ],
-						[ 'initials' => '·',    'name' => 'Advisor 4 — TBD', 'link' => '', 'credit' => 'To be confirmed.', 'credit_jp' => '確定待ち。' ],
+						[ 'initials' => 'H.T.', 'name' => 'Henry Seiichi Takata', 'link' => '', 'credit' => 'Representative Director, SynTech Japan Co., Ltd.; member of the Japan Board of the U.S.-Japan Council. Formerly operated a biomass power plant in Mie Prefecture. Advises on biomass-CHP plant selection, grid/FIT strategy, and business development. Confirmed July 16, 2026.', 'credit_jp' => 'シンテック・ジャパン株式会社 代表取締役、米日カウンシル日本理事。三重県でバイオマス発電所を運営した経験を持つ。バイオマス熱電併給（CHP）設備の選定、系統連系・FIT戦略、事業開発を助言。2026年7月16日確認。' ],
 					],
 				],
 				'founders' => [
