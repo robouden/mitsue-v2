@@ -1,6 +1,6 @@
 <?php /** @package Mitsue */ ?>
 <footer role="contentinfo" style="position:relative;">
-  <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/Mitsue-kun_16-removebg-preview.png' ); ?>" alt="" aria-hidden="true" style="position:absolute;right:24px;bottom:0;width:150px;height:auto;pointer-events:none;">
+  <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/Mitsue-kun_16-removebg-preview.png' ); ?>" alt="" aria-hidden="true" style="position:absolute;right:24px;bottom:48px;width:150px;height:auto;pointer-events:none;">
   <div class="wrap">
     <div class="foot-grid">
       <div>
