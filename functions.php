@@ -69,6 +69,42 @@ add_action( 'wp_head', function () {
 	echo '<meta property="og:image" content="' . esc_url( $image ) . '">' . "\n";
 	echo '<meta property="og:locale" content="ja_JP">' . "\n";
 	echo '<meta name="twitter:card" content="summary_large_image">' . "\n";
+
+	if ( $is_home ) {
+		echo '<meta name="keywords" content="Rob Oudendijk, ロブ・アウデンダイク, Henry Seiichi Takata, 高田誠一, Joi Ito, 伊藤穰一, 御杖村, Mitsue Village, バイオマスエネルギー, biomass energy, AI data center, 奈良県">' . "\n";
+
+		$json_ld = [
+			'@context' => 'https://schema.org',
+			'@type'    => 'Organization',
+			'name'     => 'BIOMASS ENERGY & AI — Mitsue Village Project',
+			'alternateName' => '御杖村バイオマスエネルギー＆AIプロジェクト',
+			'url'      => home_url( '/' ),
+			'member'   => [
+				[
+					'@type'    => 'Person',
+					'name'     => 'Rob Oudendijk',
+					'alternateName' => 'ロブ・アウデンダイク',
+					'jobTitle' => 'Founder',
+					'url'      => 'https://about.me/robouden',
+				],
+				[
+					'@type'    => 'Person',
+					'name'     => 'Henry Seiichi Takata',
+					'alternateName' => '高田誠一',
+					'jobTitle' => 'Advisory Board Member',
+				],
+			],
+			'mentions' => [
+				[
+					'@type'    => 'Person',
+					'name'     => 'Joi Ito',
+					'alternateName' => '伊藤穰一',
+					'description' => 'Referral / inspiration contact for outreach; not yet a formal advisor or partner.',
+				],
+			],
+		];
+		echo '<script type="application/ld+json">' . wp_json_encode( $json_ld, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES ) . '</script>' . "\n";
+	}
 }, 2 );
 
 add_action( 'wp_enqueue_scripts', function () {
