@@ -84,6 +84,17 @@ add_action( 'wp_head', function () {
 			'name'     => 'BIOMASS ENERGY & AI — Mitsue Village Project',
 			'alternateName' => '御杖村バイオマスエネルギー＆AIプロジェクト',
 			'url'      => home_url( '/' ),
+			'logo'     => MITSUE_URI . '/assets/images/mitsue04.jpg',
+			'description' => '森林再生、分散型再生可能エネルギー、地域所有のデータセンターを統合した農山村再生モデル。',
+			'address'  => [
+				'@type'         => 'PostalAddress',
+				'addressLocality' => '御杖村',
+				'addressRegion'   => '奈良県',
+				'addressCountry'  => 'JP',
+			],
+			'sameAs'   => [
+				'https://www.vill.mitsue.nara.jp/',
+			],
 			'member'   => [
 				[
 					'@type'    => 'Person',
