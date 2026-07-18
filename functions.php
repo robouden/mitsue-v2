@@ -43,6 +43,34 @@ add_action( 'wp_head', function () {
 	echo '<link rel="preload" as="font" type="font/woff2" crossorigin href="' . esc_url( get_stylesheet_directory_uri() . '/assets/fonts/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxeKYY.woff2' ) . '">' . "\n";
 }, 1 );
 
+/* ── SEO: title, meta description, Open Graph, canonical ───────────────── */
+add_filter( 'document_title_parts', function ( $parts ) {
+	if ( is_front_page() ) {
+		$parts = [ 'title' => '御杖村バイオマスエネルギー＆AIプロジェクト | 奈良県御杖村' ];
+	}
+	return $parts;
+} );
+
+add_action( 'wp_head', function () {
+	$is_home = is_front_page();
+	$desc    = $is_home
+		? '奈良県御杖村で進む地域主導のバイオマスエネルギー＆AIデータセンター構想。森林資源を活用し、再生可能エネルギーと地方創生を両立する25年計画。'
+		: wp_strip_all_tags( get_the_excerpt() );
+	$title   = $is_home ? '御杖村バイオマスエネルギー＆AIプロジェクト | 奈良県御杖村' : wp_get_document_title();
+	$url     = $is_home ? home_url( '/' ) : get_permalink();
+	$image   = MITSUE_URI . '/assets/images/mitsue04.jpg';
+
+	echo "\n" . '<meta name="description" content="' . esc_attr( $desc ) . '">' . "\n";
+	echo '<link rel="canonical" href="' . esc_url( $url ) . '">' . "\n";
+	echo '<meta property="og:type" content="website">' . "\n";
+	echo '<meta property="og:title" content="' . esc_attr( $title ) . '">' . "\n";
+	echo '<meta property="og:description" content="' . esc_attr( $desc ) . '">' . "\n";
+	echo '<meta property="og:url" content="' . esc_url( $url ) . '">' . "\n";
+	echo '<meta property="og:image" content="' . esc_url( $image ) . '">' . "\n";
+	echo '<meta property="og:locale" content="ja_JP">' . "\n";
+	echo '<meta name="twitter:card" content="summary_large_image">' . "\n";
+}, 2 );
+
 add_action( 'wp_enqueue_scripts', function () {
 	// Latin fonts self-hosted — no external request, no render block
 	wp_enqueue_style(
