@@ -1,6 +1,5 @@
 <?php /** @package Mitsue */ ?>
-<footer role="contentinfo" style="position:relative;">
-  <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/Mitsue-kun_16-removebg-preview.png' ); ?>" alt="" aria-hidden="true" style="position:absolute;right:24px;bottom:48px;width:150px;height:auto;pointer-events:none;">
+<footer role="contentinfo">
   <div class="wrap">
     <div class="foot-grid">
       <div>
@@ -54,6 +53,9 @@
           <?php endif; ?>
           <li style="padding-top:12px;"><a href="https://codeberg.org/YR-Design" target="_blank" rel="noopener">codeberg.org / YR-Design ↗</a></li>
         </ul>
+      </div>
+      <div class="foot-mascot">
+        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/Mitsue-kun_16-removebg-preview.png' ); ?>" alt="" aria-hidden="true">
       </div>
     </div>
     <div class="foot-meta">
