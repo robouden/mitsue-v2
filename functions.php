@@ -43,6 +43,11 @@ add_action( 'wp_head', function () {
 	echo '<link rel="preload" as="font" type="font/woff2" crossorigin href="' . esc_url( get_stylesheet_directory_uri() . '/assets/fonts/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxeKYY.woff2' ) . '">' . "\n";
 }, 1 );
 
+/* ── SEO: drop the users sitemap (avoids exposing WP usernames via /author/) ── */
+add_filter( 'wp_sitemaps_add_provider', function ( $provider, $name ) {
+	return 'users' === $name ? false : $provider;
+}, 10, 2 );
+
 /* ── SEO: title, meta description, Open Graph, canonical ───────────────── */
 add_filter( 'document_title_parts', function ( $parts ) {
 	if ( is_front_page() ) {
