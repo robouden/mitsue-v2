@@ -71,7 +71,7 @@ add_action( 'wp_head', function () {
 	echo '<meta name="twitter:card" content="summary_large_image">' . "\n";
 
 	if ( $is_home ) {
-		echo '<meta name="keywords" content="Rob Oudendijk, ロブ・アウデンダイク, Henry Seiichi Takata, 高田誠一, Joi Ito, 伊藤穰一, 御杖村, Mitsue Village, バイオマスエネルギー, biomass energy, AI data center, 奈良県">' . "\n";
+		echo '<meta name="keywords" content="Rob Oudendijk, ロブ・アウデンダイク, Henry Seiichi Takata, 高田誠一, Ray Ozzie, レイ・オジー, Takuo Dome, 堂目卓生, Elvin Zoet, エルヴィン・ズート, Yoshiko Zoet-Susuki, 鈴木佳子, Joi Ito, 伊藤穰一, 御杖村, Mitsue Village, バイオマスエネルギー, biomass energy, AI data center, 奈良県">' . "\n";
 
 		$json_ld = [
 			'@context' => 'https://schema.org',
@@ -91,6 +91,31 @@ add_action( 'wp_head', function () {
 					'@type'    => 'Person',
 					'name'     => 'Henry Seiichi Takata',
 					'alternateName' => '高田誠一',
+					'jobTitle' => 'Advisory Board Member',
+				],
+				[
+					'@type'    => 'Person',
+					'name'     => 'Ray Ozzie',
+					'alternateName' => 'レイ・オジー',
+					'jobTitle' => 'Advisory Board Member',
+					'url'      => 'https://en.wikipedia.org/wiki/Ray_Ozzie',
+				],
+				[
+					'@type'    => 'Person',
+					'name'     => 'Takuo Dome',
+					'alternateName' => '堂目卓生',
+					'jobTitle' => 'Advisory Board Member',
+				],
+				[
+					'@type'    => 'Person',
+					'name'     => 'Elvin Zoet',
+					'alternateName' => 'エルヴィン・ズート',
+					'jobTitle' => 'Advisory Board Member',
+				],
+				[
+					'@type'    => 'Person',
+					'name'     => 'Yoshiko Zoet-Susuki',
+					'alternateName' => '鈴木佳子（ズート）',
 					'jobTitle' => 'Advisory Board Member',
 				],
 			],
