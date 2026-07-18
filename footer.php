@@ -55,7 +55,9 @@
         </ul>
       </div>
       <div class="foot-mascot">
-        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/Mitsue-kun_16-removebg-preview.png' ); ?>" alt="" aria-hidden="true">
+        <a href="https://codeberg.org/YR-Design/mitsue-ai-data-center/src/branch/main/mitsue_kun_mascot_explainer.md#english" target="_blank" rel="noopener">
+          <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/Mitsue-kun_16-removebg-preview.png' ); ?>" alt="Who is Mitsue-kun?">
+        </a>
       </div>
     </div>
     <div class="foot-meta">
