@@ -6,6 +6,7 @@ $advisors = mitsue_rows('advisors', [
   ['initials'=>'R.O.','name'=>'Ray Ozzie','credit'=>'Software pioneer; former Chief Software Architect at Microsoft. Decades of work on distributed systems, collaboration software, and the discipline of small, accountable platforms. Confirmed May 5, 2026.', 'credit_jp'=>'ソフトウェア分野の先駆者。元マイクロソフト チーフ ソフトウェア アーキテクト。分散システム、コラボレーションソフトウェア、小規模で説明責任のあるプラットフォームの設計を数十年にわたり追求。2026年5月5日確認。'],
   ['initials'=>'S.P.','name'=>'San Poisson','credit'=>'Project Manager.', 'credit_jp'=>'プロジェクトマネージャー。'],
   ['initials'=>'H.T.','name'=>'Henry Seiichi Takata','credit'=>'Representative Director, SynTech Japan Co., Ltd.; member of the Japan Board of the U.S.-Japan Council. Formerly operated a biomass power plant in Mie Prefecture. Advises on biomass-CHP plant selection, grid/FIT strategy, and business development. Confirmed July 16, 2026.', 'credit_jp'=>'シンテック・ジャパン株式会社 代表取締役、米日カウンシル日本理事。三重県でバイオマス発電所を運営した経験を持つ。バイオマス熱電併給（CHP）設備の選定、系統連系・FIT戦略、事業開発を助言。2026年7月16日確認。'],
+  ['initials'=>'T.D.','name'=>'Takuo Dome','credit'=>'Professor Emeritus, Osaka University; Director, Inochi Forum. Specializes in the history of economics and social innovation. Confirmed.', 'credit_jp'=>'大阪大学名誉教授・いのちフォーラム代表理事。経済学史・経済思想史を専門とし、社会イノベーションの橋渡しに注力。確定。'],
 ]);
 $founders = mitsue_rows('founders', [
   ['name'=>'Rob Oudendijk',      'when'=>'YR-Design · Safecast'],
