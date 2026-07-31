@@ -4,8 +4,8 @@ $completed = mitsue_rows('status_completed', [
   ['t'=>'Initial meeting with the local forestry group (early 2026)'],
   ['t'=>'Drafted founding charter and detailed implementation plan'],
   ['t'=>'Phase &amp; funding-gate flowchart published'],
-  ['t'=>'Advisory commitment: Ray Ozzie'],
-  ['t'=>'Created Mitsue-kun, the project mascot — <a class="status-mascot-link" href="https://codeberg.org/YR-Design/mitsue-ai-data-center/src/branch/main/mitsue_kun_mascot_explainer.md#english" target="_blank" rel="noopener"><img src="'.esc_url( get_template_directory_uri() . '/assets/images/Mitsue-kun_16-removebg-preview.png' ).'" alt="Mitsue-kun" class="status-mascot-img">who is he? ↗</a>'],
+  ['t'=>'Advisory commitments: Joi Ito, Ray Ozzie, Takuo Dome, Henry Takata, ElvinZoet and Yoshiko Zoet-Susuki', 't_jp'=>"顧問就任の確約：伊藤穰一・レイ・オジー・堂目卓生・ヘンリー・タカタ・エヴィン・ズート・\r\nヨシコ・ズート鈴木"],
+  ['t'=>'Created Mitsue-kun, the project mascot — <a class="status-mascot-link" href="https://codeberg.org/YR-Design/mitsue-ai-data-center/src/branch/main/mitsue_kun_mascot_explainer.md#english" target="_blank" rel="noopener"><img src="'.esc_url( get_template_directory_uri() . '/assets/images/Mitsue-kun_16-removebg-preview.png' ).'" alt="Mitsue-kun" class="status-mascot-img">who is he? ↗</a>', 't_jp'=>'プロジェクトのマスコット「みつえくん」を制作 — <a class="status-mascot-link" href="https://codeberg.org/YR-Design/mitsue-ai-data-center/src/branch/main/mitsue_kun_mascot_explainer.md#%E6%97%A5%E6%9C%AC%E8%AA%9E" target="_blank" rel="noopener"><img src="'.esc_url( get_template_directory_uri() . '/assets/images/Mitsue-kun_16-removebg-preview.png' ).'" alt="みつえくん" class="status-mascot-img">みつえくんとは？↗</a>'],
 ]);
 $progress = mitsue_rows('status_progress', [
   ['t'=>'Identifying a Japanese co-founder with rural credibility'],

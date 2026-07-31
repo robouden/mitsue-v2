@@ -381,7 +381,8 @@ if ( ! class_exists( 'Mitsue_Admin_Page' ) ) {
 						[ 't' => 'Initial meeting with the local forestry group (early 2026)',   't_jp' => '地域林業グループとの初回面談（2026年初頭）' ],
 						[ 't' => 'Drafted founding charter and detailed implementation plan',     't_jp' => '設立定款・詳細実施計画の草案作成' ],
 						[ 't' => 'Phase &amp; funding-gate flowchart published',                 't_jp' => 'フェーズ・資金ゲートフローチャートの公開' ],
-						[ 't' => 'Advisory commitment: Ray Ozzie',                              't_jp' => '顧問就任の確約：レイ・オジー' ],
+						[ 't' => 'Advisory commitments: Joi Ito, Ray Ozzie, Takuo Dome, Henry Takata, ElvinZoet and Yoshiko Zoet-Susuki', 't_jp' => "顧問就任の確約：伊藤穰一・レイ・オジー・堂目卓生・ヘンリー・タカタ・エヴィン・ズート・\r\nヨシコ・ズート鈴木" ],
+						[ 't' => 'Created Mitsue-kun, the project mascot', 't_jp' => 'プロジェクトのマスコット「みつえくん」を制作' ],
 					],
 				],
 				'status_progress' => [
