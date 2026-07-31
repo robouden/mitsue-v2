@@ -40,8 +40,8 @@ $next = mitsue_rows('status_next', [
         <div class="sub">準備期 · 2026年4月〜10月</div>
         <div class="period">SELF-FUNDED · ¥0–0.5M</div>
         <p style="margin-top:24px;font-size:14px;color:var(--ink-soft);line-height:1.7;">
-          <span class="body-en">No public announcements yet. Formal channels — website, dedicated email, NPO bank account — will be established at the start of Phase 1.</span>
-          <span class="body-jp jp">現時点では公式発表はありません。ウェブサイト・専用メール・NPO口座などの正式チャネルは、フェーズ1開始時に整備されます。</span>
+          <span class="body-en">No public announcements yet. Formal channels — dedicated email, NPO bank account — will be established at the start of Phase 1.</span>
+          <span class="body-jp jp">現時点では公式発表はありません。専用メール・NPO口座などの正式チャネルは、フェーズ1開始時に整備されます。</span>
         </p>
       </div>
       <div class="status-cols">
