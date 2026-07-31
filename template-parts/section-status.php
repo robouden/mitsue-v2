@@ -5,6 +5,7 @@ $completed = mitsue_rows('status_completed', [
   ['t'=>'Drafted founding charter and detailed implementation plan'],
   ['t'=>'Phase &amp; funding-gate flowchart published'],
   ['t'=>'Advisory commitment: Ray Ozzie'],
+  ['t'=>'Created Mitsue-kun, the project mascot — <a class="status-mascot-link" href="https://codeberg.org/YR-Design/mitsue-ai-data-center/src/branch/main/mitsue_kun_mascot_explainer.md#english" target="_blank" rel="noopener"><img src="'.esc_url( get_template_directory_uri() . '/assets/images/Mitsue-kun_16-removebg-preview.png' ).'" alt="Mitsue-kun" class="status-mascot-img">who is he? ↗</a>'],
 ]);
 $progress = mitsue_rows('status_progress', [
   ['t'=>'Identifying a Japanese co-founder with rural credibility'],
