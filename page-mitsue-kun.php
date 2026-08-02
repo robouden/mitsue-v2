@@ -20,13 +20,13 @@ get_header();
     </h1>
     <div style="display:flex;justify-content:center;margin:28px 0;">
       <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/Mitsue-kun_16-removebg-preview.png' ); ?>"
-           alt="御杖くん（みつえくん / Mitsue-kun）— プロジェクトのマスコット" style="height:220px;">
+           alt="御杖くん（みつえくん / Mitsue-kun）— プロジェクトのマスコット" style="height:440px;max-width:100%;">
     </div>
   </div>
 </section>
 
 <section>
-  <div class="wrap" style="max-width:68ch;">
+  <div class="wrap">
 
     <div class="body-en" style="font-size:16px;line-height:1.75;">
       <p><strong>Mitsue-kun (みつえくん)</strong> is a character created by this project (not an official village mascot), released under a <strong>CC0 license</strong> so anyone can use him freely with no permission required. His partner is <strong>Tsuemi-chan</strong>, the official character of Mitsue Village — together the two work as a duo to help revitalize Mitsue Village, appearing in brochures, this website, and outreach materials as a warm, local embodiment of the project's guiding idea: <em>"The forest our ancestors planted — the power that sustains the village they built."</em></p>
