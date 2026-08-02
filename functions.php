@@ -33,7 +33,7 @@ add_action( 'after_setup_theme', function () {
 /* JP fonts with font-display:optional — loads without blocking, no swap = no CLS */
 add_action( 'wp_head', function () {
 	// display=optional: browser uses font only if cached/fast; no swap, no layout shift
-	$jp_url = 'https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500;600&display=optional';
+	$jp_url = 'https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500&family=Noto+Sans+JP:wght@400&display=optional';
 	echo '<link rel="preconnect" href="https://fonts.googleapis.com">' . "\n";
 	echo '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>' . "\n";
 	echo '<link rel="stylesheet" href="' . esc_url( $jp_url ) . '" media="print" onload="this.media=\'all\'">' . "\n";

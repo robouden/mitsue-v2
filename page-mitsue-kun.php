@@ -20,7 +20,7 @@ get_header();
     </h1>
     <div style="display:flex;justify-content:center;margin:28px 0;">
       <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/Mitsue-kun_16-removebg-preview.png' ); ?>"
-           alt="御杖くん（みつえくん / Mitsue-kun）— プロジェクトのマスコット" style="height:440px;max-width:100%;">
+           alt="御杖くん（みつえくん / Mitsue-kun）— プロジェクトのマスコット" width="510" height="490" style="height:440px;width:auto;max-width:100%;">
     </div>
   </div>
 </section>

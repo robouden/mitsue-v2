@@ -56,7 +56,7 @@
       </div>
       <div class="foot-mascot">
         <a href="<?php echo esc_url( home_url('/mitsue-kun/') ); ?>">
-          <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/Mitsue-kun_16-removebg-preview.png' ); ?>" alt="御杖くん（みつえくん / Mitsue-kun）とは？" loading="lazy" decoding="async">
+          <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/Mitsue-kun_16-removebg-preview.png' ); ?>" alt="御杖くん（みつえくん / Mitsue-kun）とは？" width="510" height="490" loading="lazy" decoding="async">
         </a>
         <div style="margin-top:8px;"><a href="https://codeberg.org/YR-Design/mitsue-ai-data-center/src/branch/main/mitsue_kun_mascot_explainer.md" target="_blank" rel="noopener" style="font-size:12px;color:var(--ink-mute);">codeberg.org ↗</a></div>
       </div>
