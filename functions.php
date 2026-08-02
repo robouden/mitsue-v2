@@ -49,6 +49,8 @@ add_filter( 'wp_sitemaps_add_provider', function ( $provider, $name ) {
 }, 10, 2 );
 
 /* ── SEO: title, meta description, Open Graph, canonical ───────────────── */
+remove_action( 'wp_head', 'rel_canonical' ); // avoid duplicate <link rel="canonical"> (theme emits its own below)
+
 add_filter( 'document_title_parts', function ( $parts ) {
 	if ( is_front_page() ) {
 		$parts = [ 'title' => '御杖村バイオマスエネルギー＆AIプロジェクト | 奈良県御杖村' ];
