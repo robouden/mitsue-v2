@@ -24,7 +24,7 @@ $next = mitsue_rows('status_next', [
   <div class="wrap">
     <div class="section-head">
       <div class="num">§ 07<span class="label">Current Status</span>
-        <?php $si = mitsue_get('section_img_status'); if ($si): ?><img src="<?php echo esc_url($si); ?>" alt="" class="section-img"><?php endif; ?>
+        <?php $si = mitsue_get('section_img_status'); if ($si): ?><img src="<?php echo esc_url($si); ?>" alt="" class="section-img" loading="lazy" decoding="async"><?php endif; ?>
       </div>
       <div>
         <h2>Where the project stands today, <em><?php echo date('F Y'); ?>.</em></h2>

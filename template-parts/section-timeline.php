@@ -17,7 +17,7 @@ $gates = mitsue_rows('gates', [
   <div class="wrap">
     <div class="section-head">
       <div class="num">§ 03<span class="label">Phased Plan</span>
-        <?php $si = mitsue_get('section_img_timeline'); if ($si): ?><img src="<?php echo esc_url($si); ?>" alt="" class="section-img"><?php endif; ?>
+        <?php $si = mitsue_get('section_img_timeline'); if ($si): ?><img src="<?php echo esc_url($si); ?>" alt="" class="section-img" loading="lazy" decoding="async"><?php endif; ?>
       </div>
       <div>
         <h2>Five phases, <em>four explicit gates.</em></h2>

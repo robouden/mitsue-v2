@@ -12,7 +12,7 @@ $ps = mitsue_rows('principles', [
   <div class="wrap">
     <div class="section-head">
       <div class="num">§ 06<span class="label">Operating Principles</span>
-        <?php $si = mitsue_get('section_img_principles'); if ($si): ?><img src="<?php echo esc_url($si); ?>" alt="" class="section-img"><?php endif; ?>
+        <?php $si = mitsue_get('section_img_principles'); if ($si): ?><img src="<?php echo esc_url($si); ?>" alt="" class="section-img" loading="lazy" decoding="async"><?php endif; ?>
       </div>
       <div>
         <h2>Six principles that <em>govern every decision.</em></h2>

@@ -26,7 +26,7 @@ $legal = mitsue_rows('legal_path', [
   <div class="wrap">
     <div class="section-head">
       <div class="num">§ 04<span class="label">Governance</span>
-        <?php $si = mitsue_get('section_img_governance'); if ($si): ?><img src="<?php echo esc_url($si); ?>" alt="" class="section-img"><?php endif; ?>
+        <?php $si = mitsue_get('section_img_governance'); if ($si): ?><img src="<?php echo esc_url($si); ?>" alt="" class="section-img" loading="lazy" decoding="async"><?php endif; ?>
       </div>
       <div>
         <h2>An advisory bench of <em>builders</em> — and a clear path to certified nonprofit status.</h2>
@@ -47,7 +47,7 @@ $legal = mitsue_rows('legal_path', [
           ?>
           <div class="portrait" aria-hidden="true">
             <?php if ( $photo_url ): ?>
-              <img src="<?php echo esc_url($photo_url); ?>" alt="<?php echo esc_attr($a['name']); ?>">
+              <img src="<?php echo esc_url($photo_url); ?>" alt="<?php echo esc_attr($a['name']); ?>" loading="lazy" decoding="async">
             <?php else: ?>
               <?php echo esc_html($a['initials'] ?? strtoupper(substr($a['name'],0,1))); ?>
             <?php endif; ?>
@@ -72,7 +72,7 @@ $legal = mitsue_rows('legal_path', [
           ?>
           <div class="portrait" aria-hidden="true">
             <?php if ( $photo_url ): ?>
-              <img src="<?php echo esc_url($photo_url); ?>" alt="<?php echo esc_attr($a['name']); ?>">
+              <img src="<?php echo esc_url($photo_url); ?>" alt="<?php echo esc_attr($a['name']); ?>" loading="lazy" decoding="async">
             <?php else: ?>
               <?php echo esc_html($a['initials'] ?? strtoupper(substr($a['name'],0,1))); ?>
             <?php endif; ?>
