@@ -12,7 +12,7 @@
  * @package Mitsue
  */
 
-if ( ! defined( 'MITSUE_VERSION' ) ) define( 'MITSUE_VERSION', '2.0.9' );
+if ( ! defined( 'MITSUE_VERSION' ) ) define( 'MITSUE_VERSION', '2.1.0' );
 if ( ! defined( 'MITSUE_DIR' ) )     define( 'MITSUE_DIR', get_stylesheet_directory() );
 if ( ! defined( 'MITSUE_URI' ) )     define( 'MITSUE_URI', get_stylesheet_directory_uri() );
 
@@ -203,6 +203,52 @@ function mitsue_rows( string $key, array $defaults = [] ): array {
 	}
 	return $defaults;
 }
+
+/* ── IndexNow (Bing/Yandex/Seznam/Naver instant URL submission) ─────────── */
+if ( ! defined( 'MITSUE_INDEXNOW_KEY' ) ) define( 'MITSUE_INDEXNOW_KEY', 'ef6de52f77cdb7049f12fa6a255b1b33' );
+
+add_action( 'init', function () {
+	add_rewrite_rule( '^' . MITSUE_INDEXNOW_KEY . '\.txt$', 'index.php?mitsue_indexnow=1', 'top' );
+	add_rewrite_tag( '%mitsue_indexnow%', '([^&]+)' );
+} );
+
+add_action( 'template_redirect', function () {
+	if ( get_query_var( 'mitsue_indexnow' ) ) {
+		header( 'Content-Type: text/plain; charset=utf-8' );
+		echo MITSUE_INDEXNOW_KEY;
+		exit;
+	}
+} );
+
+/**
+ * Ping IndexNow with the given URLs (fans out to Bing, Yandex, Seznam, Naver).
+ */
+function mitsue_indexnow_submit( array $urls ) {
+	if ( empty( $urls ) ) return;
+	wp_remote_post( 'https://api.indexnow.org/indexnow', [
+		'timeout'  => 5,
+		'blocking' => false,
+		'headers'  => [ 'Content-Type' => 'application/json; charset=utf-8' ],
+		'body'     => wp_json_encode( [
+			'host'        => wp_parse_url( home_url(), PHP_URL_HOST ),
+			'key'         => MITSUE_INDEXNOW_KEY,
+			'keyLocation' => home_url( '/' . MITSUE_INDEXNOW_KEY . '.txt' ),
+			'urlList'     => array_values( $urls ),
+		] ),
+	] );
+}
+
+// Content edited via Settings → Mitsue Content updates this single option — ping on every save.
+add_action( 'update_option_mitsue_options', function () {
+	mitsue_indexnow_submit( [ home_url( '/' ) ] );
+} );
+
+// Cover normal posts/pages too, in case any are added later.
+add_action( 'transition_post_status', function ( $new_status, $old_status, $post ) {
+	if ( $new_status === 'publish' ) {
+		mitsue_indexnow_submit( [ get_permalink( $post ) ] );
+	}
+}, 10, 3 );
 
 /* ── Load inc files ─────────────────────────────────────────────────────── */
 require_once MITSUE_DIR . '/inc/class-mitsue-dynamic-css.php';
