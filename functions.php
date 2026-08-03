@@ -220,6 +220,10 @@ add_action( 'template_redirect', function () {
 	}
 } );
 
+add_filter( 'redirect_canonical', function ( $redirect_url ) {
+	return get_query_var( 'mitsue_indexnow' ) ? false : $redirect_url;
+} );
+
 /**
  * Ping IndexNow with the given URLs (fans out to Bing, Yandex, Seznam, Naver).
  */
