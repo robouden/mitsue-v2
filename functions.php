@@ -205,7 +205,7 @@ function mitsue_rows( string $key, array $defaults = [] ): array {
 }
 
 /* ── IndexNow (Bing/Yandex/Seznam/Naver instant URL submission) ─────────── */
-if ( ! defined( 'MITSUE_INDEXNOW_KEY' ) ) define( 'MITSUE_INDEXNOW_KEY', '48fb20b4c3594f8291863d8c122712ec' );
+if ( ! defined( 'MITSUE_INDEXNOW_KEY' ) ) define( 'MITSUE_INDEXNOW_KEY', '0ab6f88106194389a64eec78860dcb0a' );
 
 add_action( 'init', function () {
 	add_rewrite_rule( '^' . MITSUE_INDEXNOW_KEY . '\.txt$', 'index.php?mitsue_indexnow=1', 'top' );
