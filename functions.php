@@ -59,10 +59,13 @@ add_filter( 'document_title_parts', function ( $parts ) {
 } );
 
 add_action( 'wp_head', function () {
-	$is_home = is_front_page();
+	$is_home       = is_front_page();
+	$is_mitsue_kun = is_page( 'mitsue-kun' );
 	$desc    = $is_home
 		? '奈良県御杖村で進む地域主導のバイオマスエネルギー＆AIデータセンター構想。森林資源を活用し、再生可能エネルギーと地方創生を両立する25年計画。'
-		: wp_strip_all_tags( get_the_excerpt() );
+		: ( $is_mitsue_kun
+			? 'みつえくん（Mitsue-kun）とは、御杖村バイオマスエネルギー＆AIプロジェクトのCC0マスコットキャラクター。デザインの意味と由来を紹介します。'
+			: wp_strip_all_tags( get_the_excerpt() ) );
 	$title   = $is_home ? '御杖村バイオマスエネルギー＆AIプロジェクト | 奈良県御杖村' : wp_get_document_title();
 	$url     = $is_home ? home_url( '/' ) : get_permalink();
 	$image   = MITSUE_URI . '/assets/images/mitsue04.jpg';
@@ -144,6 +147,23 @@ add_action( 'wp_head', function () {
 					'alternateName' => '伊藤穰一',
 					'description' => 'Referral / inspiration contact for outreach; not yet a formal advisor or partner.',
 				],
+			],
+		];
+		echo '<script type="application/ld+json">' . wp_json_encode( $json_ld, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES ) . '</script>' . "\n";
+	}
+
+	if ( $is_mitsue_kun ) {
+		$json_ld = [
+			'@context'      => 'https://schema.org',
+			'@type'         => 'Person',
+			'name'          => 'Mitsue-kun',
+			'alternateName' => [ 'みつえくん', '御杖くん' ],
+			'description'   => 'Mitsue-kun (みつえくん) is a CC0-licensed mascot character created for the Mitsue Village biomass energy & AI data center project, paired with the village\'s official character Tsuemi-chan.',
+			'url'           => get_permalink(),
+			'image'         => MITSUE_URI . '/assets/images/Mitsue-kun_16-removebg-preview.png',
+			'creator'       => [
+				'@type' => 'Organization',
+				'name'  => 'BIOMASS ENERGY & AI — Mitsue Village Project',
 			],
 		];
 		echo '<script type="application/ld+json">' . wp_json_encode( $json_ld, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES ) . '</script>' . "\n";
