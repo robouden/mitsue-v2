@@ -16,6 +16,7 @@ $entries = mitsue_rows( 'endorsements', [
     'cite_name'    => 'Olivia Bina',
     'cite_role_en' => 'Co-author, "Transforming Knowledge Systems for Life on Earth"',
     'cite_role_jp' => '「地球上の生命のための知識システムの変革」共著者',
+    'size'         => 'sm',
   ],
   [
     'quote_en'    => '<p>You create more energy than the grid has the capacity to take, so you suck the excess energy with the AI data center.</p>',
@@ -30,7 +31,7 @@ $entries = mitsue_rows( 'endorsements', [
   <div class="wrap">
     <div class="mono">Endorsement · 推薦の声</div>
     <?php foreach ( $entries as $e ) : ?>
-    <blockquote>
+    <blockquote<?php echo ! empty( $e['size'] ) ? ' class="' . esc_attr( $e['size'] ) . '"' : ''; ?>>
       <?php if ( ! empty( $e['quote_en'] ) ) : ?>
       <div class="body-en"><?php echo wp_kses_post( $e['quote_en'] ); ?></div>
       <?php endif; ?>

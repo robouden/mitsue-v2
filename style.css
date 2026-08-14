@@ -307,6 +307,8 @@ table.funding .total td{font-weight:500;}
 .endorsement cite .cite-name{display:block;font-family:var(--serif-en);font-size:19px;font-weight:500;color:var(--ink);margin-bottom:6px;}
 .endorsement cite .cite-role{display:block;font-family:var(--mono);font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink-mute);}
 .endorsement blockquote + blockquote{margin-top:72px;padding-top:72px;border-top:1px solid var(--rule);}
+.endorsement blockquote.sm p{font-size:clamp(16px,1.5vw,19px);line-height:1.6;}
+[data-lang="ja"] .endorsement blockquote.sm p{font-size:clamp(14px,1.3vw,16px);line-height:1.75;}
 /* JP mode: switch the pull-quote and name to the JP serif, with looser leading */
 [data-lang="ja"] .endorsement blockquote p{font-family:var(--serif-jp);font-size:clamp(17px,1.9vw,23px);line-height:1.9;letter-spacing:0.02em;}
 [data-lang="ja"] .endorsement cite .cite-name{font-family:var(--serif-jp);}
