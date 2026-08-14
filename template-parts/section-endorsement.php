@@ -24,6 +24,7 @@ $entries = mitsue_rows( 'endorsements', [
     'cite_name'    => 'Leïla Joutet',
     'cite_role_en' => 'Art-Science Manager, Swissnex in Japan',
     'cite_role_jp' => 'アート・サイエンス マネージャー、Swissnex Japan',
+    'size'         => 'sm',
   ],
 ] );
 ?>
