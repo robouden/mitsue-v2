@@ -9,7 +9,7 @@ $pillars = mitsue_rows('pillars', [
   <div class="wrap">
     <div class="section-head">
       <div class="num">§ 01<span class="label">Programme</span>
-        <?php $si = mitsue_get('section_img_programme'); if ($si): ?><img src="<?php echo esc_url($si); ?>" alt="" class="section-img"><?php endif; ?>
+        <?php $si = mitsue_get('section_img_programme'); if ($si): ?><img src="<?php echo esc_url($si); ?>" alt="Three integrated programme activities" class="section-img"><?php endif; ?>
       </div>
       <div>
         <h2>Three integrated activities, <em>one coordinating body.</em></h2>

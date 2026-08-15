@@ -26,7 +26,7 @@ $legal = mitsue_rows('legal_path', [
   <div class="wrap">
     <div class="section-head">
       <div class="num">§ 04<span class="label">Governance</span>
-        <?php $si = mitsue_get('section_img_governance'); if ($si): ?><img src="<?php echo esc_url($si); ?>" alt="" class="section-img" loading="lazy" decoding="async"><?php endif; ?>
+        <?php $si = mitsue_get('section_img_governance'); if ($si): ?><img src="<?php echo esc_url($si); ?>" alt="Project governance and advisory structure" class="section-img" loading="lazy" decoding="async"><?php endif; ?>
       </div>
       <div>
         <h2>An advisory bench of <em>builders</em> — and a clear path to certified nonprofit status.</h2>
