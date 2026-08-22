@@ -274,6 +274,14 @@ add_action( 'transition_post_status', function ( $new_status, $old_status, $post
 	}
 }, 10, 3 );
 
+/* ── Redirect old default-WP-install slug "/sample-page/" to "/join/" ───── */
+add_action( 'template_redirect', function () {
+	if ( untrailingslashit( wp_parse_url( $_SERVER['REQUEST_URI'], PHP_URL_PATH ) ) === '/sample-page' ) {
+		wp_safe_redirect( home_url( '/join/' ), 301 );
+		exit;
+	}
+} );
+
 /* ── Load inc files ─────────────────────────────────────────────────────── */
 require_once MITSUE_DIR . '/inc/class-mitsue-dynamic-css.php';
 require_once MITSUE_DIR . '/inc/class-mitsue-customizer.php';
