@@ -6,17 +6,19 @@ $completed = mitsue_rows('status_completed', [
   ['t'=>'Phase &amp; funding-gate flowchart published'],
   ['t'=>'Advisory commitments: Joi Ito, Ray Ozzie, Takuo Dome, Henry Takata, ElvinZoet and Yoshiko Zoet-Susuki', 't_jp'=>"顧問就任の確約：伊藤穰一・レイ・オジー・堂目卓生・ヘンリー・タカタ・エヴィン・ズート・\r\nヨシコ・ズート鈴木"],
   ['t'=>'Created Mitsue-kun, the project mascot — <a class="status-mascot-link" href="https://codeberg.org/YR-Design/mitsue-ai-data-center/src/branch/main/mitsue_kun_mascot_explainer.md#english" target="_blank" rel="noopener"><img src="'.esc_url( get_template_directory_uri() . '/assets/images/Mitsue-kun_16-removebg-preview.png' ).'" alt="Mitsue-kun" width="22" height="22" class="status-mascot-img">who is he? ↗</a>', 't_jp'=>'プロジェクトのマスコット「みつえくん」を制作 — <a class="status-mascot-link" href="https://codeberg.org/YR-Design/mitsue-ai-data-center/src/branch/main/mitsue_kun_mascot_explainer.md#%E6%97%A5%E6%9C%AC%E8%AA%9E" target="_blank" rel="noopener"><img src="'.esc_url( get_template_directory_uri() . '/assets/images/Mitsue-kun_16-removebg-preview.png' ).'" alt="みつえくん" width="22" height="22" class="status-mascot-img">みつえくんとは？↗</a>'],
+  ['t'=>'Dr James Hill (Osaka Metropolitan University) joined the advisory board (Sept 2026)','t_jp'=>'大阪公立大学のジェームズ・ヒル博士が顧問に就任（2026年9月）'],
+  ['t'=>'Forest-thinning and wood-supply inquiry started with local forestry workers and the village hall','t_jp'=>'地域の林業関係者・村役場との間伐・木材供給の調査を開始'],
 ]);
 $progress = mitsue_rows('status_progress', [
   ['t'=>'Identifying a Japanese co-founder with rural credibility'],
-  ['t'=>'Scheduling a formal meeting with the Village Mayor'],
+  ['t'=>'Mapping thinning and wood-supply flows with the forestry cooperative and village hall','t_jp'=>'森林組合・村役場との間伐・木材供給の流れの整理'],
   ['t'=>'Drafting bylaws for a 一般社団法人'],
   ['t'=>'Engaging a 行政書士 (administrative scrivener) in Nara'],
 ]);
 $next = mitsue_rows('status_next', [
-  ['t'=>'Approach candidate Japanese co-founder'],
-  ['t'=>'Hold informal meeting with the Village Mayor'],
-  ['t'=>'Initial consultations with administrative scriveners'],
+  ['t'=>'Meet the forestry cooperative (Oct 2) on fuel supply','t_jp'=>'森林組合との面談（10月2日）：燃料供給について'],
+  ['t'=>'Discuss routing more thinning volume to biomass fuel with the Mayor','t_jp'=>'村長と間伐材をバイオマス燃料へ回す件を協議'],
+  ['t'=>'Follow up on the village hall reply about thinning operators','t_jp'=>'間伐事業者に関する村役場の回答へのフォローアップ'],
   ['t'=>'Finalise a two-page bilingual charter for distribution'],
 ]);
 ?>

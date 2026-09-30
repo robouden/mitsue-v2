@@ -384,6 +384,8 @@ if ( ! class_exists( 'Mitsue_Admin_Page' ) ) {
 						[ 't' => 'Phase &amp; funding-gate flowchart published',                 't_jp' => 'フェーズ・資金ゲートフローチャートの公開' ],
 						[ 't' => 'Advisory commitments: Joi Ito, Ray Ozzie, Takuo Dome, Henry Takata, ElvinZoet and Yoshiko Zoet-Susuki', 't_jp' => "顧問就任の確約：伊藤穰一・レイ・オジー・堂目卓生・ヘンリー・タカタ・エヴィン・ズート・\r\nヨシコ・ズート鈴木" ],
 						[ 't' => 'Created Mitsue-kun, the project mascot', 't_jp' => 'プロジェクトのマスコット「みつえくん」を制作' ],
+						[ 't' => 'Dr James Hill (Osaka Metropolitan University) joined the advisory board (Sept 2026)', 't_jp' => '大阪公立大学のジェームズ・ヒル博士が顧問に就任（2026年9月）' ],
+						[ 't' => 'Forest-thinning and wood-supply inquiry started with local forestry workers and the village hall', 't_jp' => '地域の林業関係者・村役場との間伐・木材供給の調査を開始' ],
 					],
 				],
 				'status_progress' => [
@@ -393,7 +395,7 @@ if ( ! class_exists( 'Mitsue_Admin_Page' ) ) {
 					'columns' => [ 't' => 'Item text EN', 't_jp' => 'Item text JP' ],
 					'defaults' => [
 						[ 't' => 'Identifying a Japanese co-founder with rural credibility', 't_jp' => '農村に信頼のある日本人共同創業者の選定' ],
-						[ 't' => 'Scheduling a formal meeting with the Village Mayor',       't_jp' => '村長との正式面談の調整' ],
+						[ 't' => 'Mapping thinning and wood-supply flows with the forestry cooperative and village hall', 't_jp' => '森林組合・村役場との間伐・木材供給の流れの整理' ],
 						[ 't' => 'Drafting bylaws for a 一般社団法人',                      't_jp' => '一般社団法人の定款草案の作成' ],
 						[ 't' => 'Engaging a 行政書士 (administrative scrivener) in Nara',  't_jp' => '奈良県内の行政書士との協議' ],
 					],
@@ -404,9 +406,9 @@ if ( ! class_exists( 'Mitsue_Admin_Page' ) ) {
 					'type'    => 'repeater',
 					'columns' => [ 't' => 'Item text EN', 't_jp' => 'Item text JP' ],
 					'defaults' => [
-						[ 't' => 'Approach candidate Japanese co-founder',                    't_jp' => '候補となる日本人共同創業者へのアプローチ' ],
-						[ 't' => 'Hold informal meeting with the Village Mayor',              't_jp' => '村長との非公式面談の実施' ],
-						[ 't' => 'Initial consultations with administrative scriveners',      't_jp' => '行政書士との初回相談' ],
+						[ 't' => 'Meet the forestry cooperative (Oct 2) on fuel supply', 't_jp' => '森林組合との面談（10月2日）：燃料供給について' ],
+						[ 't' => 'Discuss routing more thinning volume to biomass fuel with the Mayor', 't_jp' => '村長と間伐材をバイオマス燃料へ回す件を協議' ],
+						[ 't' => 'Follow up on the village hall reply about thinning operators', 't_jp' => '間伐事業者に関する村役場の回答へのフォローアップ' ],
 						[ 't' => 'Finalise a two-page bilingual charter for distribution',   't_jp' => '配布用二ページ二言語版定款の最終化' ],
 					],
 				],
