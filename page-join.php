@@ -9,7 +9,7 @@
 get_header();
 
 $ways = mitsue_rows('join_ways', [
-  ['label_en'=>'🌲 Work','label_jp'=>'働く','sub'=>'Paid roles at the forestry co-op — forest, energy, data.','sub_jp'=>'森林組合の有給職——森・エネルギー・データ。','anchor'=>'#work'],
+  ['label_en'=>'🌲 Work','label_jp'=>'働く','sub'=>'Paid roles in local forestry — forest, energy, data.','sub_jp'=>'林業の有給職——森・エネルギー・データ。','anchor'=>'#work'],
   ['label_en'=>'◆ Invest','label_jp'=>'出資する','sub'=>'Patient capital for a 25-year, non-profit build.','sub_jp'=>'25年・非営利の事業への長期資本。','anchor'=>'#invest'],
   ['label_en'=>'✎ Advise','label_jp'=>'助言する','sub'=>'Expertise in forestry, energy, compute, or governance.','sub_jp'=>'林業・エネルギー・計算・ガバナンスの知見。','anchor'=>'#advise'],
   ['label_en'=>'⌂ Partner','label_jp'=>'連携する','sub'=>'Companies, NGOs, landowners, and volunteers.','sub_jp'=>'企業・NGO・土地所有者・ボランティア。','anchor'=>'#partner'],
@@ -67,8 +67,8 @@ $email = mitsue_get('join_email', mitsue_get('cta_email', 'info@mitsue.it'));
       <div>
         <h2>Three things, <em>one job.</em></h2>
         <div class="h2-jp jp">三つのこと、ひとつの仕事。</div>
-        <div class="h2-sub body-en"><?php echo esc_html( mitsue_get('join_work_intro_en', 'Paid, multi-skill roles at the Mitsue forestry cooperative. Most rural jobs offer one thread — this offers all three, woven together.') ); ?></div>
-        <div class="h2-sub body-jp jp"><?php echo esc_html( mitsue_get('join_work_intro_jp', '御杖村森林組合の有給・多技能職。多くの地方の仕事は1本の糸しか提供しませんが、これは3本を編み合わせて提供します。') ); ?></div>
+        <div class="h2-sub body-en"><?php echo esc_html( mitsue_get('join_work_intro_en', 'Paid, multi-skill roles in Mitsue's local forestry sector. Most rural jobs offer one thread — this offers all three, woven together.') ); ?></div>
+        <div class="h2-sub body-jp jp"><?php echo esc_html( mitsue_get('join_work_intro_jp', '御杖村の林業での有給・多技能職。多くの地方の仕事は1本の糸しか提供しませんが、これは3本を編み合わせて提供します。') ); ?></div>
       </div>
     </div>
     <div class="pillars">

@@ -11,12 +11,12 @@ $completed = mitsue_rows('status_completed', [
 ]);
 $progress = mitsue_rows('status_progress', [
   ['t'=>'Identifying a Japanese co-founder with rural credibility'],
-  ['t'=>'Mapping thinning and wood-supply flows with the forestry cooperative and village hall','t_jp'=>'森林組合・村役場との間伐・木材供給の流れの整理'],
+  ['t'=>'Mapping thinning and wood-supply flows with local forestry partners and the village hall','t_jp'=>'林業の担い手・村役場との間伐・木材供給の流れの整理'],
   ['t'=>'Drafting bylaws for a 一般社団法人'],
   ['t'=>'Engaging a 行政書士 (administrative scrivener) in Nara'],
 ]);
 $next = mitsue_rows('status_next', [
-  ['t'=>'Meet the forestry cooperative (Oct 2) on fuel supply','t_jp'=>'森林組合との面談（10月2日）：燃料供給について'],
+  ['t'=>'Meet a local forestry partner (Oct 2) on fuel supply','t_jp'=>'地域の林業パートナーとの面談（10月2日）：燃料供給について'],
   ['t'=>'Discuss routing more thinning volume to biomass fuel with the Mayor','t_jp'=>'村長と間伐材をバイオマス燃料へ回す件を協議'],
   ['t'=>'Follow up on the village hall reply about thinning operators','t_jp'=>'間伐事業者に関する村役場の回答へのフォローアップ'],
   ['t'=>'Finalise a two-page bilingual charter for distribution'],
