@@ -230,11 +230,11 @@ if ( ! class_exists( 'Mitsue_Admin_Page' ) ) {
 					'type'    => 'repeater',
 					'columns' => [ 'name' => 'Phase name', 'title' => 'Title EN', 'jp' => 'Title JP', 'months' => 'Months', 'note' => 'Note EN', 'note_jp' => 'Note JP', 'budget' => 'Budget', 'extra' => 'Extra note', 'current' => 'Current (1=yes)' ],
 					'defaults' => [
-						[ 'name' => 'Phase 0 — Current', 'title' => 'Pre-Foundation',  'jp' => '準備期',         'months' => 'Months 01 – 03', 'note' => 'Local trust-building, founding team, draft charter.', 'note_jp' => '地域との信頼構築、創設チーム形成、定款草案。', 'budget' => '¥0 – 0.5M',  'extra' => 'self-funded', 'current' => '1' ],
-						[ 'name' => 'Phase 1',           'title' => 'Foundation',      'jp' => '基盤構築期',     'months' => 'Months 04 – 09', 'note' => 'Legal entity, feasibility studies, advisors.',       'note_jp' => '法人設立、実現可能性調査、顧問選定。',         'budget' => '¥3 – 8M',    'extra' => '', 'current' => '0' ],
-						[ 'name' => 'Phase 2',           'title' => 'Pilot Design',    'jp' => 'パイロット設計期', 'months' => 'Months 10 – 18', 'note' => 'Engineering, partnerships, permits.',               'note_jp' => 'エンジニアリング、パートナーシップ、許認可。', 'budget' => '¥15 – 30M',  'extra' => '', 'current' => '0' ],
-						[ 'name' => 'Phase 3',           'title' => 'Pilot Build',     'jp' => 'パイロット建設期', 'months' => 'Months 19 – 30', 'note' => 'First-stage construction, commissioning.',          'note_jp' => '第一期建設、竣工検査。',                       'budget' => '¥80 – 200M', 'extra' => '', 'current' => '0' ],
-						[ 'name' => 'Phase 4',           'title' => 'Operate & Scale', 'jp' => '運営・拡張期',   'months' => 'Months 31 +',    'note' => 'Operations, monitoring, replication.',               'note_jp' => '運営、モニタリング、モデル普及。',             'budget' => 'Revenue-led', 'extra' => '', 'current' => '0' ],
+						[ 'name' => 'Phase 0 — Current', 'title' => 'Pre-Foundation',  'jp' => '準備期',         'months' => 'Apr – Dec 2026', 'note' => 'Local trust-building, founding team, draft charter.', 'note_jp' => '地域との信頼構築、創設チーム形成、定款草案。', 'budget' => '¥0 – 0.5M',  'extra' => 'self-funded', 'current' => '1' ],
+						[ 'name' => 'Phase 1',           'title' => 'Foundation',      'jp' => '基盤構築期',     'months' => 'Jan – Aug 2027', 'note' => 'Legal entity, feasibility studies, advisors.',       'note_jp' => '法人設立、実現可能性調査、顧問選定。',         'budget' => '¥3 – 8M',    'extra' => '', 'current' => '0' ],
+						[ 'name' => 'Phase 2',           'title' => 'Pilot Design',    'jp' => 'パイロット設計期', 'months' => 'Aug 2027 – Aug 2028', 'note' => 'Engineering, partnerships, permits.',               'note_jp' => 'エンジニアリング、パートナーシップ、許認可。', 'budget' => '¥15 – 30M',  'extra' => '', 'current' => '0' ],
+						[ 'name' => 'Phase 3',           'title' => 'Pilot Build',     'jp' => 'パイロット建設期', 'months' => 'Aug 2028 – Feb 2030', 'note' => 'First-stage construction, commissioning.',          'note_jp' => '第一期建設、竣工検査。',                       'budget' => '¥80 – 200M', 'extra' => '', 'current' => '0' ],
+						[ 'name' => 'Phase 4',           'title' => 'Operate & Scale', 'jp' => '運営・拡張期',   'months' => 'Feb 2030 +',    'note' => 'Operations, monitoring, replication.',               'note_jp' => '運営、モニタリング、モデル普及。',             'budget' => 'Revenue-led', 'extra' => '', 'current' => '0' ],
 					],
 				],
 				'gates' => [
