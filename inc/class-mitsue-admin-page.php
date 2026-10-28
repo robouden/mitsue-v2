@@ -395,7 +395,7 @@ if ( ! class_exists( 'Mitsue_Admin_Page' ) ) {
 					'columns' => [ 't' => 'Item text EN', 't_jp' => 'Item text JP' ],
 					'defaults' => [
 						[ 't' => 'Identifying a Japanese co-founder with rural credibility', 't_jp' => '農村に信頼のある日本人共同創業者の選定' ],
-						[ 't' => 'Mapping thinning and wood-supply flows with the forestry cooperative and village hall', 't_jp' => '森林組合・村役場との間伐・木材供給の流れの整理' ],
+						[ 't' => 'Mapping thinning and wood-supply flows with local forestry partners and the village hall', 't_jp' => '林業の担い手・村役場との間伐・木材供給の流れの整理' ],
 						[ 't' => 'Drafting bylaws for a 一般社団法人',                      't_jp' => '一般社団法人の定款草案の作成' ],
 						[ 't' => 'Engaging a 行政書士 (administrative scrivener) in Nara',  't_jp' => '奈良県内の行政書士との協議' ],
 					],
@@ -406,7 +406,7 @@ if ( ! class_exists( 'Mitsue_Admin_Page' ) ) {
 					'type'    => 'repeater',
 					'columns' => [ 't' => 'Item text EN', 't_jp' => 'Item text JP' ],
 					'defaults' => [
-						[ 't' => 'Meet the forestry cooperative (Oct 2) on fuel supply', 't_jp' => '森林組合との面談（10月2日）：燃料供給について' ],
+						[ 't' => 'Review village forestry data with the village hall and plan next steps', 't_jp' => '村役場と森林に関するデータを確認し、次の進め方を検討' ],
 						[ 't' => 'Discuss routing more thinning volume to biomass fuel with the Mayor', 't_jp' => '村長と間伐材をバイオマス燃料へ回す件を協議' ],
 						[ 't' => 'Follow up on the village hall reply about thinning operators', 't_jp' => '間伐事業者に関する村役場の回答へのフォローアップ' ],
 						[ 't' => 'Finalise a two-page bilingual charter for distribution',   't_jp' => '配布用二ページ二言語版定款の最終化' ],
@@ -418,7 +418,7 @@ if ( ! class_exists( 'Mitsue_Admin_Page' ) ) {
 					'tab'     => 'join',
 					'label'   => __( 'Eyebrow text', 'mitsue' ),
 					'type'    => 'text',
-					'default' => 'Get involved · 御杖くんプロジェクト × 御杖村森林組合',
+					'default' => 'Get involved · 御杖くんプロジェクト',
 				],
 				'join_headline_en' => [
 					'tab'     => 'join',
@@ -450,7 +450,7 @@ if ( ! class_exists( 'Mitsue_Admin_Page' ) ) {
 					'type'    => 'repeater',
 					'columns' => [ 'label_en' => 'Label EN', 'label_jp' => 'Label JP', 'sub' => 'One-liner EN', 'sub_jp' => 'One-liner JP', 'anchor' => 'Anchor (#work etc.)' ],
 					'defaults' => [
-						[ 'label_en' => '🌲 Work', 'label_jp' => '働く', 'sub' => 'Paid roles at the forestry co-op — forest, energy, data.', 'sub_jp' => '森林組合の有給職——森・エネルギー・データ。', 'anchor' => '#work' ],
+						[ 'label_en' => '🌲 Work', 'label_jp' => '働く', 'sub' => 'Paid roles in local forestry — forest, energy, data.', 'sub_jp' => '林業の有給職——森・エネルギー・データ。', 'anchor' => '#work' ],
 						[ 'label_en' => '◆ Invest', 'label_jp' => '出資する', 'sub' => 'Patient capital for a 25-year, non-profit build.', 'sub_jp' => '25年・非営利の事業への長期資本。', 'anchor' => '#invest' ],
 						[ 'label_en' => '✎ Advise', 'label_jp' => '助言する', 'sub' => 'Expertise in forestry, energy, compute, or governance.', 'sub_jp' => '林業・エネルギー・計算・ガバナンスの知見。', 'anchor' => '#advise' ],
 						[ 'label_en' => '⌂ Partner', 'label_jp' => '連携する', 'sub' => 'Companies, NGOs, landowners, and volunteers.', 'sub_jp' => '企業・NGO・土地所有者・ボランティア。', 'anchor' => '#partner' ],
@@ -485,7 +485,7 @@ if ( ! class_exists( 'Mitsue_Admin_Page' ) ) {
 					'type'    => 'repeater',
 					'columns' => [ 'scheme' => 'Scheme', 'who' => 'Funder → recipient', 'val' => 'Value EN', 'val_jp' => 'Value JP' ],
 					'defaults' => [
-						[ 'scheme' => '緑の雇用 (Green Employment)', 'who' => '林野庁 → the co-op', 'val' => 'Wage + ~3-yr OJT training subsidy for new forestry recruits', 'val_jp' => '新規就業者の人件費＋約3年のOJT研修助成' ],
+						[ 'scheme' => '緑の雇用 (Green Employment)', 'who' => '林野庁 → forestry employers', 'val' => 'Wage + ~3-yr OJT training subsidy for new forestry recruits', 'val_jp' => '新規就業者の人件費＋約3年のOJT研修助成' ],
 						[ 'scheme' => '地域おこし協力隊', 'who' => '総務省 → via 御杖村', 'val' => '~¥5.2M/yr (salary + activity), up to 3 yrs, + up to ¥1M startup grant', 'val_jp' => '報償費＋活動費 約520万円/年、最長3年、＋起業支援最大100万円' ],
 						[ 'scheme' => '移住支援金 (Relocation grant)', 'who' => '国 + 県 + 町 → you', 'val' => 'Household up to ¥1M + up to ¥1M per child; single ¥0.6M', 'val_jp' => '世帯 最大100万円＋子1人最大100万円／単身60万円' ],
 						[ 'scheme' => '空き家バンク + housing', 'who' => '御杖村', 'val' => 'Vacant-house match + renovation support', 'val_jp' => '空き家マッチング＋改修支援' ],

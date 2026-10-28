@@ -22,7 +22,7 @@ $pillars = mitsue_rows('join_pillars', [
 ]);
 
 $stack = mitsue_rows('join_stack', [
-  ['scheme'=>'緑の雇用 (Green Employment)','who'=>'林野庁 → the co-op','val'=>'Wage + ~3-yr OJT training subsidy for new forestry recruits','val_jp'=>'新規就業者の人件費＋約3年のOJT研修助成'],
+  ['scheme'=>'緑の雇用 (Green Employment)','who'=>'林野庁 → forestry employers','val'=>'Wage + ~3-yr OJT training subsidy for new forestry recruits','val_jp'=>'新規就業者の人件費＋約3年のOJT研修助成'],
   ['scheme'=>'地域おこし協力隊','who'=>'総務省 → via 御杖村','val'=>'~¥5.2M/yr (salary + activity), up to 3 yrs, + up to ¥1M startup grant','val_jp'=>'報償費＋活動費 約520万円/年、最長3年、＋起業支援最大100万円'],
   ['scheme'=>'移住支援金 (Relocation grant)','who'=>'国 + 県 + 町 → you','val'=>'Household up to ¥1M + up to ¥1M per child; single ¥0.6M','val_jp'=>'世帯 最大100万円＋子1人最大100万円／単身60万円'],
   ['scheme'=>'空き家バンク + housing','who'=>'御杖村','val'=>'Vacant-house match + renovation support','val_jp'=>'空き家マッチング＋改修支援'],
@@ -67,7 +67,7 @@ $email = mitsue_get('join_email', mitsue_get('cta_email', 'info@mitsue.it'));
       <div>
         <h2>Three things, <em>one job.</em></h2>
         <div class="h2-jp jp">三つのこと、ひとつの仕事。</div>
-        <div class="h2-sub body-en"><?php echo esc_html( mitsue_get('join_work_intro_en', 'Paid, multi-skill roles in Mitsue's local forestry sector. Most rural jobs offer one thread — this offers all three, woven together.') ); ?></div>
+        <div class="h2-sub body-en"><?php echo esc_html( mitsue_get('join_work_intro_en', 'Paid, multi-skill roles in Mitsue\'s local forestry sector. Most rural jobs offer one thread — this offers all three, woven together.') ); ?></div>
         <div class="h2-sub body-jp jp"><?php echo esc_html( mitsue_get('join_work_intro_jp', '御杖村の林業での有給・多技能職。多くの地方の仕事は1本の糸しか提供しませんが、これは3本を編み合わせて提供します。') ); ?></div>
       </div>
     </div>
