@@ -14,6 +14,7 @@ $progress = mitsue_rows('status_progress', [
   ['t'=>'Mapping thinning and wood-supply flows with local forestry partners and the village hall','t_jp'=>'林業の担い手・村役場との間伐・木材供給の流れの整理'],
   ['t'=>'Drafting bylaws for a 一般社団法人'],
   ['t'=>'Engaging a 行政書士 (administrative scrivener) in Nara'],
+  ['t'=>'Fuel-volume and financial sizing model for a clear-cut + kiri + CHP system (working estimates, shared with Komatsu)','t_jp'=>'皆伐・キリ・CHPシステムの燃料量・収支の試算モデルを作成（作業上の推計。コマツにも共有）'],
 ]);
 $next = mitsue_rows('status_next', [
   ['t'=>'Meet a local forestry partner (Oct 2) on fuel supply','t_jp'=>'地域の林業パートナーとの面談（10月2日）：燃料供給について'],
