@@ -382,7 +382,7 @@ if ( ! class_exists( 'Mitsue_Admin_Page' ) ) {
 						[ 't' => 'Initial meeting with the local forestry group (early 2026)',   't_jp' => '地域林業グループとの初回面談（2026年初頭）' ],
 						[ 't' => 'Drafted founding charter and detailed implementation plan',     't_jp' => '設立定款・詳細実施計画の草案作成' ],
 						[ 't' => 'Phase &amp; funding-gate flowchart published',                 't_jp' => 'フェーズ・資金ゲートフローチャートの公開' ],
-						[ 't' => 'Advisory commitments: Ray Ozzie, Takuo Dome, Henry Takata, ElvinZoet and Yoshiko Zoet-Susuki', 't_jp' => "顧問就任の確約：レイ・オジー・堂目卓生・ヘンリー・タカタ・エヴィン・ズート・\r\nヨシコ・ズート鈴木" ],
+						[ 't' => 'Advisory commitments: Ray Ozzie, Takuo Dome, Henry Takata, James Hill, ElvinZoet and Yoshiko Zoet-Susuki', 't_jp' => "顧問就任の確約：レイ・オジー・堂目卓生・ヘンリー・タカタ・ジェームズ・ヒル・エヴィン・ズート・\r\nヨシコ・ズート鈴木" ],
 						[ 't' => 'Created Mitsue-kun, the project mascot', 't_jp' => 'プロジェクトのマスコット「みつえくん」を制作' ],
 						[ 't' => 'Dr James Hill (Osaka Metropolitan University) joined the advisory board (Sept 2026)', 't_jp' => '大阪公立大学のジェームズ・ヒル博士が顧問に就任（2026年9月）' ],
 						[ 't' => 'Forest-thinning and wood-supply inquiry started with local forestry workers and the village hall', 't_jp' => '地域の林業関係者・村役場との間伐・木材供給の調査を開始' ],

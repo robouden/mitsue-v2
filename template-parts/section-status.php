@@ -4,7 +4,7 @@ $completed = mitsue_rows('status_completed', [
   ['t'=>'Initial meeting with the local forestry group (early 2026)'],
   ['t'=>'Drafted founding charter and detailed implementation plan'],
   ['t'=>'Phase &amp; funding-gate flowchart published'],
-  ['t'=>'Advisory commitments: Ray Ozzie, Takuo Dome, Henry Takata, ElvinZoet and Yoshiko Zoet-Susuki', 't_jp'=>"顧問就任の確約：レイ・オジー・堂目卓生・ヘンリー・タカタ・エヴィン・ズート・\r\nヨシコ・ズート鈴木"],
+  ['t'=>'Advisory commitments: Ray Ozzie, Takuo Dome, Henry Takata, James Hill, ElvinZoet and Yoshiko Zoet-Susuki', 't_jp'=>"顧問就任の確約：レイ・オジー・堂目卓生・ヘンリー・タカタ・ジェームズ・ヒル・エヴィン・ズート・\r\nヨシコ・ズート鈴木"],
   ['t'=>'Created Mitsue-kun, the project mascot — <a class="status-mascot-link" href="https://codeberg.org/YR-Design/mitsue-ai-data-center/src/branch/main/mitsue_kun_mascot_explainer.md#english" target="_blank" rel="noopener"><img src="'.esc_url( get_template_directory_uri() . '/assets/images/Mitsue-kun_16-removebg-preview.png' ).'" alt="Mitsue-kun" width="22" height="22" class="status-mascot-img">who is he? ↗</a>', 't_jp'=>'プロジェクトのマスコット「みつえくん」を制作 — <a class="status-mascot-link" href="https://codeberg.org/YR-Design/mitsue-ai-data-center/src/branch/main/mitsue_kun_mascot_explainer.md#%E6%97%A5%E6%9C%AC%E8%AA%9E" target="_blank" rel="noopener"><img src="'.esc_url( get_template_directory_uri() . '/assets/images/Mitsue-kun_16-removebg-preview.png' ).'" alt="みつえくん" width="22" height="22" class="status-mascot-img">みつえくんとは？↗</a>'],
   ['t'=>'Dr James Hill (Osaka Metropolitan University) joined the advisory board (Sept 2026)','t_jp'=>'大阪公立大学のジェームズ・ヒル博士が顧問に就任（2026年9月）'],
   ['t'=>'Forest-thinning and wood-supply inquiry started with local forestry workers and the village hall','t_jp'=>'地域の林業関係者・村役場との間伐・木材供給の調査を開始'],
